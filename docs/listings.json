@@ -2,7 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/2021-2-26-End-To-End-In-Game-Style-Transfer-Tutorial-1.html",
+      "/posts/2021-2-8-Weekly-Recap-3.html",
       "/posts/2021-1-12-In-Game-Style-Transfer-Experiments-5.html",
       "/posts/2021-1-24-Weekly-Recap-1.html",
       "/posts/2021-1-6-In-Game-Style-Transfer-Experiments-3.html",
@@ -13,7 +13,6 @@
       "/posts/2021-2-1-Weekly-Recap-2.html",
       "/posts/2021-2-17-In-Game-Style-Transfer-Experiments-6.html",
       "/posts/2021-2-17-Weekly-Recap-4.html",
-      "/posts/2021-2-26-End-To-End-In-Game-Style-Transfer-Tutorial-1-5.html",
       "/posts/2020-11-4-Barracuda-PoseNet-Tutorial-2.html",
       "/posts/2020-12-8-Basic-In-Game-Style-Transfer-Tutorial.html",
       "/posts/2021-12-6-OpenVINO-Object-Detection-for-Unity-Tutorial-In-Editor.html",
@@ -76,11 +75,8 @@
       "/posts/2021-12-9-Notes-on-NATS-Keynote.html",
       "/posts/2021-12-9-Notes-on-Procedural-Map-Generation-Techniques.html",
       "/posts/2021-12-9-Notes-on-the-Procedural-Tools-Used-to-Make-Far-Cry-5.html",
-      "/posts/2021-2-26-End-To-End-In-Game-Style-Transfer-Tutorial-2.html",
-      "/posts/2021-2-8-Weekly-Recap-3.html",
       "/posts/2021-3-12-Weekly-Recap-5.html",
       "/posts/2021-3-27-Create-a-Triangle-Motion-Graphic-With-the-Blender-Python-API.html",
-      "/posts/2021-3-3-End-To-End-In-Game-Style-Transfer-Tutorial-3.html",
       "/posts/2021-4-25-Weekly-Recap-8.html",
       "/posts/2021-3-20-Crop-Images-on-the-GPU-In-Unity.html",
       "/posts/2021-3-24-Create-a-Shape-Key-Motion-Graphic-With-the-Blender-Python-API.html",
@@ -134,6 +130,10 @@
       "/posts/2021-12-16-Notes-on-Cover-Letters-for-Software-Engineers.html",
       "/posts/2021-12-16-Notes-on-the-Behavioral-Aspect-of-Technical-Interviews.html",
       "/posts/2021-12-16-Notes-on-Writing-Resumes-for-Software-Developer-Jobs.html",
+      "/posts/end-to-end-in-game-style-transfer-tutorial/part-3/End-To-End-In-Game-Style-Transfer-Tutorial-3.html",
+      "/posts/end-to-end-in-game-style-transfer-tutorial/part-1/End-To-End-In-Game-Style-Transfer-Tutorial-1.html",
+      "/posts/end-to-end-in-game-style-transfer-tutorial/part-1-5/End-To-End-In-Game-Style-Transfer-Tutorial-1-5.html",
+      "/posts/end-to-end-in-game-style-transfer-tutorial/part-2/End-To-End-In-Game-Style-Transfer-Tutorial-2.html",
       "/posts/2020-12-31-Using-PyTorch-with-CUDA-on-WSL2.html",
       "/posts/2020-12-20-In-Game-Style-Transfer-Experiments-2.html",
       "/posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html",
@@ -144,13 +144,13 @@
       "/posts/2020-11-12-Barracuda-PoseNet-Tutorial-4.html",
       "/posts/2020-10-25-Barracuda-PoseNet-Tutorial-1.html",
       "/posts/2020-10-21-How-to-Convert-a-TensorFlow-SavedModel-to-ONNX.html",
-      "/posts/2020-10-19-Barracuda-Pose-Estimation-Project-Log-5.html",
       "/posts/2020-10-19-In-Game-Style-Transfer.html",
-      "/posts/2020-09-24-Barracuda-Pose-Estimation-Project-Log-4.html",
-      "/posts/2020-09-22-Barracuda-Pose-Estimation-Project-Log-3.html",
-      "/posts/2020-09-21-Barracuda-Pose-Estimation-Project-Log-2.html",
-      "/posts/2020-09-16-Barracuda-Pose-Estimation-Project-Log-1.html",
-      "/posts/2020-09-15-How-to-Convert-a-TensorFlow-js-Graph-Model-to-a-Tensorflow-SavedModel.html"
+      "/posts/barracuda-pose-estimation-project-log/part-5/Barracuda-Pose-Estimation-Project-Log-5.html",
+      "/posts/barracuda-pose-estimation-project-log/part-4/Barracuda-Pose-Estimation-Project-Log-4.html",
+      "/posts/barracuda-pose-estimation-project-log/part-3/Barracuda-Pose-Estimation-Project-Log-3.html",
+      "/posts/barracuda-pose-estimation-project-log/part-2/Barracuda-Pose-Estimation-Project-Log-2.html",
+      "/posts/barracuda-pose-estimation-project-log/part-1/Barracuda-Pose-Estimation-Project-Log-1.html",
+      "/posts/How-to-Convert-a-TensorFlow-js-Graph-Model-to-a-Tensorflow-SavedModel.html"
     ]
   }
 ]
