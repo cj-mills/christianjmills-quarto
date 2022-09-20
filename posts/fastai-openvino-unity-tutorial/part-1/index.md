@@ -7,6 +7,7 @@ date: 2022-7-17
 description: This follow-up to the fastai-to-unity tutorial covers creating an OpenVINO
   plugin for the Unity game engine. Part 1 covers the required modifications to the
   original training code.
+image: ./images/cover.jpg
 hide: false
 layout: post
 search_exclude: false
@@ -1623,7 +1624,13 @@ display(Markdown(f"`{mo_command}`"))
 Model Optimizer command to convert the ONNX model to OpenVINO:
 ```
 
-`mo --input_model "asl-and-some-words-resnet10t.onnx" --input_shape "[1,3, 216, 384]" --mean_values="(0.485, 0.456, 0.406)" --scale_values="(0.229, 0.224, 0.225)" --data_type FP16 --output_dir "."`
+```bash
+mo --input_model "asl-and-some-words-resnet10t.onnx" --input_shape "[1,3, 216, 384]" --mean_values="(0.485, 0.456, 0.406)" --scale_values="(0.229, 0.224, 0.225)" --data_type FP16 --output_dir "."
+```
+
+
+
+
 
 **Convert ONNX model to OpenVINO IR**
 

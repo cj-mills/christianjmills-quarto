@@ -2840,14 +2840,14 @@ test_input_size
 <span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Model Optimizer command to convert the ONNX model to OpenVINO:"</span>)</span>
 <span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>display(Markdown(<span class="ss">f"`</span><span class="sc">{</span>mo_command<span class="sc">}</span><span class="ss">`"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre class="text"><code>Model Optimizer command to convert the ONNX model to OpenVINO:</code></pre>
-<p><code>mo --input_model "asl-and-some-words-resnet10t.onnx" --input_shape "[1,3, 216, 384]" --mean_values="(0.485, 0.456, 0.406)" --scale_values="(0.229, 0.224, 0.225)" --data_type FP16 --output_dir "."</code></p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mo</span> <span class="at">--input_model</span> <span class="st">"asl-and-some-words-resnet10t.onnx"</span> <span class="at">--input_shape</span> <span class="st">"[1,3, 216, 384]"</span> <span class="at">--mean_values</span><span class="op">=</span><span class="st">"(0.485, 0.456, 0.406)"</span> <span class="at">--scale_values</span><span class="op">=</span><span class="st">"(0.229, 0.224, 0.225)"</span> <span class="at">--data_type</span> FP16 <span class="at">--output_dir</span> <span class="st">"."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Convert ONNX model to OpenVINO IR</strong></p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> ir_path.exists():</span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Exporting ONNX model to IR... This may take a few minutes."</span>)</span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>    mo_result <span class="op">=</span> <span class="op">%</span>sx $mo_command</span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>.join(mo_result))</span>
-<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"IR model </span><span class="sc">{</span>ir_path<span class="sc">}</span><span class="ss"> already exists."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> ir_path.exists():</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Exporting ONNX model to IR... This may take a few minutes."</span>)</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>    mo_result <span class="op">=</span> <span class="op">%</span>sx $mo_command</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">"</span>.join(mo_result))</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"IR model </span><span class="sc">{</span>ir_path<span class="sc">}</span><span class="ss"> already exists."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre class="text"><code>    Exporting ONNX model to IR... This may take a few minutes.
     Model Optimizer arguments:
     Common parameters:
@@ -2897,64 +2897,64 @@ test_input_size
 <p>Now we can compare inference speed between OpenVINO and PyTorch. OpenVINO supports inference with ONNX models in addition to its IR format.</p>
 <p><strong>Get available OpenVINO compute devices</strong></p>
 <p>OpenVINO does not support GPU inference with non-Intel GPUs.</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>devices <span class="op">=</span> ie.available_devices</span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> device <span class="kw">in</span> devices:</span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>    device_name <span class="op">=</span> ie.get_property(device_name<span class="op">=</span>device, name<span class="op">=</span><span class="st">"FULL_DEVICE_NAME"</span>)</span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>device<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>device_name<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>devices <span class="op">=</span> ie.available_devices</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> device <span class="kw">in</span> devices:</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>    device_name <span class="op">=</span> ie.get_property(device_name<span class="op">=</span>device, name<span class="op">=</span><span class="st">"FULL_DEVICE_NAME"</span>)</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>device<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>device_name<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre class="text"><code>CPU: 11th Gen Intel(R) Core(TM) i7-11700K @ 3.60GHz</code></pre>
 <p><strong>Create normalized input for ONNX model</strong></p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>normalized_input_image <span class="op">=</span> batched_tensor.cpu().detach().numpy()</span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>normalized_input_image.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>normalized_input_image <span class="op">=</span> batched_tensor.cpu().detach().numpy()</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>normalized_input_image.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre class="text"><code>(1, 3, 224, 224)</code></pre>
 <p><strong>Test ONNX model using OpenVINO</strong></p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load network to Inference Engine</span></span>
-<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>ie <span class="op">=</span> Core()</span>
-<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>model_onnx <span class="op">=</span> ie.read_model(model<span class="op">=</span>onnx_file_name)</span>
-<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>compiled_model_onnx <span class="op">=</span> ie.compile_model(model<span class="op">=</span>model_onnx, device_name<span class="op">=</span><span class="st">"CPU"</span>)</span>
-<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>input_layer_onnx <span class="op">=</span> <span class="bu">next</span>(<span class="bu">iter</span>(compiled_model_onnx.inputs))</span>
-<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>output_layer_onnx <span class="op">=</span> <span class="bu">next</span>(<span class="bu">iter</span>(compiled_model_onnx.outputs))</span>
-<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Run inference on the input image</span></span>
-<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a>res_onnx <span class="op">=</span> compiled_model_onnx(inputs<span class="op">=</span>[normalized_input_image])[output_layer_onnx]</span>
-<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a>learn.dls.vocab[np.argmax(res_onnx)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load network to Inference Engine</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>ie <span class="op">=</span> Core()</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>model_onnx <span class="op">=</span> ie.read_model(model<span class="op">=</span>onnx_file_name)</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>compiled_model_onnx <span class="op">=</span> ie.compile_model(model<span class="op">=</span>model_onnx, device_name<span class="op">=</span><span class="st">"CPU"</span>)</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>input_layer_onnx <span class="op">=</span> <span class="bu">next</span>(<span class="bu">iter</span>(compiled_model_onnx.inputs))</span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>output_layer_onnx <span class="op">=</span> <span class="bu">next</span>(<span class="bu">iter</span>(compiled_model_onnx.outputs))</span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Run inference on the input image</span></span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a>res_onnx <span class="op">=</span> compiled_model_onnx(inputs<span class="op">=</span>[normalized_input_image])[output_layer_onnx]</span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>learn.dls.vocab[np.argmax(res_onnx)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre class="text"><code>'J'</code></pre>
 <p><strong>Benchmark ONNX model CPU inference speed</strong></p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
-<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>compiled_model_onnx(inputs<span class="op">=</span>[normalized_input_image])[output_layer_onnx]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>compiled_model_onnx(inputs<span class="op">=</span>[normalized_input_image])[output_layer_onnx]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre class="text"><code>3.62 ms ± 61.8 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)</code></pre>
 <p><strong>Prepare input image for OpenVINO IR model</strong></p>
-<div class="sourceCode" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>input_image <span class="op">=</span> scaled_tensor.unsqueeze(dim<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>input_image.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>input_image <span class="op">=</span> scaled_tensor.unsqueeze(dim<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>input_image.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre class="text"><code>torch.Size([1, 3, 224, 224])</code></pre>
 <p><strong>Test OpenVINO IR model</strong></p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the network in Inference Engine</span></span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>ie <span class="op">=</span> Core()</span>
-<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>model_ir <span class="op">=</span> ie.read_model(model<span class="op">=</span>ir_path)</span>
-<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>model_ir.reshape(input_image.shape)</span>
-<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>compiled_model_ir <span class="op">=</span> ie.compile_model(model<span class="op">=</span>model_ir, device_name<span class="op">=</span><span class="st">"CPU"</span>)</span>
-<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Get input and output layers</span></span>
-<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>input_layer_ir <span class="op">=</span> <span class="bu">next</span>(<span class="bu">iter</span>(compiled_model_ir.inputs))</span>
-<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>output_layer_ir <span class="op">=</span> <span class="bu">next</span>(<span class="bu">iter</span>(compiled_model_ir.outputs))</span>
-<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Run inference on the input image</span></span>
-<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>res_ir <span class="op">=</span> compiled_model_ir([input_image])[output_layer_ir]</span>
-<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a>learn.dls.vocab[np.argmax(res_ir)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the network in Inference Engine</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>ie <span class="op">=</span> Core()</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>model_ir <span class="op">=</span> ie.read_model(model<span class="op">=</span>ir_path)</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>model_ir.reshape(input_image.shape)</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>compiled_model_ir <span class="op">=</span> ie.compile_model(model<span class="op">=</span>model_ir, device_name<span class="op">=</span><span class="st">"CPU"</span>)</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Get input and output layers</span></span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>input_layer_ir <span class="op">=</span> <span class="bu">next</span>(<span class="bu">iter</span>(compiled_model_ir.inputs))</span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>output_layer_ir <span class="op">=</span> <span class="bu">next</span>(<span class="bu">iter</span>(compiled_model_ir.outputs))</span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Run inference on the input image</span></span>
+<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a>res_ir <span class="op">=</span> compiled_model_ir([input_image])[output_layer_ir]</span>
+<span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a>learn.dls.vocab[np.argmax(res_ir)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre class="text"><code>'J'</code></pre>
 <p><strong>Benchmark OpenVINO IR model CPU inference speed</strong></p>
-<div class="sourceCode" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
-<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>compiled_model_ir([input_image])[output_layer_ir]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>compiled_model_ir([input_image])[output_layer_ir]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre class="text"><code>3.39 ms ± 84.3 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)</code></pre>
 <p><strong>Note:</strong> The IR model is slightly faster than the ONNX model and half the file size.</p>
 <p><strong>Benchmark PyTorch model GPU inference speed</strong></p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
-<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad(): preds <span class="op">=</span> learn.model.cuda()(batched_tensor.cuda())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad(): preds <span class="op">=</span> learn.model.cuda()(batched_tensor.cuda())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre class="text"><code>1.81 ms ± 5.52 µs per loop (mean ± std. dev. of 7 runs, 1,000 loops each)</code></pre>
 <p>PyTorch inference with a Titan RTX is still faster than OpenVINO inference with an i7-11700K for a ResNet10 model. However, OpenVINO CPU inference is often faster when using models optimized for mobile devices, like MobileNet.</p>
 <p><strong>Benchmark PyTorch model CPU inference speed</strong></p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
-<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad(): preds <span class="op">=</span> learn.model.cpu()(batched_tensor.cpu())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>timeit</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad(): preds <span class="op">=</span> learn.model.cpu()(batched_tensor.cpu())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre class="text"><code>8.94 ms ± 52.2 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)</code></pre>
 <p>OpenVINO is easily faster than PyTorch for CPU inference.</p>
 </section>
