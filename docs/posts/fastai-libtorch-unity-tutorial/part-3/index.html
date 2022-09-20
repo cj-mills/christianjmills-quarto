@@ -88,22 +88,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -125,7 +125,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -135,7 +135,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">christianjmills-quarto</span>
     </a>
   </div>
@@ -145,7 +145,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">About</a>
+    <a class="nav-link" href="../../../about.html">About</a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/cj-mills"><i class="bi bi-github" role="img">
@@ -233,7 +233,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>First, we’ll create a new folder to store the <a href="https://christianjmills.com/Fastai-to-LibTorch-to-Unity-Tutorial-Windows-2/#gather-dependencies">DLL files</a> from part 2. Create a new folder called <code>Plugins</code>, then create a subfolder named <code>x86_64</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-create-plugins-folder.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-create-plugins-folder.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-create-plugins-folder</figcaption><p></p>
 </figure>
 </div>
@@ -243,14 +243,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-add-dll-files.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-add-dll-files.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-add-dll-files</figcaption><p></p>
 </figure>
 </div>
 <p>Next, we’ll create a folder to store the TorchScript modules. TorchScript modules are not <a href="https://docs.unity3d.com/Manual/AssetTypes.html">supported asset types</a>, so we need to place them in a <a href="https://docs.unity3d.com/Manual/StreamingAssets.html">StreamingAssets</a> folder. Create a new folder named <code>StreamingAssets</code>. We’ll put the files in a new subfolder called <code>TorchScriptModules</code> to keep things organized.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-create-streaming-assets-folder.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-create-streaming-assets-folder.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-create-streaming-assets-folder</figcaption><p></p>
 </figure>
 </div>
@@ -260,14 +260,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-add-torchscript-modules.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-add-torchscript-modules.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-add-torchscript-modules</figcaption><p></p>
 </figure>
 </div>
 <p>Lastly, we’ll store the JSON files with the normalization stats in a new assets folder called <code>NormalizationStats</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-create-normalization-stats-folder.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-create-normalization-stats-folder.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-create-normalization-stats-folder</figcaption><p></p>
 </figure>
 </div>
@@ -277,14 +277,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Rather than copying the input image from Unity to the LibTorch plugin, we’ll pass a pointer to the pixel data. First, we need to allow unsafe code for the Unity project. Select <code>Edit → Project Settings...</code> from the top menu.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-open-project-settings.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-open-project-settings.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-open-project-settings</figcaption><p></p>
 </figure>
 </div>
 <p>Open the <code>Player → Other Settings</code> dropdown and scroll down to the <code>Allow 'unsafe' Code</code> checkbox. Enable the setting and close the Project Settings window.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-allow-unsafe-code.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-allow-unsafe-code.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-allow-unsafe-code</figcaption><p></p>
 </figure>
 </div>
@@ -339,7 +339,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Duplicate the <code>ImageClassifier</code> script and name the copy <code>ImageClassifierTorch</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-create-image-classifier-torch-script.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-create-image-classifier-torch-script.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-create-image-classifier-torch-script</figcaption><p></p>
 </figure>
 </div>
@@ -696,28 +696,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>As mentioned earlier, we’ll add a new dropdown menu to the GUI so we can switch between available TorchScript modules at runtime. Select the <code>WebcamDeviceText</code> and <code>WebcamDropdown</code> objects and press Ctrl-d to duplicate them. Rename the duplicates to <code>TorchScriptModelText</code> and <code>TorchScriptModelDropdown</code> respectively.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-add-torchscript-model-dropdown.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-add-torchscript-model-dropdown.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-add-torchscript-model-dropdown</figcaption><p></p>
 </figure>
 </div>
 <p>Select the <code>TorchScriptModelText</code> object and update the <code>Pos Y</code> value to <code>-145</code> and the Text value to <code>TorchScript Model:</code> in the Inspector tab.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-update-torchscript-model-text-position-and-text.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-update-torchscript-model-text-position-and-text.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-update-torchscript-model-text-position</figcaption><p></p>
 </figure>
 </div>
 <p>Then, select the <code>TorchScriptModelDropdown</code> object and update the <code>Pos Y</code> value to <code>-165</code> in the Inspector tab.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-update-torchscript-model-dropdown-position.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-update-torchscript-model-dropdown-position.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-update-torchscript-model-dropdown-position</figcaption><p></p>
 </figure>
 </div>
 <p>The updated GUI should look like the image below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-view-updated-gui.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-view-updated-gui.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-view-updated-gui</figcaption><p></p>
 </figure>
 </div>
@@ -727,7 +727,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Now we can add the new <code>ImageClassifierTorch</code> script to the <code>InferenceManager</code> object. Make sure to disable the existing <code>ImageClassifier</code> component, as shown below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-add-image-classifier-torch-component.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-add-image-classifier-torch-component.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-add-image-classifier-torch-component</figcaption><p></p>
 </figure>
 </div>
@@ -738,21 +738,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Update the <code>WebcamToggle</code> On Value Changed Event</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-webcam-toggle-update-on-value-changed.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-webcam-toggle-update-on-value-changed.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-webcam-toggle-update-on-value-changed</figcaption><p></p>
 </figure>
 </div>
 <p><strong>Update the <code>WebcamDropdown</code> On Value Changed Event</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-webcam-dropdown-update-on-value-changed.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-webcam-dropdown-update-on-value-changed.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-webcam-dropdown-update-on-value-changed</figcaption><p></p>
 </figure>
 </div>
 <p><strong>Update the <code>TorchScriptModelDropdown</code> On Value Changed Event</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-3/unity-update-torchscript-model-dropdown-on-value-changed.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-update-torchscript-model-dropdown-on-value-changed.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-update-torchscript-model-dropdown-on-value-changed</figcaption><p></p>
 </figure>
 </div>

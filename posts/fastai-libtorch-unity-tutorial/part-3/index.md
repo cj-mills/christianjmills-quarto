@@ -49,7 +49,7 @@ First, we'll create a new folder to store the [DLL files](https://christianjmill
 
 
 
-![unity-create-plugins-folder](../images/fastai-libtorch-unity-tutorial/part-3/unity-create-plugins-folder.png)
+![unity-create-plugins-folder](./images/unity-create-plugins-folder.png)
 
 
 
@@ -61,7 +61,7 @@ Copy all the DLL files into the `Assets/Plugins/x86_64` folder. We then need to 
 
 
 
-![unity-add-dll-files](../images/fastai-libtorch-unity-tutorial/part-3/unity-add-dll-files.png)
+![unity-add-dll-files](./images/unity-add-dll-files.png)
 
 
 
@@ -71,7 +71,7 @@ Next, we'll create a folder to store the TorchScript modules. TorchScript module
 
 
 
-![unity-create-streaming-assets-folder](../images/fastai-libtorch-unity-tutorial/part-3/unity-create-streaming-assets-folder.png)
+![unity-create-streaming-assets-folder](./images/unity-create-streaming-assets-folder.png)
 
 
 
@@ -83,7 +83,7 @@ Add any TorchScript files into the `Assets/StreamingAssets/TorchScriptModules` f
 
 
 
-![unity-add-torchscript-modules](../images/fastai-libtorch-unity-tutorial/part-3/unity-add-torchscript-modules.png)
+![unity-add-torchscript-modules](./images/unity-add-torchscript-modules.png)
 
 
 
@@ -91,7 +91,7 @@ Lastly, we'll store the JSON files with the normalization stats in a new assets 
 
 
 
-![unity-create-normalization-stats-folder](../images/fastai-libtorch-unity-tutorial/part-3/unity-create-normalization-stats-folder.png)
+![unity-create-normalization-stats-folder](./images/unity-create-normalization-stats-folder.png)
 
 
 
@@ -103,7 +103,7 @@ Lastly, we'll store the JSON files with the normalization stats in a new assets 
 
 Rather than copying the input image from Unity to the LibTorch plugin, we'll pass a pointer to the pixel data. First, we need to allow unsafe code for the Unity project. Select `Edit → Project Settings...` from the top menu.
 
-![unity-open-project-settings](../images/fastai-libtorch-unity-tutorial/part-3/unity-open-project-settings.png)
+![unity-open-project-settings](./images/unity-open-project-settings.png)
 
 
 
@@ -111,7 +111,7 @@ Open the `Player → Other Settings` dropdown and scroll down to the `Allow 'uns
 
 
 
-![unity-allow-unsafe-code](../images/fastai-libtorch-unity-tutorial/part-3/unity-allow-unsafe-code.png)
+![unity-allow-unsafe-code](./images/unity-allow-unsafe-code.png)
 
 
 
@@ -178,7 +178,7 @@ Duplicate the `ImageClassifier` script and name the copy `ImageClassifierTorch`.
 
 
 
-![unity-create-image-classifier-torch-script](../images/fastai-libtorch-unity-tutorial/part-3/unity-create-image-classifier-torch-script.png)
+![unity-create-image-classifier-torch-script](./images/unity-create-image-classifier-torch-script.png)
 
 
 
@@ -671,7 +671,7 @@ As mentioned earlier, we'll add a new dropdown menu to the GUI so we can switch 
 
 
 
-![unity-add-torchscript-model-dropdown](../images/fastai-libtorch-unity-tutorial/part-3/unity-add-torchscript-model-dropdown.png)
+![unity-add-torchscript-model-dropdown](./images/unity-add-torchscript-model-dropdown.png)
 
 
 
@@ -681,7 +681,7 @@ Select the `TorchScriptModelText` object and update the `Pos Y` value to `-145` 
 
 
 
-![unity-update-torchscript-model-text-position](../images/fastai-libtorch-unity-tutorial/part-3/unity-update-torchscript-model-text-position-and-text.png)
+![unity-update-torchscript-model-text-position](./images/unity-update-torchscript-model-text-position-and-text.png)
 
 
 
@@ -689,7 +689,7 @@ Then, select the `TorchScriptModelDropdown` object and update the `Pos Y` value 
 
 
 
-![unity-update-torchscript-model-dropdown-position](../images/fastai-libtorch-unity-tutorial/part-3/unity-update-torchscript-model-dropdown-position.png)
+![unity-update-torchscript-model-dropdown-position](./images/unity-update-torchscript-model-dropdown-position.png)
 
 
 
@@ -697,7 +697,7 @@ The updated GUI should look like the image below.
 
 
 
-![unity-view-updated-gui](../images/fastai-libtorch-unity-tutorial/part-3/unity-view-updated-gui.png)
+![unity-view-updated-gui](./images/unity-view-updated-gui.png)
 
 
 
@@ -709,7 +709,7 @@ The updated GUI should look like the image below.
 
 Now we can add the new `ImageClassifierTorch` script to the `InferenceManager` object. Make sure to disable the existing `ImageClassifier` component, as shown below.
 
-![unity-add-image-classifier-torch-component](../images/fastai-libtorch-unity-tutorial/part-3/unity-add-image-classifier-torch-component.png)
+![unity-add-image-classifier-torch-component](./images/unity-add-image-classifier-torch-component.png)
 
 
 
@@ -721,7 +721,7 @@ With the `ImageClassifierTorch` component added, we can update the On Value Chan
 
 **Update the `WebcamToggle` On Value Changed Event**
 
-![unity-webcam-toggle-update-on-value-changed](../images/fastai-libtorch-unity-tutorial/part-3/unity-webcam-toggle-update-on-value-changed.png)
+![unity-webcam-toggle-update-on-value-changed](./images/unity-webcam-toggle-update-on-value-changed.png)
 
 
 
@@ -729,7 +729,7 @@ With the `ImageClassifierTorch` component added, we can update the On Value Chan
 
 
 
-![unity-webcam-dropdown-update-on-value-changed](../images/fastai-libtorch-unity-tutorial/part-3/unity-webcam-dropdown-update-on-value-changed.png)
+![unity-webcam-dropdown-update-on-value-changed](./images/unity-webcam-dropdown-update-on-value-changed.png)
 
 
 
@@ -737,7 +737,7 @@ With the `ImageClassifierTorch` component added, we can update the On Value Chan
 
 
 
-![unity-update-torchscript-model-dropdown-on-value-changed](../images/fastai-libtorch-unity-tutorial/part-3/unity-update-torchscript-model-dropdown-on-value-changed.png)
+![unity-update-torchscript-model-dropdown-on-value-changed](./images/unity-update-torchscript-model-dropdown-on-value-changed.png)
 
 
 

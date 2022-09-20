@@ -88,22 +88,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -125,7 +125,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -135,7 +135,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">christianjmills-quarto</span>
     </a>
   </div>
@@ -145,7 +145,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">About</a>
+    <a class="nav-link" href="../../../about.html">About</a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/cj-mills"><i class="bi bi-github" role="img">
@@ -235,35 +235,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Select the <code>opencv-4.6.0-vc14_vc15.exe</code> option from the Assets list.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/opencv_github_download_executable.png" class="img-fluid figure-img"></p>
+<p><img src="./images/opencv_github_download_executable.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">opencv_github_download_executable</figcaption><p></p>
 </figure>
 </div>
 <p>Run the executable once it finishes downloading. You might get a warning from Windows that the executable is an unrecognized app. We can bypass this by clicking the <code>More info</code> text, then the Run anyway button.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/windows-defender-smartscreen-warning.png" class="img-fluid figure-img"></p>
+<p><img src="./images/windows-defender-smartscreen-warning.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">windows-defender-smartscreen-warning</figcaption><p></p>
 </figure>
 </div>
 <p>Then, click the <code>Run anyway</code> button.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/windows-defender-smartscreen-warning-run-anyway.png" class="img-fluid figure-img"></p>
+<p><img src="./images/windows-defender-smartscreen-warning-run-anyway.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">windows-defender-smartscreen-warning-run-anyway</figcaption><p></p>
 </figure>
 </div>
 <p>The executable will prompt us to select a location to extract the opencv folder. We’ll need to give Visual Studio this location to access the library’s functionality. I tend to place my C++ dependencies in a dedicated folder for consistency.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/opencv-select-extraction-location.png" class="img-fluid figure-img"></p>
+<p><img src="./images/opencv-select-extraction-location.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">opencv-select-extraction-location</figcaption><p></p>
 </figure>
 </div>
 <p>If we open the opencv folder, we can see a build folder and a source folder. Everything we need is in the build folder.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/opencv-folder.png" class="img-fluid figure-img"></p>
+<p><img src="./images/opencv-folder.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">opencv-folder</figcaption><p></p>
 </figure>
 </div>
@@ -279,14 +279,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/download-libtorch-cpu.png" class="img-fluid figure-img"></p>
+<p><img src="./images/download-libtorch-cpu.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">download-libtorch-cpu</figcaption><p></p>
 </figure>
 </div>
 <p>As with the OpenCV library, we must pick a location to extract the LibTorch library.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/libtorch-folder.png" class="img-fluid figure-img"></p>
+<p><img src="./images/libtorch-folder.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">libtorch-folder</figcaption><p></p>
 </figure>
 </div>
@@ -298,21 +298,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Open Visual Studio and select the <code>Create a new project</code> option.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-create-new-project.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-create-new-project.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-create-new-project</figcaption><p></p>
 </figure>
 </div>
 <p>Type <code>DLL</code> into the text box and select the <code>Dynamic-Link Library (DLL)</code> option. This option automatically configures a few parameters for us compared to starting with a standard console application.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-new-dll-project.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-new-dll-project.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-new-dll-project</figcaption><p></p>
 </figure>
 </div>
 <p>Choose a name and location for the project and click the <code>Create</code> button. By default, the DLL file will use the project name.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-choose-project-name-and-location.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-choose-project-name-and-location.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-choose-project-name-and-location</figcaption><p></p>
 </figure>
 </div>
@@ -322,14 +322,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>At the top of the window, open the Solution Configurations dropdown menu, and select <code>Release</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-switch-to-release.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-switch-to-release.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-switch-to-release</figcaption><p></p>
 </figure>
 </div>
 <p>Then, open the Solution Platform dropdown menu and select <code>x64</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-switch-to-64-bit.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-switch-to-64-bit.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-switch-to-64-bit</figcaption><p></p>
 </figure>
 </div>
@@ -339,28 +339,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>We need to tell Visual Studio where LibTorch and OpenCV are so we can access their APIs. Right-click the project name in the Solution Explorer panel.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-solution-explorer-select-project-name.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-solution-explorer-select-project-name.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-solution-explorer-select-project-name</figcaption><p></p>
 </figure>
 </div>
 <p>Select the <code>Properties</code> option in the popup menu.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-open-properties.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-open-properties.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-open-properties</figcaption><p></p>
 </figure>
 </div>
 <p><strong>Note:</strong> We can change the name of the DLL file using the Target Name parameter.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-properties-target-name.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-properties-target-name.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-properties-target-name</figcaption><p></p>
 </figure>
 </div>
 <p>In the Properties Window, open on the <code>C/C++</code> dropdown. Select the <code>Additional Include Directories</code> section and click on <code>&lt;Edit..&gt;</code> in the dropdown.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-open-additional-include-directories.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-open-additional-include-directories.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-open-additional-include-directories</figcaption><p></p>
 </figure>
 </div>
@@ -372,7 +372,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-add-additional-include-directories.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-add-additional-include-directories.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-add-additional-include-directories</figcaption><p></p>
 </figure>
 </div>
@@ -382,7 +382,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Next, open the <code>Linker</code> dropdown in the Properties window and select <code>Input</code>. Select <code>Additional Dependencies</code> and click <code>&lt;Edit..&gt;</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-linker-additional-dependencies.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-linker-additional-dependencies.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-linker-additional-dependencies</figcaption><p></p>
 </figure>
 </div>
@@ -395,7 +395,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-linker-add-additional-dependencies.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-linker-add-additional-dependencies.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-linker-add-additional-dependencies</figcaption><p></p>
 </figure>
 </div>
@@ -406,21 +406,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>OpenCV DLL file</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/get-opencv-world-dll-file.png" class="img-fluid figure-img"></p>
+<p><img src="./images/get-opencv-world-dll-file.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">get-opencv-world-dll-file</figcaption><p></p>
 </figure>
 </div>
 <p><strong>LibTorch DLL files</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/get-libtorch-dll-files.png" class="img-fluid figure-img"></p>
+<p><img src="./images/get-libtorch-dll-files.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">get-libtorch-dll-files</figcaption><p></p>
 </figure>
 </div>
 <p>We can add a post-build event in Visual Studio to automatically copy these DLL files to the build folder for the project at compile time. Open the <code>Build Events</code> dropdown in the Properties window and select <code>Post-Build Event</code>. Select <code>Command Line</code> and click <code>&lt;Edit..&gt;</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-post-build-event-edit-command-line-events.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-post-build-event-edit-command-line-events.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-post-build-event-edit-command-line-events</figcaption><p></p>
 </figure>
 </div>
@@ -432,14 +432,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-post-build-event-add-xcopy-commands.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-post-build-event-add-xcopy-commands.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-post-build-event-add-xcopy-commands</figcaption><p></p>
 </figure>
 </div>
 <p>Finally, click the <code>Apply</code> button and close the Properties window.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-properties-apply-changes.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-properties-apply-changes.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-properties-apply-changes</figcaption><p></p>
 </figure>
 </div>
@@ -450,7 +450,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>We need to make a small change to the <code>pch.h</code> <a href="https://docs.microsoft.com/en-us/cpp/build/creating-precompiled-header-files?view=msvc-160">Precompiled Header file</a> to avoid some conflicts with LibTorch. Open the <code>pch.h</code> file by selecting it in the Solution Explorer window.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-open-pch-header-file.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-open-pch-header-file.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-open-pch-header-file</figcaption><p></p>
 </figure>
 </div>
@@ -608,7 +608,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Open the Build menu at the top of the Visual Studio window and click Build Solution. Visual Studio will generate a new x64 folder in the project directory containing the DLL file and its dependencies.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-build-solution.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-build-solution.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-build-solution</figcaption><p></p>
 </figure>
 </div>
@@ -618,28 +618,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Right-click the project name in the Solution Explorer panel and select <code>Open Folder in File Explorer</code> from the popup menu.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-open-folder-in-explorer.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-open-folder-in-explorer.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-open-folder-in-explorer</figcaption><p></p>
 </figure>
 </div>
 <p>In the new File Explorer window, go to the parent folder.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-project-folder.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-project-folder.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-project-folder</figcaption><p></p>
 </figure>
 </div>
 <p>Open the <code>x64 → Release</code> subfolder.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-project-folder-x64-folder.png" class="img-fluid figure-img"></p>
+<p><img src="./images/visual-studio-project-folder-x64-folder.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">visual-studio-project-folder-x64-folder</figcaption><p></p>
 </figure>
 </div>
 <p>We’ll need to copy all the DLL files in this folder to the Unity project.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-libtorch-unity-tutorial/part-2/file-explorer-select-dll-files.png" class="img-fluid figure-img"></p>
+<p><img src="./images/file-explorer-select-dll-files.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">file-explorer-select-dll-files</figcaption><p></p>
 </figure>
 </div>

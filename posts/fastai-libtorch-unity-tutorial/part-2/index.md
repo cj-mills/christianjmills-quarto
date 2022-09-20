@@ -47,7 +47,7 @@ Our LibTorch DLL requires the [OpenCV](https://github.com/opencv/opencv) library
 
 Select the `opencv-4.6.0-vc14_vc15.exe` option from the Assets list.
 
-![opencv_github_download_executable](../images/fastai-libtorch-unity-tutorial/part-2/opencv_github_download_executable.png)
+![opencv_github_download_executable](./images/opencv_github_download_executable.png)
 
 
 
@@ -55,7 +55,7 @@ Run the executable once it finishes downloading. You might get a warning from Wi
 
 
 
-![windows-defender-smartscreen-warning](../images/fastai-libtorch-unity-tutorial/part-2/windows-defender-smartscreen-warning.png)
+![windows-defender-smartscreen-warning](./images/windows-defender-smartscreen-warning.png)
 
 
 
@@ -63,7 +63,7 @@ Then, click the `Run anyway` button.
 
 
 
-![windows-defender-smartscreen-warning-run-anyway](../images/fastai-libtorch-unity-tutorial/part-2/windows-defender-smartscreen-warning-run-anyway.png)
+![windows-defender-smartscreen-warning-run-anyway](./images/windows-defender-smartscreen-warning-run-anyway.png)
 
 
 
@@ -73,7 +73,7 @@ The executable will prompt us to select a location to extract the opencv folder.
 
 
 
-![opencv-select-extraction-location](../images/fastai-libtorch-unity-tutorial/part-2/opencv-select-extraction-location.png)
+![opencv-select-extraction-location](./images/opencv-select-extraction-location.png)
 
 
 
@@ -81,7 +81,7 @@ If we open the opencv folder, we can see a build folder and a source folder. Eve
 
 
 
-![opencv-folder](../images/fastai-libtorch-unity-tutorial/part-2/opencv-folder.png)
+![opencv-folder](./images/opencv-folder.png)
 
 
 
@@ -101,7 +101,7 @@ The LibTorch releases are available on the PyTorch install page linked below. Th
 
 
 
-![download-libtorch-cpu](../images/fastai-libtorch-unity-tutorial/part-2/download-libtorch-cpu.png)
+![download-libtorch-cpu](./images/download-libtorch-cpu.png)
 
 
 
@@ -109,7 +109,7 @@ As with the OpenCV library, we must pick a location to extract the LibTorch libr
 
 
 
-![libtorch-folder](../images/fastai-libtorch-unity-tutorial/part-2/libtorch-folder.png)
+![libtorch-folder](./images/libtorch-folder.png)
 
 
 
@@ -121,7 +121,7 @@ Now we can create the Visual Studio DLL project.
 
 Open Visual Studio and select the `Create a new project` option.
 
-![visual-studio-create-new-project](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-create-new-project.png)
+![visual-studio-create-new-project](./images/visual-studio-create-new-project.png)
 
 
 
@@ -129,7 +129,7 @@ Type `DLL` into the text box and select the `Dynamic-Link Library (DLL)` option.
 
 
 
-![visual-studio-new-dll-project](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-new-dll-project.png)
+![visual-studio-new-dll-project](./images/visual-studio-new-dll-project.png)
 
 
 
@@ -137,7 +137,7 @@ Choose a name and location for the project and click the `Create` button. By def
 
 
 
-![visual-studio-choose-project-name-and-location](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-choose-project-name-and-location.png)
+![visual-studio-choose-project-name-and-location](./images/visual-studio-choose-project-name-and-location.png)
 
 
 
@@ -147,7 +147,7 @@ Choose a name and location for the project and click the `Create` button. By def
 
 At the top of the window, open the Solution Configurations dropdown menu, and select `Release`.
 
-![visual-studio-switch-to-release](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-switch-to-release.png)
+![visual-studio-switch-to-release](./images/visual-studio-switch-to-release.png)
 
 
 
@@ -155,7 +155,7 @@ Then, open the Solution Platform dropdown menu and select `x64`.
 
 
 
-![visual-studio-switch-to-64-bit](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-switch-to-64-bit.png)
+![visual-studio-switch-to-64-bit](./images/visual-studio-switch-to-64-bit.png)
 
 
 
@@ -165,13 +165,13 @@ We need to tell Visual Studio where LibTorch and OpenCV are so we can access the
 
 
 
-![visual-studio-solution-explorer-select-project-name](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-solution-explorer-select-project-name.png)
+![visual-studio-solution-explorer-select-project-name](./images/visual-studio-solution-explorer-select-project-name.png)
 
 
 
 Select the `Properties` option in the popup menu.
 
-![visual-studio-open-properties](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-open-properties.png)
+![visual-studio-open-properties](./images/visual-studio-open-properties.png)
 
 
 
@@ -181,7 +181,7 @@ Select the `Properties` option in the popup menu.
 
 
 
-![visual-studio-properties-target-name](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-properties-target-name.png)
+![visual-studio-properties-target-name](./images/visual-studio-properties-target-name.png)
 
 
 
@@ -189,7 +189,7 @@ In the Properties Window, open on the `C/C++` dropdown. Select the `Additional I
 
 
 
-![visual-studio-open-additional-include-directories](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-open-additional-include-directories.png)
+![visual-studio-open-additional-include-directories](./images/visual-studio-open-additional-include-directories.png)
 
 
 
@@ -201,7 +201,7 @@ Add the paths for the following folders and click `OK`.
 
 
 
-![visual-studio-add-additional-include-directories](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-add-additional-include-directories.png)
+![visual-studio-add-additional-include-directories](./images/visual-studio-add-additional-include-directories.png)
 
 
 
@@ -211,7 +211,7 @@ Add the paths for the following folders and click `OK`.
 
 Next, open the `Linker` dropdown in the Properties window and select `Input`. Select `Additional Dependencies` and click `<Edit..>`.
 
-![visual-studio-linker-additional-dependencies](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-linker-additional-dependencies.png)
+![visual-studio-linker-additional-dependencies](./images/visual-studio-linker-additional-dependencies.png)
 
 
 
@@ -224,7 +224,7 @@ Add the paths to the following files and click `OK`.
 
 
 
-![visual-studio-linker-add-additional-dependencies](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-linker-add-additional-dependencies.png)
+![visual-studio-linker-add-additional-dependencies](./images/visual-studio-linker-add-additional-dependencies.png)
 
 
 
@@ -236,13 +236,13 @@ Our DLL file will depend on the following DLL files included with the LibTorch a
 
 **OpenCV DLL file**
 
-![get-opencv-world-dll-file](../images/fastai-libtorch-unity-tutorial/part-2/get-opencv-world-dll-file.png)
+![get-opencv-world-dll-file](./images/get-opencv-world-dll-file.png)
 
 
 
 **LibTorch DLL files**
 
-![get-libtorch-dll-files](../images/fastai-libtorch-unity-tutorial/part-2/get-libtorch-dll-files.png)
+![get-libtorch-dll-files](./images/get-libtorch-dll-files.png)
 
 
 
@@ -250,7 +250,7 @@ We can add a post-build event in Visual Studio to automatically copy these DLL f
 
 
 
-![visual-studio-post-build-event-edit-command-line-events](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-post-build-event-edit-command-line-events.png)
+![visual-studio-post-build-event-edit-command-line-events](./images/visual-studio-post-build-event-edit-command-line-events.png)
 
 
 
@@ -263,7 +263,7 @@ Add the following commands, replacing `<parent-folder-path>` with the path to th
 
 
 
-![visual-studio-post-build-event-add-xcopy-commands](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-post-build-event-add-xcopy-commands.png)
+![visual-studio-post-build-event-add-xcopy-commands](./images/visual-studio-post-build-event-add-xcopy-commands.png)
 
 
 
@@ -271,7 +271,7 @@ Finally, click the `Apply` button and close the Properties window.
 
 
 
-![visual-studio-properties-apply-changes](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-properties-apply-changes.png)
+![visual-studio-properties-apply-changes](./images/visual-studio-properties-apply-changes.png)
 
 
 
@@ -285,7 +285,7 @@ With the dependencies taken care of, we can start modifying the code.
 
 We need to make a small change to the `pch.h` [Precompiled Header file](https://docs.microsoft.com/en-us/cpp/build/creating-precompiled-header-files?view=msvc-160) to avoid some conflicts with LibTorch. Open the `pch.h` file by selecting it in the Solution Explorer window.
 
-![visual-studio-open-pch-header-file](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-open-pch-header-file.png)
+![visual-studio-open-pch-header-file](./images/visual-studio-open-pch-header-file.png)
 
 
 
@@ -503,7 +503,7 @@ That is all the code needed for the plugin. We can now build the solution to gen
 
 Open the Build menu at the top of the Visual Studio window and click Build Solution. Visual Studio will generate a new x64 folder in the project directory containing the DLL file and its dependencies.
 
-![visual-studio-build-solution](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-build-solution.png)
+![visual-studio-build-solution](./images/visual-studio-build-solution.png)
 
 
 
@@ -511,13 +511,13 @@ Open the Build menu at the top of the Visual Studio window and click Build Solut
 
 Right-click the project name in the Solution Explorer panel and select `Open Folder in File Explorer` from the popup menu.
 
-![visual-studio-open-folder-in-explorer](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-open-folder-in-explorer.png)
+![visual-studio-open-folder-in-explorer](./images/visual-studio-open-folder-in-explorer.png)
 
 
 
 In the new File Explorer window, go to the parent folder.
 
-![visual-studio-project-folder](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-project-folder.png)
+![visual-studio-project-folder](./images/visual-studio-project-folder.png)
 
 
 
@@ -525,7 +525,7 @@ Open the `x64 → Release` subfolder.
 
 
 
-![visual-studio-project-folder-x64-folder](../images/fastai-libtorch-unity-tutorial/part-2/visual-studio-project-folder-x64-folder.png)
+![visual-studio-project-folder-x64-folder](./images/visual-studio-project-folder-x64-folder.png)
 
 
 
@@ -533,7 +533,7 @@ We'll need to copy all the DLL files in this folder to the Unity project.
 
 
 
-![file-explorer-select-dll-files](../images/fastai-libtorch-unity-tutorial/part-2/file-explorer-select-dll-files.png)
+![file-explorer-select-dll-files](./images/file-explorer-select-dll-files.png)
 
 
 
