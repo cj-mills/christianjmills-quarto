@@ -4,10 +4,10 @@ categories:
 - fastai
 - notes
 - pytorch
+date: '2022-3-29'
 description: Chapter 19 covers creating a fast.ai Learner from scratch.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on fastai Book Ch. 19
 toc: false

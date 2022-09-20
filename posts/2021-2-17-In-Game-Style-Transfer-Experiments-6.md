@@ -2,11 +2,11 @@
 categories:
 - style_transfer
 - log
+date: 2021-2-17
 description: Testing out an arbitrary style transfer model and a change in plans for
   the end-to-end style transfer tutorial.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: In-Game Style Transfer Experiments Pt.6
 toc: false

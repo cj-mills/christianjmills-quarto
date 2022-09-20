@@ -8,7 +8,6 @@ date: '2021-12-29'
 description: My notes from Keith Galli's video providing an introduction to NumPy.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on NumPy
 toc: false

@@ -8,7 +8,6 @@ date: '2021-12-16'
 description: My notes on the overview of StyleGANv2 by Henry AI Labs.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on StyleGANv2
 toc: false
@@ -123,7 +122,6 @@ $AdaIN(x,y) = \sigma(y) \ \left(\frac{x - \mu(x)}{\sigma(x)}\right) + \mu(y)$
           w^{\prime\prime}_{ijk} = w^{\prime}_{ijk} / {\sqrt{\sum_{i,k}{w^\prime_{ijk}}^2+\epsilon}}
           $$
         
-          
     - Change the weight parameters of the 3x3 kernel size convolutional layer instead of having an intermediate modulation and normalizing layer
     - removing weight demodulation results in strange artifacts when interpolating between images
     
@@ -148,9 +146,9 @@ $AdaIN(x,y) = \sigma(y) \ \left(\frac{x - \mu(x)}{\sigma(x)}\right) + \mu(y)$
         $$
 
     - Jacobian matrix $J_{w} = \partial g(w)/\partial w$
-​        - sort of seeing the partial derivatives of output with respect to small changes in the latent vector that produces the images
-​        - Use the small changes and the Jacobian matrix and multiply it by a random image $Y$ and is randomly sampled at each iteration
-​        
+    ​        - sort of seeing the partial derivatives of output with respect to small changes in the latent vector that produces the images
+    ​        - Use the small changes and the Jacobian matrix and multiply it by a random image $Y$ and is randomly sampled at each iteration
+    ​        
 
     - Lazy regularization: only perform regularization every 16 steps
 

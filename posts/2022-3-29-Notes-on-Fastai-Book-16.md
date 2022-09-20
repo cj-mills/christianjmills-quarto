@@ -4,11 +4,11 @@ categories:
 - fastai
 - notes
 - pytorch
+date: '2022-3-29'
 description: Chapter 16 covers momentum, RMSProp, Adam, decoupled weight decay, and
   fast.ai callbacks.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on fastai Book Ch. 16
 toc: false

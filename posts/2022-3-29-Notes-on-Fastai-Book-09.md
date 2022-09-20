@@ -4,10 +4,10 @@ categories:
 - fastai
 - notes
 - pytorch
+date: '2022-3-29'
 description: Chapter 9 provides a deep dive into tabular modeling.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on fastai Book Ch. 9
 toc: false

@@ -10,7 +10,6 @@ description: My notes from a podcast with Will Robinson on game design and the p
   of Web3 for games.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Game Design and Web3 Potential
 toc: false

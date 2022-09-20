@@ -6,11 +6,11 @@ categories:
 - object-detection
 - unity
 - tutorial
+date: '2022-8-10'
 description: Part 3 covers performing object detection in a Unity project with OpenVINO.
 hide: false
 image: images/icevision-openvino-unity-tutorial/social-media/hero.jpg
 layout: post
-permalink: /:title/
 search_exclude: false
 title: End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 3
 toc: false

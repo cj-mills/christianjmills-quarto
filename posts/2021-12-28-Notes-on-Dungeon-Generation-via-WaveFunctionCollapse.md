@@ -9,7 +9,6 @@ description: My notes from Brian Bucklew's talk on procedurally generating dunge
   levels using the WaveFunctionCollapse algorithm.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Dungeon Generation via WaveFunctionCollapse
 toc: false

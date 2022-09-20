@@ -8,7 +8,6 @@ date: '2021-12-29'
 description: My notes from Tobias Gunther's video covering advanced git tools.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Advanced Git Tools
 toc: false

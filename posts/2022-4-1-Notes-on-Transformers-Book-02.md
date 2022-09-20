@@ -4,11 +4,11 @@ categories:
 - huggingface
 - nlp
 - notes
+date: '2022-4-1'
 description: Chapter 2 covers training a model to classify emotions expressed in Twitter
   messages.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Transformers Book Ch. 2
 toc: false

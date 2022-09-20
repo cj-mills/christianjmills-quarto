@@ -10,7 +10,6 @@ date: '2020-12-31'
 description: This post covers my experience getting PyTorch to run with CUDA on WSL2.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Using PyTorch with CUDA on WSL2
 toc: false

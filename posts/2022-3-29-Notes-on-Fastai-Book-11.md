@@ -4,10 +4,10 @@ categories:
 - fastai
 - notes
 - pytorch
+date: '2022-3-29'
 description: Chapter 11 covers data munging with fast.ai's mid-level data API.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on fastai Book Ch. 11
 toc: false

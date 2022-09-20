@@ -4,10 +4,10 @@ categories:
 - huggingface
 - nlp
 - notes
+date: '2022-4-8'
 description: Chapter 5 covers different methods for generating text with GPT-2.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Transformers Book Ch. 5
 toc: false

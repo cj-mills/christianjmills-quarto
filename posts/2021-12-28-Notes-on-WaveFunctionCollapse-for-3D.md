@@ -9,7 +9,6 @@ description: My notes from Martin Donald's video on using the WaveFunctionCollap
   algorithm for 3D modules.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on WaveFunctionCollapse for 3D
 toc: false

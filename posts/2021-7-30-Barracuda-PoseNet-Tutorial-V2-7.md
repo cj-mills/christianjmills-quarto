@@ -3,11 +3,11 @@ categories:
 - unity
 - barracuda
 - tutorial
+date: '2021-7-30'
 description: This post covers how to create pose skeletons and manipulate them using
   output from the model.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Barracuda PoseNet Tutorial 2nd Edition Pt. 7
 toc: false

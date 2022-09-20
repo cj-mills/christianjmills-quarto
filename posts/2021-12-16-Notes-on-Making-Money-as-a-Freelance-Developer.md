@@ -9,7 +9,6 @@ description: My notes on some tips for making money as a freelance developer by 
   Ciciliano on freeCodeCamp.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Making Money as a Freelance Developer
 toc: false

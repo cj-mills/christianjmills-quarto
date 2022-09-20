@@ -2,11 +2,11 @@
 categories:
 - unity
 - log
+date: 2021-1-6
 description: Examining results from my initial attempts to optimize the fast neural
   style transfer model.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: In-Game Style Transfer Experiments Pt.3
 toc: false

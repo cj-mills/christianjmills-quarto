@@ -2,11 +2,11 @@
 categories:
 - unity
 - barracuda
+date: '2022-5-28'
 description: This post provides an overview of Unity's Barracuda inference library
   for executing deep learning models on user devices.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Getting Started With Deep Learning in Unity
 toc: false

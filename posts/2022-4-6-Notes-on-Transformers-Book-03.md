@@ -4,11 +4,11 @@ categories:
 - huggingface
 - nlp
 - notes
+date: '2022-4-6'
 description: Chapter 3 covers the Transformer architecture and different types of
   transformer models available on the Hugging Face Hub.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Transformers Book Ch. 3
 toc: false

@@ -9,7 +9,6 @@ description: My notes from Mayuko Inoue's video on writing a resume for a softwa
   developer job.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Writing Resumes for Software Developer Jobs
 toc: false

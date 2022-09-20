@@ -5,11 +5,11 @@ categories:
 - yolox
 - tutorial
 - unity
+date: '2021-12-6'
 description: This post covers the changes needed to use the in-game camera as input
   for the YOLOX model.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: OpenVINO Object Detection in Unity Using the In-Game Camera
 toc: false

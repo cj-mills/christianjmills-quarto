@@ -8,7 +8,6 @@ date: '2021-12-31'
 description: My notes from Lynn Zheng's video on solving LeetCode backtracking problems.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Backtracking Problems in Python
 toc: false

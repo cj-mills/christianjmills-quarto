@@ -2,11 +2,11 @@
 categories:
 - ai
 - notes
+date: '2021-12-9'
 description: My notes from an overview of the Learning Generative Models of 3D Structures
   paper.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Learning Generative Models of 3D Structures
 toc: false

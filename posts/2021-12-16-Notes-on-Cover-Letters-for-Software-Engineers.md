@@ -9,7 +9,6 @@ description: My notes for Mayuko Inoue's video on whether cover letters are wort
   it for software engineering jobs.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Cover Letters for Software Engineers
 toc: false

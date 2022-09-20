@@ -9,7 +9,6 @@ description: My notes from Mayuko Inoue's video on finding software engineering 
   openings.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Finding Software Engineering Job Openings
 toc: false

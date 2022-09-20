@@ -3,11 +3,11 @@ categories:
 - fastai
 - unity
 - barracuda
+date: '2022-6-8'
 description: Part 3 covers building a Unity project to run in a web browser and hosting
   it using GitHub Pages.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Fastai to Unity Beginner Tutorial Pt. 3
 toc: false

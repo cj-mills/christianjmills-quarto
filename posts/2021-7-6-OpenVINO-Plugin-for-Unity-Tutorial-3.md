@@ -4,11 +4,11 @@ categories:
 - style_transfer
 - tutorial
 - unity
+date: '2021-7-6'
 description: This post demonstrates how to access the DLL as a plugin inside a Unity
   project.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: OpenVINO Plugin for Unity Tutorial Pt.3
 toc: false

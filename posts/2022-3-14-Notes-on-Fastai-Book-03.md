@@ -4,11 +4,11 @@ categories:
 - ethics
 - fastai
 - notes
+date: '2022-3-14'
 description: Chapter 3 defines data ethics, introduces essential topics in data ethics,
   and explains how to identify and address ethical issues.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on fastai Book Ch. 3
 toc: false

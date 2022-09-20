@@ -9,7 +9,6 @@ description: My notes from Neural Nine's video providing an introduction to netw
   programming with python.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Network Programming With Python
 toc: false

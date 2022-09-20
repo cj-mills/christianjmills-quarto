@@ -6,12 +6,12 @@ categories:
 - object-detection
 - unity
 - tutorial
+date: '2022-8-9'
 description: Part 2 covers creating a dynamic link library (DLL) file in Visual Studio
   to perform inference with the object detection model.
 hide: false
 image: images/icevision-openvino-unity-tutorial/social-media/hero.jpg
 layout: post
-permalink: /:title/
 search_exclude: false
 title: End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 2
 toc: false

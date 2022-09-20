@@ -3,10 +3,10 @@ categories:
 - fastai
 - unity
 - barracuda
+date: '2022-6-7'
 description: Part 2 covers implementing a trained model in a Unity project.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Fastai to Unity Beginner Tutorial Pt. 2
 toc: false

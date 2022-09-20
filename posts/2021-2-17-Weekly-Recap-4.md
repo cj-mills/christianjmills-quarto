@@ -1,11 +1,11 @@
 ---
 categories:
 - recap
+date: 2021-2-17
 description: Revising the style transfer tutorial, working with the Blender Python
   API, and learning about freelancing.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Weekly Recap
 toc: false

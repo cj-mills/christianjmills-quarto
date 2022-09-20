@@ -8,7 +8,6 @@ date: '2021-12-28'
 description: My notes from Justin Kan's video on tips for pitching startups to investors.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Creating Pitch Decks
 toc: false

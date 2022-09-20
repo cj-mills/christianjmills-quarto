@@ -2,11 +2,11 @@
 categories:
 - unity
 - log
+date: 2021-1-9
 description: Examining results from my initial attempts to optimize the few-shot video
   stylization model.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: In-Game Style Transfer Experiments Pt.4
 toc: false

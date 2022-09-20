@@ -9,7 +9,6 @@ description: My notes from JimShapedCoding's video providing an introduction to 
   scraping with the beautiful soup library.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Web Scraping with Beautiful Soup
 toc: false

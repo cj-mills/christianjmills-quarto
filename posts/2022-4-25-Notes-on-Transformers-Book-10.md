@@ -4,11 +4,11 @@ categories:
 - huggingface
 - nlp
 - notes
+date: '2022-4-25'
 description: Chapter 10 covers how to train a GPT-like model to generate Python source
   code from scratch.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Transformers Book Ch. 10
 toc: false

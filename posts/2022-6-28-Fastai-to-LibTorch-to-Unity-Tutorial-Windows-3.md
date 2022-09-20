@@ -3,11 +3,11 @@ categories:
 - fastai
 - libtorch
 - unity
+date: '2022-6-28'
 description: Part 3 covers modifying the Unity project from the fastai-to-unity tutorial
   to classify images with a LibTorch DLL.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: How to Create a LibTorch Plugin for Unity on Windows Pt. 3
 toc: false

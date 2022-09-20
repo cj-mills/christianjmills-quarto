@@ -4,11 +4,11 @@ categories:
 - huggingface
 - nlp
 - notes
+date: '2022-4-22'
 description: Chapter 9 covers how to deal with few to no labels by training a model
   that automatically tags GitHub issues for the Hugging Face Transformers library.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Transformers Book Ch. 9
 toc: false

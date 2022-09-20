@@ -9,7 +9,6 @@ date: '2021-12-29'
 description: My notes from freeCodeCamp's video covering regular expressions in JavaScript.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Regular Expressions in JavaScript
 toc: false

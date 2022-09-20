@@ -2,6 +2,7 @@
 categories:
 - unity
 - tutorial
+date: 2020-11-6
 description: This post covers how to perform inference with the PoseNet model.
 hide: false
 layout: post

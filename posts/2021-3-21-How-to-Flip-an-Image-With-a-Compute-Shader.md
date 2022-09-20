@@ -2,10 +2,10 @@
 categories:
 - unity
 - tutorial
+date: 2021-3-21
 description: This post covers how to flip an image with a compute shader in Unity.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: How to Flip an Image With a Compute Shader
 toc: false

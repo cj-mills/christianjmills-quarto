@@ -2,6 +2,7 @@
 categories:
 - unity
 - tutorial
+date: 2020-12-8
 description: This post provides a basic method for performing in-game style transfer.
 hide: false
 layout: post

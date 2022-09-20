@@ -9,7 +9,6 @@ description: My notes from Code With Tomi's video providing an introduction to t
   FastAPI framework.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on FastAPI Basics
 toc: false

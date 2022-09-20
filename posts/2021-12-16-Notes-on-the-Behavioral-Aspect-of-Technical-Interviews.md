@@ -9,7 +9,6 @@ description: My notes from Mayuko Inoue's video on what most people get wrong ab
   technical interviews.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on the Behavioral Aspect of Technical Interviews
 toc: false

@@ -5,11 +5,11 @@ categories:
 - yolox
 - tutorial
 - unity
+date: '2021-10-6'
 description: This post demonstrates how to create a Unity project to access the DLL
   as a plugin.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: OpenVINO Object Detection for Unity Tutorial Pt.3 (Outdated)
 toc: false

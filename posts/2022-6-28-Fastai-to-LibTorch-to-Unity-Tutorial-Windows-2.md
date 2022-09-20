@@ -3,11 +3,11 @@ categories:
 - fastai
 - libtorch
 - unity
+date: '2022-6-28'
 description: Part 2 covers creating a dynamic link library (DLL) file in Visual Studio
   to perform inference with TorchScript modules using LibTorch.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: How to Create a LibTorch Plugin for Unity on Windows Pt. 2
 toc: false

@@ -4,11 +4,11 @@ categories:
 - fastai
 - notes
 - pytorch
+date: '2022-3-29'
 description: Chapter 15 provides a deep dive into different application architectures
   in the fast.ai library.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on fastai Book Ch. 15
 toc: false

@@ -4,11 +4,11 @@ categories:
 - huggingface
 - nlp
 - notes
+date: '2022-4-7'
 description: Chapter 4 covers fine-tuning a multilingual transformer model to perform
   named entity recognition.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Transformers Book Ch. 4
 toc: false

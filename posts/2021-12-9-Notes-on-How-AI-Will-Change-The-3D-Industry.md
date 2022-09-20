@@ -3,11 +3,11 @@ categories:
 - ai
 - 3d
 - notes
+date: '2021-12-9'
 description: My notes from Andrew Price's talk at Blender Conference 2018 on how A.I.
   will change the 3D industry.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on How A.I. Will Change the 3D Industry
 toc: false

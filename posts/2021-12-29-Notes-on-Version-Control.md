@@ -9,7 +9,6 @@ description: My notes from Tobias Gunther's video covering tools and concepts fo
   version control with git.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Version Control
 toc: false

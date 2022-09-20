@@ -3,11 +3,11 @@ categories:
 - unity
 - barracuda
 - tutorial
+date: '2021-7-29'
 description: This post covers how to implement the post processing steps for single
   pose estimation.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Barracuda PoseNet Tutorial 2nd Edition Pt. 5
 toc: false

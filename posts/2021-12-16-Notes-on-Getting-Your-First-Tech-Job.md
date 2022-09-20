@@ -8,7 +8,6 @@ date: '2021-12-16'
 description: My notes for Mayuko Inoue's video on how to get your first tech job.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Getting Your First Tech Job
 toc: false

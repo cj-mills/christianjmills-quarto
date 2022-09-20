@@ -4,11 +4,11 @@ categories:
 - pytorch
 - unity
 - tutorial
+date: 2021-3-20
 description: This post covers how to use a different style transfer model that is
   specialized for video.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: End-to-End In-Game Style Transfer Tutorial Addendum
 toc: false

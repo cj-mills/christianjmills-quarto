@@ -4,11 +4,11 @@ categories:
 - huggingface
 - reinforcement-learning
 - notes
+date: '2022-5-5'
 description: Unit 1 introduces the basic concepts for reinforcement learning and covers
   how to train an agent for the classic lunar lander environment.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on The Hugging Face Deep RL Class Pt.1
 toc: false

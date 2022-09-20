@@ -6,13 +6,13 @@ categories:
 - object-detection
 - unity
 - tutorial
+date: '2022-8-8'
 description: This tutorial covers training an object detection model using IceVision
   and creating an OpenVINO plugin for the Unity game engine to perform inference with
   the trained model. Part 1 covers training and exporting the model.
 hide: false
 image: images/icevision-openvino-unity-tutorial/social-media/hero.jpg
 layout: post
-permalink: /:title/
 search_exclude: false
 title: End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1
 toc: false

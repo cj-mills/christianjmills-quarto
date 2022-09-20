@@ -4,10 +4,10 @@ categories:
 - huggingface
 - reinforcement-learning
 - notes
+date: '2022-5-26'
 description: Unit 2 introduces monte carlo, temporal difference learning, and Q-learning.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on The Hugging Face Deep RL Class Pt.2
 toc: false

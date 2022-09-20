@@ -2,10 +2,10 @@
 categories:
 - unity
 - tutorial
+date: 2021-3-20
 description: This post covers how to efficiently crop images in Unity with a GPU.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: How to Crop Images With a GPU in Unity
 toc: false

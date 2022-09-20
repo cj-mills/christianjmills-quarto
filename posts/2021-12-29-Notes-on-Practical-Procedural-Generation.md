@@ -9,7 +9,6 @@ description: My notes from Kate Compton's talk on practical techniques for proce
   generation.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Practical Procedural Generation
 toc: false

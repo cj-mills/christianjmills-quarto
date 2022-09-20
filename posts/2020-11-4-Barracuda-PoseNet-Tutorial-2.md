@@ -2,6 +2,7 @@
 categories:
 - unity
 - tutorial
+date: 2020-11-4
 description: This post covers how to implement the preprocessing steps for the PoseNet
   model.
 hide: false

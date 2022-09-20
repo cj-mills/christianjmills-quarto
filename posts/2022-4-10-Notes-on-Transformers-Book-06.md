@@ -4,11 +4,11 @@ categories:
 - huggingface
 - nlp
 - notes
+date: '2022-4-10'
 description: Chapter 6 covers building an encoder-decoder model to condense dialogues
   between several people into a crisp summary.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on Transformers Book Ch. 6
 toc: false

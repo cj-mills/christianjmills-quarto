@@ -9,7 +9,6 @@ description: My notes from Squirrel Eiserloh's presentation on 1D nonlinear tran
   for game development.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on 1D Nonlinear Transformations for Games
 toc: false

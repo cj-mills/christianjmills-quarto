@@ -8,7 +8,6 @@ date: '2021-12-16'
 description: My notes for Patrick Winston's course on how to speak.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Notes on How To Speak
 toc: false

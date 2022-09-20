@@ -2,6 +2,7 @@
 categories:
 - unity
 - tutorial
+date: 2020-11-5
 description: This post covers how to view preprocessed images during runtime.
 hide: false
 layout: post
