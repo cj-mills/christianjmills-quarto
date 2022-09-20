@@ -12,7 +12,7 @@ layout: post
 search_exclude: false
 title: How to Create a LibTorch Plugin for Unity on Windows Pt. 1
 toc: false
-image: ./videos/libtorch-plugin-demo.mp4
+image: ./images/pytorch.png
 ---
 
 * [Introduction](#introduction)
