@@ -2,10 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html",
       "/posts/onnx-directml-unity-tutorial/part-2/ONNX-DiretML-to-Unity-Tutorial-2.html",
-      "/posts/onnx-directml-unity-tutorial/part-1/ONNX-DiretML-to-Unity-Tutorial-1.html",
+      "/posts/onnx-directml-unity-tutorial/part-1/index.html",
       "/posts/2022-8-10-IceVision-to-OpenVINO-to-Unity-Tutorial-3.html",
       "/posts/2022-8-9-IceVision-to-OpenVINO-to-Unity-Tutorial-2.html",
       "/posts/2022-8-8-IceVision-to-OpenVINO-to-Unity-Tutorial-1.html",
