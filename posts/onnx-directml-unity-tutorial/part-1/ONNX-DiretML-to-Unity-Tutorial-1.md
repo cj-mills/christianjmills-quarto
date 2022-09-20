@@ -17,7 +17,7 @@ permalink: /:title/
 search_exclude: false
 title: Object Detection for Unity With ONNX Runtime and DirectML Pt. 1
 toc: false
-
+date: "8/18/2022"
 ---
 
 * [Introduction](#introduction)
