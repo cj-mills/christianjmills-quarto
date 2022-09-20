@@ -6,6 +6,7 @@ categories:
 - object-detection
 - unity
 - tutorial
+date: 8/18/2022
 description: This tutorial covers creating an object detection plugin for a Unity
   game engine project using ONNX Runtime and DirectML. Part 1 covers creating a dynamic
   link library (DLL) file in Visual Studio to perform inference with the object detection
@@ -13,11 +14,10 @@ description: This tutorial covers creating an object detection plugin for a Unit
 hide: false
 image: ../social-media/cover.jpg
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Object Detection for Unity With ONNX Runtime and DirectML Pt. 1
 toc: false
-date: "8/18/2022"
+
 ---
 
 * [Introduction](#introduction)

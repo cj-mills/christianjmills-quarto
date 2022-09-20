@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /onnx/tensorflow/tutorial/2020/10/21/How-to-Convert-a-TensorFlow-SavedModel-to-ONNX
 categories:
 - tensorflow
 - onnx
@@ -10,7 +10,6 @@ description: This post covers how to use tf2onnx to convert a TensorFlow SavedMo
   to ONNX.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: How to Convert TensorFlow Models to ONNX with tf2onnx
 toc: true

@@ -6,7 +6,6 @@ description: This post covers how to implement the preprocessing steps for the P
   model.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Barracuda PoseNet Tutorial Pt. 2 (Outdated)
 toc: false

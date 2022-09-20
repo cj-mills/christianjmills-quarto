@@ -5,7 +5,6 @@ categories:
 description: This post provides a basic method for performing in-game style transfer.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Basic In-Game Style Transfer Tutorial
 toc: false

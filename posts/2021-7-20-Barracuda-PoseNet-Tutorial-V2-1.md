@@ -10,9 +10,7 @@ permalink: /:title/
 search_exclude: false
 title: Barracuda PoseNet Tutorial 2nd Edition Pt. 1
 toc: false
-comments:
-  utterances:
-    repo: cj-mills/christianjmills
+
 ---
 
 * [Introduction](#introduction)

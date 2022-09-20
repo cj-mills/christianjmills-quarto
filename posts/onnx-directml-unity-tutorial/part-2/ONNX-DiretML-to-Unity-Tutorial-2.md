@@ -6,6 +6,7 @@ categories:
 - object-detection
 - unity
 - tutorial
+date: 8/19/2022
 description: Part 2 covers performing object detection in a Unity project with ONNX
   Runtime and DirectML.
 hide: false
@@ -15,7 +16,7 @@ permalink: /:title/
 search_exclude: false
 title: Object Detection for Unity With ONNX Runtime and DirectML Pt. 2
 toc: false
-date: "8/19/2022"
+
 ---
 
 * [Overview](#overview)

@@ -5,7 +5,6 @@ categories:
 description: This post covers how to perform inference with the PoseNet model.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Barracuda PoseNet Tutorial Pt. 3 (Outdated)
 toc: false

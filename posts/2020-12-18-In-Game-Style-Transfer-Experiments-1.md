@@ -1,14 +1,13 @@
 ---
 aliases:
-- /:title/
+- /log/unity/2020/12/18/In-Game-Style-Transfer-Experiments-1
 categories:
 - unity
 - log
-date: '2020-12-18'
+date: 12/18/2020
 description: Trying out custom datasets, a new model, and Unity's style transfer project.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: In-Game Style Transfer Experiments Pt.1
 toc: false

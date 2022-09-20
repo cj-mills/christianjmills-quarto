@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /style_transfer/unity/2020/10/19/In-Game-Style-Transfer
 categories:
 - unity
 - style_transfer
@@ -8,7 +8,6 @@ date: '2020-10-19'
 description: Some optimization is still required.
 hide: false
 layout: post
-permalink: /:title/
 search_exclude: false
 title: In-Game Style Transfer
 toc: false
