@@ -88,22 +88,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -125,7 +125,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -135,7 +135,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">christianjmills-quarto</span>
     </a>
   </div>
@@ -145,7 +145,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">About</a>
+    <a class="nav-link" href="../../../about.html">About</a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/cj-mills"><i class="bi bi-github" role="img">
@@ -236,14 +236,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-create-plugins-folder.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-create-plugins-folder.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-create-plugins-folder</figcaption><p></p>
 </figure>
 </div>
 <p>Copy all the DLL files and the <code>plugins.xml</code> file into the <code>Assets/Plugins/x86_64</code> folder.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-openvino-plugins-folder.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-openvino-plugins-folder.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-openvino-plugins-folder</figcaption><p></p>
 </figure>
 </div>
@@ -254,7 +254,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-openvino-models-folder.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-openvino-models-folder.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-openvino-models-folder</figcaption><p></p>
 </figure>
 </div>
@@ -294,14 +294,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Rather than copying the input image from Unity to the OpenVINO plugin, we’ll pass a pointer to the pixel data. First, we need to allow unsafe code for the Unity project. Select <code>Edit → Project Settings...</code> from the top menu.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-open-project-settings.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-open-project-settings.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-open-project-settings</figcaption><p></p>
 </figure>
 </div>
 <p>Open the <code>Player → Other Settings</code> dropdown and scroll down to the <code>Allow 'unsafe' Code</code> checkbox. Enable the setting and close the Project Settings window.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-allow-unsafe-code.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-allow-unsafe-code.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-allow-unsafe-code</figcaption><p></p>
 </figure>
 </div>
@@ -356,7 +356,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Duplicate the <code>ImageClassifier</code> script and name the copy <code>ImageClassifierOpenVINO</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-create-image-classifier-openvino-script.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-create-image-classifier-openvino-script.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-create-image-classifier-openvino-script</figcaption><p></p>
 </figure>
 </div>
@@ -406,21 +406,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>We use the <code>UNITY_EDITOR</code> <a href="https://docs.unity3d.com/Manual/PlatformDependentCompilation.html">scripting symbol</a> to check whether we are in the Unity Editor. We are in the Editor, so it returns true, and the code executes.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity_scripting_symbol_in_editor.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity_scripting_symbol_in_editor.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity_scripting_symbol_in_editor</figcaption><p></p>
 </figure>
 </div>
 <p>If we check if we are not in the Unity Editor, it returns false, and the code block does not execute.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity_scripting_symbol_not_in_editor.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity_scripting_symbol_not_in_editor.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity_scripting_symbol_not_in_editor</figcaption><p></p>
 </figure>
 </div>
 <p>We can verify the code works by saving the script and going to the <code>StreamingAssets</code> folder in the Editor. The plugins.xml file should be present.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-verify-initializeonload.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-verify-initializeonload.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-verify-initializeonload</figcaption><p></p>
 </figure>
 </div>
@@ -791,7 +791,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Select the <code>WebcamDeviceText</code> and <code>WebcamDropdown</code> objects and press Ctrl-d to duplicate them. Rename the duplicates to <code>OpenVINOModelText</code> and <code>OpenVINOModelDropdown</code>, respectively. Then select <code>OpenVINOModelText</code> and <code>OpenVINOModelDropdown</code> and press Ctrl-d.&nbsp;Rename the copies to <code>OpenVINODevicelText</code> and <code>OpenVINODevicelDropdown</code>, respectively.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-add-openvino-gui-objects.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-add-openvino-gui-objects.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-add-openvino-gui-objects</figcaption><p></p>
 </figure>
 </div>
@@ -799,7 +799,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Select the <code>SettingsPanel</code> object and update the <code>Height</code> value to <code>255</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-update-settings-panel-height.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-update-settings-panel-height.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-update-settings-panel-height</figcaption><p></p>
 </figure>
 </div>
@@ -807,35 +807,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Select the <code>OpenVINOModelText</code> object and update the <code>Pos Y</code> value to <code>-145</code> and the Text value to <code>OpenVINO Model:</code> in the Inspector tab.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-update-openvinomodeltext-position-and-text.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-update-openvinomodeltext-position-and-text.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-update-openvinomodeltext-position</figcaption><p></p>
 </figure>
 </div>
 <p>Then, select the <code>OpenVINOModelDropdown</code> object and update the <code>Pos Y</code> value to <code>-165</code> in the Inspector tab.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-update-openvinomodeldropdown-position.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-update-openvinomodeldropdown-position.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-update-openvinomodeldropdown-position</figcaption><p></p>
 </figure>
 </div>
 <p>Next, select the <code>OpenVINODevicelText</code> object and update the <code>Pos Y</code> value to <code>-200</code> and the Text value to <code>OpenVINO Device:</code> in the Inspector tab.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-update-openvinodevicetext-position-and-text.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-update-openvinodevicetext-position-and-text.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-update-openvinodevicetext-position</figcaption><p></p>
 </figure>
 </div>
 <p>Last but not least, select the <code>OpenVINODevicelDropdown</code> object and update the <code>Pos Y</code> value to <code>-220</code> in the Inspector tab.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-update-openvinodevicedropdown-position.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-update-openvinodevicedropdown-position.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-update-openvinodevicedropdown-position</figcaption><p></p>
 </figure>
 </div>
 <p>The updated GUI should look like the image below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-view-updated-gui.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-view-updated-gui.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-view-updated-gui</figcaption><p></p>
 </figure>
 </div>
@@ -845,7 +845,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Now we can add the new <code>ImageClassifierOpenVINO</code> script to the <code>InferenceManager</code> object. Make sure to disable the existing <code>ImageClassifier</code> component, as shown below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-add-image-classifier-openvino-component.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-add-image-classifier-openvino-component.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-add-image-classifier-openvino-component</figcaption><p></p>
 </figure>
 </div>
@@ -856,28 +856,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Update the <code>WebcamToggle</code> On Value Changed Event</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-webcam-toggle-update-on-value-changed.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-webcam-toggle-update-on-value-changed.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-webcam-toggle-update-on-value-changed</figcaption><p></p>
 </figure>
 </div>
 <p><strong>Update the <code>WebcamDropdown</code> On Value Changed Event</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-webcam-dropdown-update-on-value-changed.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-webcam-dropdown-update-on-value-changed.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-webcam-dropdown-update-on-value-changed</figcaption><p></p>
 </figure>
 </div>
 <p><strong>Update the <code>OpenVINOModelDropdown</code> On Value Changed Event</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-update-openvino-model-dropdown-on-value-changed.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-update-openvino-model-dropdown-on-value-changed.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-update-openvino-model-dropdown-on-value-changed</figcaption><p></p>
 </figure>
 </div>
 <p><strong>Update the <code>OpenVINODeviceDropdown</code> On Value Changed Event</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/fastai-openvino-unity-tutorial/part-3/unity-update-openvino-device-dropdown-on-value-changed.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-update-openvino-device-dropdown-on-value-changed.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-update-openvino-device-dropdown-on-value-changed</figcaption><p></p>
 </figure>
 </div>

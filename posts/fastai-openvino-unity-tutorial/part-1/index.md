@@ -33,7 +33,7 @@ This tutorial is a follow-up to the [fastai-to-unity](https://christianjmills.co
 
 We'll modify the [original tutorial code](https://github.com/cj-mills/fastai-to-unity-tutorial) and create a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file to access the OpenVINO functionality in Unity.
 
-![openvino-plugin-demo](../videos/fastai-openvino-unity-tutorial/openvino-plugin-demo.mp4)
+![openvino-plugin-demo](./videos/openvino-plugin-demo.mp4)
 
 
 
