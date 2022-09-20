@@ -11,7 +11,7 @@ description: This tutorial covers creating an object detection plugin for a Unit
   link library (DLL) file in Visual Studio to perform inference with the object detection
   model.
 hide: false
-image: images/onnx-directml-unity-tutorial/social-media/hero.jpg
+image: ../social-media/cover.jpg
 layout: post
 permalink: /:title/
 search_exclude: false
@@ -73,7 +73,7 @@ We'll use the [OpenCV](https://github.com/opencv/opencv) library to process imag
 
 Select the `opencv-4.6.0-vc14_vc15.exe` option from the Assets list.
 
-![opencv_github_download_executable](../images/onnx-directml-unity-tutorial/part-1/opencv_github_download_executable.png)
+![opencv_github_download_executable](./images/opencv_github_download_executable.png)
 
 
 
@@ -81,7 +81,7 @@ Run the executable once it finishes downloading. You might get a warning from Wi
 
 
 
-![windows-defender-smartscreen-warning](../images/onnx-directml-unity-tutorial/part-1/windows-defender-smartscreen-warning.png)
+![windows-defender-smartscreen-warning](./images/windows-defender-smartscreen-warning.png)
 
 
 
@@ -89,7 +89,7 @@ Then, click the `Run anyway` button.
 
 
 
-![windows-defender-smartscreen-warning-run-anyway](../images/onnx-directml-unity-tutorial/part-1/windows-defender-smartscreen-warning-run-anyway.png)
+![windows-defender-smartscreen-warning-run-anyway](./images/windows-defender-smartscreen-warning-run-anyway.png)
 
 
 
@@ -97,7 +97,7 @@ The executable will prompt us to select a location to extract the `opencv` folde
 
 
 
-![opencv-select-extraction-location](../images/onnx-directml-unity-tutorial/part-1/opencv-select-extraction-location.png)
+![opencv-select-extraction-location](./images/opencv-select-extraction-location.png)
 
 
 
@@ -105,7 +105,7 @@ If we open the `opencv` folder, we can see a build folder and a source folder. E
 
 
 
-![opencv-folder](../images/onnx-directml-unity-tutorial/part-1/opencv-folder.png)
+![opencv-folder](./images/opencv-folder.png)
 
 
 
@@ -115,7 +115,7 @@ If we open the `opencv` folder, we can see a build folder and a source folder. E
 
 Open Visual Studio and select the `Create a new project` option.
 
-![visual-studio-create-new-project](../images/onnx-directml-unity-tutorial/part-1/visual-studio-create-new-project.png)
+![visual-studio-create-new-project](./images/visual-studio-create-new-project.png)
 
 
 
@@ -123,7 +123,7 @@ Type `DLL` into the text box and select the `Dynamic-Link Library (DLL)` option.
 
 
 
-![visual-studio-new-dll-project](../images/onnx-directml-unity-tutorial/part-1/visual-studio-new-dll-project.png)
+![visual-studio-new-dll-project](./images/visual-studio-new-dll-project.png)
 
 
 
@@ -131,7 +131,7 @@ Choose a name and location for the project and click the `Create` button. By def
 
 
 
-![visual-studio-choose-project-name-and-location](../images/onnx-directml-unity-tutorial/part-1/visual-studio-choose-project-name-and-location.png)
+![visual-studio-choose-project-name-and-location](./images/visual-studio-choose-project-name-and-location.png)
 
 
 
@@ -145,7 +145,7 @@ At the top of the window, open the Solution Configurations dropdown menu, and se
 
 
 
-![visual-studio-switch-to-release](../images/onnx-directml-unity-tutorial/part-1/visual-studio-switch-to-release.png)
+![visual-studio-switch-to-release](./images/visual-studio-switch-to-release.png)
 
 
 
@@ -153,7 +153,7 @@ At the top of the window, open the Solution Configurations dropdown menu, and se
 
 Then, open the Solution Platform dropdown menu and select `x64`.
 
-![visual-studio-switch-to-64-bit](../images/onnx-directml-unity-tutorial/part-1/visual-studio-switch-to-64-bit.png)
+![visual-studio-switch-to-64-bit](./images/visual-studio-switch-to-64-bit.png)
 
 
 
@@ -163,13 +163,13 @@ Then, open the Solution Platform dropdown menu and select `x64`.
 
 We need to tell Visual Studio where OpenCV is so we can access its APIs. Right-click the project name in the Solution Explorer panel.
 
-![visual-studio-solution-explorer-select-project-name](../images/onnx-directml-unity-tutorial/part-1/visual-studio-solution-explorer-select-project-name.png)
+![visual-studio-solution-explorer-select-project-name](./images/visual-studio-solution-explorer-select-project-name.png)
 
 
 
 Select the `Properties` option in the popup menu.
 
-![visual-studio-open-properties](../images/onnx-directml-unity-tutorial/part-1/visual-studio-open-properties.png)
+![visual-studio-open-properties](./images/visual-studio-open-properties.png)
 
 
 
@@ -177,7 +177,7 @@ Select the `Properties` option in the popup menu.
 
 In the Properties Window, open on the `C/C++` dropdown. Select the `Additional Include Directories` section and click on `<Edit..>` in the dropdown.
 
-![visual-studio-open-additional-include-directories](../images/onnx-directml-unity-tutorial/part-1/visual-studio-open-additional-include-directories.png)
+![visual-studio-open-additional-include-directories](./images/visual-studio-open-additional-include-directories.png)
 
 
 
@@ -187,7 +187,7 @@ Add the path for the following folder, replacing `<parent-folder-path>` with the
 
 
 
-![visual-studio-add-additional-include-directories](../images/onnx-directml-unity-tutorial/part-1/visual-studio-add-additional-include-directories.png)
+![visual-studio-add-additional-include-directories](./images/visual-studio-add-additional-include-directories.png)
 
 
 
@@ -199,7 +199,7 @@ Next, open the `Linker` dropdown in the Properties window and select `Input`. Se
 
 
 
-![visual-studio-linker-additional-dependencies](../images/onnx-directml-unity-tutorial/part-1/visual-studio-linker-additional-dependencies.png)
+![visual-studio-linker-additional-dependencies](./images/visual-studio-linker-additional-dependencies.png)
 
 
 
@@ -209,7 +209,7 @@ Add the following path, replacing `<parent-folder-path>` with the full path to t
 
 
 
-![visual-studio-linker-add-additional-dependencies](../images/onnx-directml-unity-tutorial/part-1/visual-studio-linker-add-additional-dependencies.png)
+![visual-studio-linker-add-additional-dependencies](./images/visual-studio-linker-add-additional-dependencies.png)
 
 
 
@@ -221,7 +221,7 @@ Our DLL file will depend on the following DLL file included with OpenCV.
 
 **OpenCV DLL files**
 
-![get-opencv-dll-files](../images/onnx-directml-unity-tutorial/part-1/get-opencv-dll-files.png)
+![get-opencv-dll-files](./images/get-opencv-dll-files.png)
 
 
 
@@ -229,7 +229,7 @@ We can add a post-build event in Visual Studio to automatically copy these DLL f
 
 
 
-![visual-studio-post-build-event-edit-command-line-events](../images/onnx-directml-unity-tutorial/part-1/visual-studio-post-build-event-edit-command-line-events.png)
+![visual-studio-post-build-event-edit-command-line-events](./images/visual-studio-post-build-event-edit-command-line-events.png)
 
 
 
@@ -239,13 +239,13 @@ Add the following commands, replacing `<parent-folder-path>` with the full path 
 
 
 
-![visual-studio-post-build-event-add-xcopy-commands](../images/onnx-directml-unity-tutorial/part-1/visual-studio-post-build-event-add-xcopy-commands.png)
+![visual-studio-post-build-event-add-xcopy-commands](./images/visual-studio-post-build-event-add-xcopy-commands.png)
 
 
 
 Finally, click the `Apply` button and close the Properties window.
 
-![visual-studio-properties-apply-changes](../images/onnx-directml-unity-tutorial/part-1/visual-studio-properties-apply-changes.png)
+![visual-studio-properties-apply-changes](./images/visual-studio-properties-apply-changes.png)
 
 
 
@@ -257,25 +257,25 @@ We can install ONNX Runtime with DirectML directly into our project via the [NuG
 
 
 
-![visual-studio-open-nuget-package-manager](../images/onnx-directml-unity-tutorial/part-1/visual-studio-open-nuget-package-manager.png)
+![visual-studio-open-nuget-package-manager](./images/visual-studio-open-nuget-package-manager.png)
 
 
 
 Select the `Browse` option and enter `Microsoft.ML.OnnxRuntime.DirectML` into the search box.
 
-![visual-studio-nuget-package-manager-search-for-package](../images/onnx-directml-unity-tutorial/part-1/visual-studio-nuget-package-manager-search-for-package.png)
+![visual-studio-nuget-package-manager-search-for-package](./images/visual-studio-nuget-package-manager-search-for-package.png)
 
 
 
 With the package selected, click the `Install` button. The project uses version `1.12.1`.
 
-![visual-studio-nuget-package-manager-install-package](../images/onnx-directml-unity-tutorial/part-1/visual-studio-nuget-package-manager-install-package.png)
+![visual-studio-nuget-package-manager-install-package](./images/visual-studio-nuget-package-manager-install-package.png)
 
 
 
 Click `OK` in the popup window.
 
-![visual-studio-approve-nuget-package-install](../images/onnx-directml-unity-tutorial/part-1/visual-studio-approve-nuget-package-install.png)
+![visual-studio-approve-nuget-package-install](./images/visual-studio-approve-nuget-package-install.png)
 
 
 
@@ -289,7 +289,7 @@ With the dependencies taken care of, we can start modifying the code.
 
 We'll first update the `pch.h` [Precompiled Header file](https://docs.microsoft.com/en-us/cpp/build/creating-precompiled-header-files?view=msvc-160) with the required header files. We can open the `pch.h` file by selecting it in the Solution Explorer window.
 
-![visual-studio-open-pch-header-file](../images/onnx-directml-unity-tutorial/part-1/visual-studio-open-pch-header-file.png)
+![visual-studio-open-pch-header-file](./images/visual-studio-open-pch-header-file.png)
 
 
 
@@ -1049,7 +1049,7 @@ Open the Build menu at the top of the Visual Studio window and click `Build Solu
 
 
 
-![visual-studio-build-solution](../images/onnx-directml-unity-tutorial/part-1/visual-studio-build-solution.png)
+![visual-studio-build-solution](./images/visual-studio-build-solution.png)
 
 
 
@@ -1059,19 +1059,19 @@ Open the Build menu at the top of the Visual Studio window and click `Build Solu
 
 Right-click the project name in the Solution Explorer panel and select `Open Folder in File Explorer` from the popup menu.
 
-![visual-studio-open-folder-in-explorer](../images/onnx-directml-unity-tutorial/part-1/visual-studio-open-folder-in-explorer.png)
+![visual-studio-open-folder-in-explorer](./images/visual-studio-open-folder-in-explorer.png)
 
 
 
 In the new File Explorer window, go to the parent folder.
 
-![visual-studio-project-folder](../images/onnx-directml-unity-tutorial/part-1/visual-studio-project-folder.png)
+![visual-studio-project-folder](./images/visual-studio-project-folder.png)
 
 
 
 Open the `x64 → Release` subfolder.
 
-![visual-studio-project-folder-x64-folder](../images/onnx-directml-unity-tutorial/part-1/visual-studio-project-folder-x64-folder.png)
+![visual-studio-project-folder-x64-folder](./images/visual-studio-project-folder-x64-folder.png)
 
 
 
@@ -1079,7 +1079,7 @@ Open the `x64 → Release` subfolder.
 
 We'll need to copy all the DLL files in this folder to the Unity project.
 
-![file-explorer-select-dll-files](../images/onnx-directml-unity-tutorial/part-1/file-explorer-select-dll-files.png)
+![file-explorer-select-dll-files](./images/file-explorer-select-dll-files.png)
 
 
 
