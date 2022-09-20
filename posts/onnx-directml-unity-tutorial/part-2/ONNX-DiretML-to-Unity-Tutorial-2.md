@@ -1,4 +1,6 @@
 ---
+aliases:
+- /ONNX-DiretML-to-Unity-Tutorial-2
 categories:
 - onnx
 - directml
