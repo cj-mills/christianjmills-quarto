@@ -4,7 +4,7 @@ categories:
 - fastai
 - notes
 - pytorch
-date: '2022-3-29'
+date: 2022-3-29
 description: Chapter 10 covers text preprocessing and training an RNN for text classification.
 hide: false
 layout: post

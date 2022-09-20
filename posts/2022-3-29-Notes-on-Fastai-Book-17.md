@@ -4,7 +4,7 @@ categories:
 - fastai
 - notes
 - pytorch
-date: '2022-3-29'
+date: 2022-3-29
 description: Chapter 17 covers building a neural network from the foundations.
 hide: false
 layout: post

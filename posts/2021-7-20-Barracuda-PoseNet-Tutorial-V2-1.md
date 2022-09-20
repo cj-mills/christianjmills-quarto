@@ -3,7 +3,7 @@ categories:
 - unity
 - barracuda
 - tutorial
-date: '2021-7-20'
+date: 2021-7-20
 description: This tutorial series provides step-by-step instructions for how to perform
   human pose estimation in Unity with the Barracuda inference library.
 draft: false

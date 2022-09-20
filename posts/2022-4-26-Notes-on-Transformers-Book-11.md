@@ -4,7 +4,7 @@ categories:
 - huggingface
 - nlp
 - notes
-date: '2022-4-26'
+date: 2022-4-26
 description: Chapter 11 explores scaling up transformers, methods to make self-attention
   more efficient, and multimodel transformers.
 hide: false

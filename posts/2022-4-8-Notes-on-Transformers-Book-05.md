@@ -4,7 +4,7 @@ categories:
 - huggingface
 - nlp
 - notes
-date: '2022-4-8'
+date: 2022-4-8
 description: Chapter 5 covers different methods for generating text with GPT-2.
 hide: false
 layout: post

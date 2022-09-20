@@ -3,7 +3,7 @@ categories:
 - unity
 - barracuda
 - tutorial
-date: '2021-7-29'
+date: 2021-7-29
 description: This post covers how to implement the post processing steps for single
   pose estimation.
 hide: false

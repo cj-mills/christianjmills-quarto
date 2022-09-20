@@ -5,7 +5,7 @@ categories:
 - yolox
 - tutorial
 - unity
-date: '2021-10-6'
+date: 2021-10-6
 description: This post covers the prerequisite software, pretrained object detection
   models, and test videos used in the tutorial.
 hide: false

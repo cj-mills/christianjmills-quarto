@@ -4,7 +4,7 @@ categories:
 - fastai
 - notes
 - pytorch
-date: '2022-3-14'
+date: 2022-3-14
 description: Chapter 1 covers the history of artificial neural networks, approaches
   for learning ML/DL, and using the fast.ai library for multiple deep learning tasks.
 hide: false

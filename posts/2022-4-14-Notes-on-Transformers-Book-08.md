@@ -4,7 +4,7 @@ categories:
 - huggingface
 - nlp
 - notes
-date: '2022-4-14'
+date: 2022-4-14
 description: Chapter 8 covers different methods to make transformer models more efficient
   in production.
 hide: false

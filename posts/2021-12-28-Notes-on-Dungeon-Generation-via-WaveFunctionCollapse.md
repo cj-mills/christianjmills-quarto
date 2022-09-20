@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /notes/procedural-generation/2021/12/28/Notes-on-Dungeon-Generation-via-WaveFunctionCollapse
 categories:
 - procedural-generation
 - notes

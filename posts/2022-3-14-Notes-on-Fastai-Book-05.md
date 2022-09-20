@@ -4,7 +4,7 @@ categories:
 - fastai
 - notes
 - pytorch
-date: '2022-3-14'
+date: 2022-3-14
 description: Chapter 5 covers creating a custom DataBlock for an image classifier,
   pre-sizing, cross-entropy loss, model interpretation, picking learning rates, transfer
   learning, and discriminative learning rates.

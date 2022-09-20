@@ -4,7 +4,7 @@ categories:
 - fastai
 - notes
 - pytorch
-date: '2022-3-14'
+date: 2022-3-14
 description: Chapter 6 covers multi-label classification and image regression.
 hide: false
 layout: post

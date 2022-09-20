@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /notes/procedural-generation/2021/12/28/Notes-on-WaveFunctionCollapse-for-3D
 categories:
 - procedural-generation
 - notes

@@ -5,7 +5,7 @@ categories:
 - yolox
 - tutorial
 - unity
-date: '2021-12-6'
+date: 2021-12-6
 description: This post covers the changes needed to use the in-game camera as input
   for the YOLOX model.
 hide: false

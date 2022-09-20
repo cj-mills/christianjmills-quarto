@@ -5,7 +5,7 @@ categories:
 - yolox
 - tutorial
 - unity
-date: '2021-10-6'
+date: 2021-10-6
 description: This post demonstrates how to create a Unity project to access the DLL
   as a plugin.
 hide: false

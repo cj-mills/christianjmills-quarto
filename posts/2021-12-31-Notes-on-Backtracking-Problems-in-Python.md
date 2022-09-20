@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /notes/python/2021/12/31/Notes-on-Backtracking-Problems-in-Python
 categories:
 - python
 - notes

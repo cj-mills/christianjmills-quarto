@@ -1,6 +1,4 @@
 ---
-aliases:
-- /:title/
 categories:
 - unity
 - log

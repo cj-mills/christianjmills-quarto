@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /career/notes/2021/12/16/Notes-on-Cover-Letters-for-Software-Engineers
 categories:
 - career
 - notes

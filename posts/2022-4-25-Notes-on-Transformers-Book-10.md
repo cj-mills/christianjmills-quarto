@@ -4,7 +4,7 @@ categories:
 - huggingface
 - nlp
 - notes
-date: '2022-4-25'
+date: 2022-4-25
 description: Chapter 10 covers how to train a GPT-like model to generate Python source
   code from scratch.
 hide: false

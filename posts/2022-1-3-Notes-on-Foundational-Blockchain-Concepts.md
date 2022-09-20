@@ -2,7 +2,7 @@
 categories:
 - web3
 - notes
-date: '2022-1-3'
+date: 2022-1-3
 description: My notes from Lesson 0 of Patrick Collins' Solidity, Blockchain, and
   Smart Contract Course.
 hide: false

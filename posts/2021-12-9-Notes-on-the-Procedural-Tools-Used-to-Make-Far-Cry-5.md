@@ -3,7 +3,7 @@ categories:
 - procedural-generation
 - game-dev
 - notes
-date: '2021-12-9'
+date: 2021-12-9
 description: My notes from Etienne Carrier's overview of the procedural tools developed
   to create Far Cry 5.
 hide: false

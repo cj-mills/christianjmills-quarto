@@ -4,7 +4,7 @@ categories:
 - barracuda
 - webgl
 - tutorial
-date: '2022-3-10'
+date: 2022-3-10
 description: This post covers how to modify the Barracuda PoseNet project to run in
   the browser using WebGL.
 hide: false

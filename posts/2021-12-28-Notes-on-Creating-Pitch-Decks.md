@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /career/notes/2021/12/28/Notes-on-Creating-Pitch-Decks
 categories:
 - career
 - notes

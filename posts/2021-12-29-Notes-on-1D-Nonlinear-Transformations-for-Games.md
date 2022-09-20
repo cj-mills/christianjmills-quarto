@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /game-dev/notes/2021/12/29/Notes-on-1D-Nonlinear-Transformations-for-Games
 categories:
 - game-dev
 - notes

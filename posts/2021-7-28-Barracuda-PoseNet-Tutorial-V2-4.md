@@ -3,7 +3,7 @@ categories:
 - unity
 - barracuda
 - tutorial
-date: '2021-7-28'
+date: 2021-7-28
 description: This post covers how to load, modify, and execute the PoseNet models.
 hide: false
 layout: post

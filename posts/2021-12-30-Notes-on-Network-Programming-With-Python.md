@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /notes/python/2021/12/30/Notes-on-Network-Programming-With-Python
 categories:
 - python
 - notes

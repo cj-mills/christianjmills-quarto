@@ -3,7 +3,7 @@ categories:
 - fastai
 - unity
 - barracuda
-date: '2022-6-8'
+date: 2022-6-8
 description: Part 3 covers building a Unity project to run in a web browser and hosting
   it using GitHub Pages.
 hide: false

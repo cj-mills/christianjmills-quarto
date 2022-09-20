@@ -5,7 +5,7 @@ categories:
 - numpy
 - pandas
 - notes
-date: '2022-1-2'
+date: 2022-1-2
 description: My notes and reference examples for working with the Streamlit API.
 hide: false
 layout: post

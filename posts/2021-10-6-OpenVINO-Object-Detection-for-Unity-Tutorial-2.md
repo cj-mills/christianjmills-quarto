@@ -5,7 +5,7 @@ categories:
 - yolox
 - tutorial
 - unity
-date: '2021-10-6'
+date: 2021-10-6
 description: This post walks through the steps needed to create a Dynamic link library
   (DLL) in Visual Studio to perform inference with the pretrained deep learning model.
 hide: false

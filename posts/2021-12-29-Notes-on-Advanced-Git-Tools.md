@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /git/notes/2021/12/29/Notes-on-Advanced-Git-Tools
 categories:
 - git
 - notes

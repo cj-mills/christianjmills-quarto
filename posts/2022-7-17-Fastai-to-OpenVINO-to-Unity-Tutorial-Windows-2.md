@@ -3,7 +3,7 @@ categories:
 - fastai
 - openvino
 - unity
-date: '2022-7-17'
+date: 2022-7-17
 description: Part 2 covers creating a dynamic link library (DLL) file in Visual Studio
   to perform inference with OpenVINO.
 hide: false

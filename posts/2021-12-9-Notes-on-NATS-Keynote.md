@@ -3,7 +3,7 @@ categories:
 - nats
 - cloud
 - notes
-date: '2021-12-9'
+date: 2021-12-9
 description: My notes from the NATS KubeCon + CloudNativeCon NA 2019 Keynote.
 hide: false
 layout: post

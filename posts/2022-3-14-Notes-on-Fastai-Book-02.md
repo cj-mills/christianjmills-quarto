@@ -4,7 +4,7 @@ categories:
 - fastai
 - notes
 - pytorch
-date: '2022-3-14'
+date: 2022-3-14
 description: Chapter 2 covers how to train an image classification model using a custom
   dataset and turn it into an online application.
 hide: false

@@ -5,7 +5,7 @@ categories:
 - numpy
 - pandas
 - notes
-date: '2022-1-2'
+date: 2022-1-2
 description: My notes from Chanin Nantasenamat's video on creating data science web
   apps with Streamlit.
 hide: false

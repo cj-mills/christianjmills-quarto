@@ -3,7 +3,7 @@ categories:
 - fastai
 - libtorch
 - unity
-date: '2022-6-28'
+date: 2022-6-28
 description: Part 2 covers creating a dynamic link library (DLL) file in Visual Studio
   to perform inference with TorchScript modules using LibTorch.
 hide: false

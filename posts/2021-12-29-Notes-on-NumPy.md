@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /notes/numpy/2021/12/29/Notes-on-NumPy
 categories:
 - numpy
 - notes

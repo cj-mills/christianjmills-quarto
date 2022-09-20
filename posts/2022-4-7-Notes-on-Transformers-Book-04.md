@@ -4,7 +4,7 @@ categories:
 - huggingface
 - nlp
 - notes
-date: '2022-4-7'
+date: 2022-4-7
 description: Chapter 4 covers fine-tuning a multilingual transformer model to perform
   named entity recognition.
 hide: false

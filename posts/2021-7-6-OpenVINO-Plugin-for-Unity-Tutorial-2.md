@@ -4,7 +4,7 @@ categories:
 - style_transfer
 - tutorial
 - unity
-date: '2021-7-6'
+date: 2021-7-6
 description: This post walks through the steps needed to create a Dynamic link library
   (DLL) in Visual Studio to perform inference with the pretrained deep learning model.
 hide: false

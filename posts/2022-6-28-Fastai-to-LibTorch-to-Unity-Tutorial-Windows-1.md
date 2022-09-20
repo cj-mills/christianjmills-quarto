@@ -3,7 +3,7 @@ categories:
 - fastai
 - libtorch
 - unity
-date: '2022-6-28'
+date: 2022-6-28
 description: This follow-up to the fastai-to-unity tutorial covers creating a LibTorch
   plugin for the Unity game engine. Part 1 covers the required modifications to the
   original training code.

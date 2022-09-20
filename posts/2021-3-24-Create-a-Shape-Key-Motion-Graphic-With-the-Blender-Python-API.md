@@ -3,7 +3,7 @@ categories:
 - blender
 - python
 - tutorial
-date: '2021-3-24'
+date: 2021-3-24
 description: This post covers how to create a simple shape-key motion graphic in Blender
   using the Python API.
 hide: false

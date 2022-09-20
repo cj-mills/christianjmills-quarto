@@ -2,7 +2,7 @@
 categories:
 - unity
 - barracuda
-date: '2022-5-28'
+date: 2022-5-28
 description: This post provides an overview of Unity's Barracuda inference library
   for executing deep learning models on user devices.
 hide: false

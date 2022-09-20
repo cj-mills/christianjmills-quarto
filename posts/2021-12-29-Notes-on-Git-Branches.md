@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /git/notes/2021/12/29/Notes-on-Git-Branches
 categories:
 - git
 - notes

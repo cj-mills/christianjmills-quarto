@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /game-dev/notes/web3/2021/12/31/Notes-on-Game-Design-and-Web3-Potential
 categories:
 - web3
 - game-dev

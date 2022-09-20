@@ -4,7 +4,7 @@ categories:
 - huggingface
 - nlp
 - notes
-date: '2022-3-30'
+date: 2022-3-30
 description: Chapter 1 covers essential advancements for transformers, recurrent architectures,
   the encoder-decoder framework, attention mechanisms, transfer learning in NLP, and
   the HuggingFace ecosystem.

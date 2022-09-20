@@ -1,7 +1,7 @@
 ---
 categories:
 - recap
-date: '2021-4-28'
+date: 2021-4-28
 description: A summary of what I worked on today.
 hide: false
 layout: post

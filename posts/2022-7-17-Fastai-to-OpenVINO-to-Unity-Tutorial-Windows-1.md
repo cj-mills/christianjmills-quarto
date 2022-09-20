@@ -3,7 +3,7 @@ categories:
 - fastai
 - openvino
 - unity
-date: '2022-7-17'
+date: 2022-7-17
 description: This follow-up to the fastai-to-unity tutorial covers creating an OpenVINO
   plugin for the Unity game engine. Part 1 covers the required modifications to the
   original training code.

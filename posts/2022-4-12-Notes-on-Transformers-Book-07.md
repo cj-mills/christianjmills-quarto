@@ -4,7 +4,7 @@ categories:
 - huggingface
 - nlp
 - notes
-date: '2022-4-12'
+date: 2022-4-12
 description: Chapter 7 covers building a question-answering model that finds answers
   to questions in customer reviews.
 hide: false

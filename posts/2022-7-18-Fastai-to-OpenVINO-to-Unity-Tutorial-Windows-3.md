@@ -3,7 +3,7 @@ categories:
 - fastai
 - openvino
 - unity
-date: '2022-7-18'
+date: 2022-7-18
 description: Part 3 covers modifying the Unity project from the fastai-to-unity tutorial
   to classify images with a OpenVINO DLL.
 hide: false

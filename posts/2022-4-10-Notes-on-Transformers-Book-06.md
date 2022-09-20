@@ -4,7 +4,7 @@ categories:
 - huggingface
 - nlp
 - notes
-date: '2022-4-10'
+date: 2022-4-10
 description: Chapter 6 covers building an encoder-decoder model to condense dialogues
   between several people into a crisp summary.
 hide: false

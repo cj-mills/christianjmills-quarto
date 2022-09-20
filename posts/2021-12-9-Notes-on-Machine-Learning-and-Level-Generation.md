@@ -3,7 +3,7 @@ categories:
 - ai
 - game-dev
 - notes
-date: '2021-12-9'
+date: 2021-12-9
 description: My notes from Ben Berman's 2017 talk on machine learning and level generation.
 hide: false
 layout: post

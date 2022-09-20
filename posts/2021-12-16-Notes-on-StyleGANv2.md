@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /ai/notes/2021/12/16/Notes-on-StyleGANv2
 categories:
 - ai
 - notes

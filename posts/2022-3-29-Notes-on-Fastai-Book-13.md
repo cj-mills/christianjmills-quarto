@@ -4,7 +4,7 @@ categories:
 - fastai
 - notes
 - pytorch
-date: '2022-3-29'
+date: 2022-3-29
 description: Chapter 13 provides a deep dive into convolutional neural networks.
 hide: false
 layout: post

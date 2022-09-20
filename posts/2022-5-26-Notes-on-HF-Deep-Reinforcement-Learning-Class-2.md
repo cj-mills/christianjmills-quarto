@@ -4,7 +4,7 @@ categories:
 - huggingface
 - reinforcement-learning
 - notes
-date: '2022-5-26'
+date: 2022-5-26
 description: Unit 2 introduces monte carlo, temporal difference learning, and Q-learning.
 hide: false
 layout: post

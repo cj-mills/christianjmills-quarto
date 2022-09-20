@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /log/pytorch/tutorial/wsl2/2020/12/31/Using-PyTorch-with-CUDA-on-WSL2
 categories:
 - log
 - tutorial

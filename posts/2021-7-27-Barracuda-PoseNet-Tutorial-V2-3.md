@@ -3,7 +3,7 @@ categories:
 - unity
 - barracuda
 - tutorial
-date: '2021-7-27'
+date: 2021-7-27
 description: This post covers how to implement the preprocessing steps for the PoseNet
   models.
 hide: false

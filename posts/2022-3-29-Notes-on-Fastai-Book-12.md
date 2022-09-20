@@ -4,7 +4,7 @@ categories:
 - fastai
 - notes
 - pytorch
-date: '2022-3-29'
+date: 2022-3-29
 description: Chapter 12 covers building and training an LSTM from scratch.
 hide: false
 layout: post

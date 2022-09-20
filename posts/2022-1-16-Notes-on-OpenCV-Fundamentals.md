@@ -4,7 +4,7 @@ categories:
 - python
 - numpy
 - notes
-date: '2022-1-16'
+date: 2022-1-16
 description: My notes from Jason Dsouza's introductory video on OpenCV for Python.
 hide: false
 layout: post

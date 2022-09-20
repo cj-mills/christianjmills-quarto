@@ -4,7 +4,7 @@ categories:
 - huggingface
 - nlp
 - notes
-date: '2022-4-1'
+date: 2022-4-1
 description: Chapter 2 covers training a model to classify emotions expressed in Twitter
   messages.
 hide: false

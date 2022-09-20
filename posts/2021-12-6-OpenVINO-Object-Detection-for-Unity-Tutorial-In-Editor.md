@@ -5,7 +5,7 @@ categories:
 - yolox
 - tutorial
 - unity
-date: '2021-12-6'
+date: 2021-12-6
 description: This post covers how to modify the existing YOLOX project so that the
   plugin can be using in the Unity Editor.
 hide: false

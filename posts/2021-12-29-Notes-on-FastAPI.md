@@ -1,6 +1,6 @@
 ---
 aliases:
-- /:title/
+- /api/notes/2021/12/29/Notes-on-FastAPI
 categories:
 - api
 - notes

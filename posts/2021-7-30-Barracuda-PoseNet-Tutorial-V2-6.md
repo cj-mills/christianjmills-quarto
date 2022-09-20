@@ -3,7 +3,7 @@ categories:
 - unity
 - barracuda
 - tutorial
-date: '2021-7-30'
+date: 2021-7-30
 description: This post covers how to implement the post processing steps for multi-pose
   estimation.
 hide: false

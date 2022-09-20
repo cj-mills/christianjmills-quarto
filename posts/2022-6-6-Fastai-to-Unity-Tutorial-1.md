@@ -3,7 +3,7 @@ categories:
 - fastai
 - unity
 - barracuda
-date: '2022-6-6'
+date: 2022-6-6
 description: This beginner tutorial covers how to train an image classifier using
   the fastai library and implement it in a Unity game engine project using the Barracuda
   inference library. Part 1 covers training and exporting a model.
