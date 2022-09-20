@@ -53,7 +53,7 @@ Once we have Unity Hub installed and an activated license, we need to install a 
 
 Open Unity Hub and select the `Installs` section in the side panel. Then click the `Install Editor` button in the upper right-hand corner.
 
-![unity-hub-installs](../images/fastai-to-unity-tutorial/part-2/unity-hub-installs.png)
+![unity-hub-installs](./images/unity-hub-installs.png)
 
 
 
@@ -61,7 +61,7 @@ Click the `Install` button next to the latest `2022.1` version under `Other Vers
 
 
 
-![unity-hub-installs-select-2022-1-3](../images/fastai-to-unity-tutorial/part-2/unity-hub-installs-select-2022-1-3.png)
+![unity-hub-installs-select-2022-1-3](./images/unity-hub-installs-select-2022-1-3.png)
 
 
 
@@ -69,7 +69,7 @@ Scroll down the `Add modules` selection menu and click the check box next to `We
 
 
 
-![unity-hub-install-2022-1-3-with-webgl](../images/fastai-to-unity-tutorial/part-2/unity-hub-install-2022-1-3-with-webgl.png)
+![unity-hub-install-2022-1-3-with-webgl](./images/unity-hub-install-2022-1-3-with-webgl.png)
 
 
 
@@ -77,7 +77,7 @@ Unity Hub will begin downloading and installing the selected editor version. If 
 
 
 
-![unity-hub-install-editor-failed-message](../images/fastai-to-unity-tutorial/part-2/unity-hub-install-editor-failed-message.png)
+![unity-hub-install-editor-failed-message](./images/unity-hub-install-editor-failed-message.png)
 
 
 
@@ -89,7 +89,7 @@ Unity Hub will begin downloading and installing the selected editor version. If 
 
 Go back to the Projects section after the editor finishes installing and click New Project.
 
-![unity-hub-new-project](../images/fastai-to-unity-tutorial/part-2/unity-hub-new-project.png)
+![unity-hub-new-project](./images/unity-hub-new-project.png)
 
 
 
@@ -97,7 +97,7 @@ Select the target editor version from the Editor Version dropdown menu.
 
 
 
-![unity-hub-new-project-select-unity-version](../images/fastai-to-unity-tutorial/part-2/unity-hub-new-project-select-unity-version.png)
+![unity-hub-new-project-select-unity-version](./images/unity-hub-new-project-select-unity-version.png)
 
 
 
@@ -105,7 +105,7 @@ Select the 2D Core template.
 
 
 
-![unity-hub-new-project-select-2D-template](../images/fastai-to-unity-tutorial/part-2/unity-hub-new-project-select-2D-template.png)
+![unity-hub-new-project-select-2D-template](./images/unity-hub-new-project-select-2D-template.png)
 
 
 
@@ -113,7 +113,7 @@ Pick a name for the project and a location for the project folder.
 
 
 
-![unity-hub-new-project-name-project](../images/fastai-to-unity-tutorial/part-2/unity-hub-new-project-name-project.png)
+![unity-hub-new-project-name-project](./images/unity-hub-new-project-name-project.png)
 
 
 
@@ -121,7 +121,7 @@ Finally, click Create Project in the lower right-hand corner.
 
 
 
-![unity-hub-new-project-click-create-project](../images/fastai-to-unity-tutorial/part-2/unity-hub-new-project-click-create-project.png)
+![unity-hub-new-project-click-create-project](./images/unity-hub-new-project-click-create-project.png)
 
 
 
@@ -133,7 +133,7 @@ Finally, click Create Project in the lower right-hand corner.
 
 Inside the editor window, we'll first install the Barracuda package. Select `Window → Package Manager` from the top menu.
 
-![unity-open-package-manager](../images/fastai-to-unity-tutorial/part-2/unity-open-package-manager.png)
+![unity-open-package-manager](./images/unity-open-package-manager.png)
 
 
 
@@ -141,7 +141,7 @@ In the Package Manager window, click the little `+` sign in the upper left-hand 
 
 
 
-![unity-package-manager-add-from-git](../images/fastai-to-unity-tutorial/part-2/unity-package-manager-add-from-git.png)
+![unity-package-manager-add-from-git](./images/unity-package-manager-add-from-git.png)
 
 
 
@@ -149,7 +149,7 @@ Enter `com.unity.barracuda` into the text box and click `Add`.
 
 
 
-![unity-package-manager-add-barracuda](../images/fastai-to-unity-tutorial/part-2/unity-package-manager-add-barracuda.png)
+![unity-package-manager-add-barracuda](./images/unity-package-manager-add-barracuda.png)
 
 
 
@@ -157,7 +157,7 @@ Wait for the Barracuda package to install and close the Package Manager window.
 
 
 
-![unity-package-manager-installing-barracuda-please-wait](../images/fastai-to-unity-tutorial/part-2/unity-package-manager-installing-barracuda-please-wait.png)
+![unity-package-manager-installing-barracuda-please-wait](./images/unity-package-manager-installing-barracuda-please-wait.png)
 
 
 
@@ -173,7 +173,7 @@ Next, we'll import any ONNX, JSON, and test image files into the Assets folder. 
 
 
 
-![unity-create-folder](../images/fastai-to-unity-tutorial/part-2/unity-create-folder.png)
+![unity-create-folder](./images/unity-create-folder.png)
 
 
 
@@ -181,7 +181,7 @@ Name the new folder Models.
 
 
 
-![unity-create-models-folder](../images/fastai-to-unity-tutorial/part-2/unity-create-models-folder.png)
+![unity-create-models-folder](./images/unity-create-models-folder.png)
 
 
 
@@ -191,7 +191,7 @@ Drag and drop any ONNX files and JSON class label files from the operating syste
 
 
 
-![unity-import-model-assets](../images/fastai-to-unity-tutorial/part-2/unity-import-model-assets.png)
+![unity-import-model-assets](./images/unity-import-model-assets.png)
 
 
 
@@ -199,7 +199,7 @@ We can click on an ONNX file to examine it in the Inspector tab on the right-han
 
 
 
-![unity-inspect-model-asset](../images/fastai-to-unity-tutorial/part-2/unity-inspect-model-asset.png)
+![unity-inspect-model-asset](./images/unity-inspect-model-asset.png)
 
 
 
@@ -207,12 +207,12 @@ When [Netron](https://netron.app/) is available, we can double-click on the ONNX
 
 
 
-![unity-inspect-model-asset-netron](../images/fastai-to-unity-tutorial/part-2/unity-inspect-model-asset-netron.png)
+![unity-inspect-model-asset-netron](./images/unity-inspect-model-asset-netron.png)
 
 
 
 <div style="overflow-y:auto; max-height:500px">
-    <img src="../images/fastai-to-unity-tutorial/part-2/asl-and-some-words-resnet18.png" alt="asl-and-some-words-resnet18">
+    <img src="./images/asl-and-some-words-resnet18.png" alt="asl-and-some-words-resnet18">
 </div>
 
 
@@ -224,13 +224,13 @@ Next, create an Images folder and drop any test images into it.
 
 
 
-![unity-create-images-folder](../images/fastai-to-unity-tutorial/part-2/unity-create-images-folder.png)
+![unity-create-images-folder](./images/unity-create-images-folder.png)
 
 Maybe stick with symmetrical hand signs (e.g., Play) since the model expects mirrored input images.
 
 **Google Drive:** [Image Assets](https://drive.google.com/drive/folders/1MyMQZzLx_PoCl3vArCjMqRWQkVyf99Cz?usp=sharing)
 
-![unity-import-image-assets](../images/fastai-to-unity-tutorial/part-2/unity-import-image-assets.png)
+![unity-import-image-assets](./images/unity-import-image-assets.png)
 
 
 
@@ -246,7 +246,7 @@ Unity automatically imports images as a Sprite (2D and UI) [texture type](https:
 
 Now we can start coding. We'll store C# scripts in a new Scripts folder. Right-click a space inside it and select `Create → C# Script`. 
 
-![unity-create-c-sharp-script](../images/fastai-to-unity-tutorial/part-2/unity-create-c-sharp-script.png)
+![unity-create-c-sharp-script](./images/unity-create-c-sharp-script.png)
 
 
 
@@ -254,7 +254,7 @@ We'll name the script `ImageClassifier`.
 
 
 
-![unity-create-image-classifier-script](../images/fastai-to-unity-tutorial/part-2/unity-create-image-classifier-script.png)
+![unity-create-image-classifier-script](./images/unity-create-image-classifier-script.png)
 
 
 
@@ -1134,7 +1134,7 @@ Now we need to create the Shaders for normalizing input images. We'll store the 
 
 Right-click a space in the Shaders folder and select `Create → Shader → Compute Shader`.
 
-![unity-create-compute-shader](../images/fastai-to-unity-tutorial/part-2/unity-create-compute-shader.png)
+![unity-create-compute-shader](./images/unity-create-compute-shader.png)
 
 
 
@@ -1142,7 +1142,7 @@ Name the Compute Shader `ProcessingShader` and open it in the code editor.
 
 
 
-![unity-create-processing-shader](../images/fastai-to-unity-tutorial/part-2/unity-create-processing-shader.png)
+![unity-create-processing-shader](./images/unity-create-processing-shader.png)
 
 
 
@@ -1207,7 +1207,7 @@ Right-click a space in the Shaders folder and select `Create → Shader → Imag
 
 
 
-![unity-create-image-effect-shader](../images/fastai-to-unity-tutorial/part-2/unity-create-image-effect-shader.png)
+![unity-create-image-effect-shader](./images/unity-create-image-effect-shader.png)
 
 
 
@@ -1215,7 +1215,7 @@ Name the new shader `NormalizeImageNet` and open it in the code editor.
 
 
 
-![unity-create-normalize-imagenet-shader](../images/fastai-to-unity-tutorial/part-2/unity-create-normalize-imagenet-shader.png)
+![unity-create-normalize-imagenet-shader](./images/unity-create-normalize-imagenet-shader.png)
 
 
 
@@ -1353,7 +1353,7 @@ Shader "Processing Shaders/NormalizeImageNet"
 
 Next, we need to create a new material to use the NormalizeImageNet shader. Right-click a space in the Shaders folder and select Create → Material.
 
-![unity-create-material](../images/fastai-to-unity-tutorial/part-2/unity-create-material.png)
+![unity-create-material](./images/unity-create-material.png)
 
 
 
@@ -1361,7 +1361,7 @@ We can name it `NormalizeImageNet` as well.
 
 
 
-![unity-create-normalize-imagenet-material](../images/fastai-to-unity-tutorial/part-2/unity-create-normalize-imagenet-material.png)
+![unity-create-normalize-imagenet-material](./images/unity-create-normalize-imagenet-material.png)
 
 
 
@@ -1369,7 +1369,7 @@ With the new Material selected, open the Shader dropdown menu at the top of the 
 
 
 
-![unity-change-material-shader](../images/fastai-to-unity-tutorial/part-2/unity-change-material-shader.png)
+![unity-change-material-shader](./images/unity-change-material-shader.png)
 
 
 
@@ -1389,7 +1389,7 @@ Right-click a space in the Hierarchy tab and select 3D Object → Quad. We can n
 
 
 
-![unity-create-quad](../images/fastai-to-unity-tutorial/part-2/unity-create-quad.png)
+![unity-create-quad](./images/unity-create-quad.png)
 
 
 
@@ -1397,7 +1397,7 @@ Next, drag and drop a test image from the Assets → Images folder onto the Scre
 
 
 
-![unity-attach-image-to-screen](../images/fastai-to-unity-tutorial/part-2/unity-attach-image-to-screen.png)
+![unity-attach-image-to-screen](./images/unity-attach-image-to-screen.png)
 
 
 
@@ -1405,7 +1405,7 @@ Select the Screen in the Hierarchy tab and open the Shader dropdown menu in the 
 
 
 
-![unity-update-screen-material-shader](../images/fastai-to-unity-tutorial/part-2/unity-update-screen-material-shader.png)
+![unity-update-screen-material-shader](./images/unity-update-screen-material-shader.png)
 
 
 
@@ -1413,7 +1413,7 @@ Select the Screen in the Hierarchy tab and open the Shader dropdown menu in the 
 
 Right-click a space in the Hierarchy tab and select Create Empty. Name the empty object `InferenceManager`.
 
-![unity-create-empty-gameobject](../images/fastai-to-unity-tutorial/part-2/unity-create-empty-gameobject.png)
+![unity-create-empty-gameobject](./images/unity-create-empty-gameobject.png)
 
 
 
@@ -1421,7 +1421,7 @@ With the `InferenceManager` object selected, drag the `ImageClassifier` script i
 
 
 
-![unity-attach-image-classifier-script](../images/fastai-to-unity-tutorial/part-2/unity-attach-image-classifier-script.png)
+![unity-attach-image-classifier-script](./images/unity-attach-image-classifier-script.png)
 
 
 
@@ -1429,7 +1429,7 @@ Now we can assign the Screen, compute shader, Material, ONNX file, and class lab
 
 
 
-![unity-assign-image-classifier-script-assets](../images/fastai-to-unity-tutorial/part-2/unity-assign-image-classifier-script-assets.png)
+![unity-assign-image-classifier-script-assets](./images/unity-assign-image-classifier-script-assets.png)
 
 
 
@@ -1445,13 +1445,13 @@ Unity provides a free [UI Sample ](https://assetstore.unity.com/packages/essenti
 
 Drag and drop the Canvas prefab into a new folder called Prefabs. 
 
-![unity-import-canvas-prefab](../images/fastai-to-unity-tutorial/part-2/unity-import-canvas-prefab.png)
+![unity-import-canvas-prefab](./images/unity-import-canvas-prefab.png)
 
 
 
 From there, drag the prefab into the Hierarchy tab. We can see the GUI by switching to the Game view.
 
-![unity-add-canvas-to-hierarchy-tab](../images/fastai-to-unity-tutorial/part-2/unity-add-canvas-to-hierarchy-tab.png)
+![unity-add-canvas-to-hierarchy-tab](./images/unity-add-canvas-to-hierarchy-tab.png)
 
 
 
@@ -1461,7 +1461,7 @@ Next, we need to pair the `WebcamToggle` with the `UpdateWebcamToggle` function 
 
 
 
-![unity-select-webcamtoggle](../images/fastai-to-unity-tutorial/part-2/unity-select-webcamtoggle.png)
+![unity-select-webcamtoggle](./images/unity-select-webcamtoggle.png)
 
 
 
@@ -1471,7 +1471,7 @@ Click and drag the `InferenceManager` into the `On Value Changed` field.
 
 
 
-![unity-webcamtoggle-assign-inference-manager](../images/fastai-to-unity-tutorial/part-2/unity-webcamtoggle-assign-inference-manager.png)
+![unity-webcamtoggle-assign-inference-manager](./images/unity-webcamtoggle-assign-inference-manager.png)
 
 
 
@@ -1479,7 +1479,7 @@ Open the `No Function` dropdown menu and select `ImageClassifier → UpdateWebca
 
 
 
-![unity-webcamtoggle-assign-inference-manager-function](../images/fastai-to-unity-tutorial/part-2/unity-webcamtoggle-assign-inference-manager-function.png)
+![unity-webcamtoggle-assign-inference-manager-function](./images/unity-webcamtoggle-assign-inference-manager-function.png)
 
 
 
@@ -1487,7 +1487,7 @@ Open the `No Function` dropdown menu and select `ImageClassifier → UpdateWebca
 
 We can follow the same steps to pair the `WebcamDropdown` with the `UpdateWebcamDevice` function in the `ImageClassifier` script.
 
-![unity-webcamdropdown-assign-inference-manager](../images/fastai-to-unity-tutorial/part-2/unity-webcamdropdown-assign-inference-manager.png)
+![unity-webcamdropdown-assign-inference-manager](./images/unity-webcamdropdown-assign-inference-manager.png)
 
 
 
@@ -1495,7 +1495,7 @@ This time select `ImageClassifier → UpdateWebcamDevice`.
 
 
 
-![unity-webcamdropdown-assign-inference-manager-function](../images/fastai-to-unity-tutorial/part-2/unity-webcamdropdown-assign-inference-manager-function.png)
+![unity-webcamdropdown-assign-inference-manager-function](./images/unity-webcamdropdown-assign-inference-manager-function.png)
 
 
 
@@ -1505,7 +1505,7 @@ This time select `ImageClassifier → UpdateWebcamDevice`.
 
 We can now assign the `WebcamToggle` and `WebcamDropdown` objects to their respective fields for the `ImageClassifier` script.
 
-![unity-inference-manager-assign-gui-objects](../images/fastai-to-unity-tutorial/part-2/unity-inference-manager-assign-gui-objects.png)
+![unity-inference-manager-assign-gui-objects](./images/unity-inference-manager-assign-gui-objects.png)
 
 
 
@@ -1513,7 +1513,7 @@ We can now assign the `WebcamToggle` and `WebcamDropdown` objects to their respe
 
 Before we can use the GUI, we need to add an Event System. Right-click a space in the Hierarchy tab and select `UI → Event System`.
 
-![unity-add-eventsystem](../images/fastai-to-unity-tutorial/part-2/unity-add-eventsystem.png)
+![unity-add-eventsystem](./images/unity-add-eventsystem.png)
 
 
 
@@ -1523,7 +1523,7 @@ Before we can use the GUI, we need to add an Event System. Right-click a space i
 
 We can finally test the project in the editor. Click the play button in the top-middle of the Editor window.
 
-![unity-click-play-button](../images/fastai-to-unity-tutorial/part-2/unity-click-play-button.png)
+![unity-click-play-button](./images/unity-click-play-button.png)
 
 
 
@@ -1531,7 +1531,7 @@ The predicted class should be `Play`, the dropdown menu should update with avail
 
 
 
-![unity-test-in-editor](../images/fastai-to-unity-tutorial/part-2/unity-test-in-editor.png)
+![unity-test-in-editor](./images/unity-test-in-editor.png)
 
 
 

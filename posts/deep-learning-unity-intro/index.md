@@ -5,6 +5,7 @@ categories:
 date: 2022-5-28
 description: This post provides an overview of Unity's Barracuda inference library
   for executing deep learning models on user devices.
+image: ./images/unity.png
 hide: false
 layout: post
 search_exclude: false
@@ -35,26 +36,14 @@ There are many potential ways to leverage deep learning in Unity applications, i
 
 #### In-Game Style Transfer
 
+![in-game-style-transfer]("./videos/in-game-style-transfer.mp4")
 
-<center>
-	<video style="width:720px;max-width:100%;height:auto;" controls loop>
-		<source src="../videos/deep-learning-unity-intro/in-game-style-transfer.mp4" type="video/mp4">
-	</video>
-</center>
 #### Pose Estimation
+![multipose-demo-1]("./videos/multipose-demo-1.mp4")
 
-<center>
-	<video style="width:720px;max-width:100%;height:auto;" controls loop>
-		<source src="../videos/multipose-demo-1.mp4" type="video/mp4">
-	</video>
-</center>
 #### Object Detection
+![openvino-yolox-object-detection-short]("./videos/openvino-yolox-object-detection-short.mp4")
 
-<center>
-	<video style="width:720px;max-width:100%;height:auto;" controls loop>
-		<source src="../videos/deep-learning-unity-intro/openvino-yolox-object-detection-short.mp4" type="video/mp4">
-	</video>
-</center>
 
 These examples only scratch the surface of what's possible by combining deep learning models with powerful real-time creation tools like Unity and [Unreal Engine](https://www.unrealengine.com/en-US). The Barracuda library makes it easy to start exploring these possibilities.
 
@@ -229,7 +218,7 @@ This performance bottleneck is not an issue when the model output can stay on th
 
 #### Standard GPU Readback
 
-![image-classifier-without-async](..\images\deep-learning-unity-intro\image-classifier-without-async.png)
+![image-classifier-without-async](./images/image-classifier-without-async.png)
 
 
 
@@ -237,7 +226,7 @@ Fortunately, Unity provides a method to read data from the GPU asynchronously ca
 
 #### Asynchronous GPU Readback
 
-![image-classifier-with-async](..\images\deep-learning-unity-intro\image-classifier-with-async.png)
+![image-classifier-with-async](./images/image-classifier-with-async.png)
 
 
 

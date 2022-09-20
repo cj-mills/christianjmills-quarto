@@ -32,31 +32,31 @@ WebGL builds use Barracuda's Pixel Shader backend, which is not nearly as perfor
 
 **Pixel Shader Backend: ResNet18**
 
-![unity-webcam-pixel-shader-fps-resnet18](../images/fastai-to-unity-tutorial/part-3/unity-webcam-pixel-shader-fps-resnet18.png)
+![unity-webcam-pixel-shader-fps-resnet18](./images/unity-webcam-pixel-shader-fps-resnet18.png)
 
 **Pixel Shader Backend: ResNet34**
 
-![unity-webcam-pixel-shader-fps-resnet34](../images/fastai-to-unity-tutorial/part-3/unity-webcam-pixel-shader-fps-resnet34.png)
+![unity-webcam-pixel-shader-fps-resnet34](./images/unity-webcam-pixel-shader-fps-resnet34.png)
 
 
 
 **Compute Shader Backend: ResNet18**
 
-![unity-webcam-compute-shader-fps-resnet18](../images/fastai-to-unity-tutorial/part-3/unity-webcam-compute-shader-fps-resnet18.png)
+![unity-webcam-compute-shader-fps-resnet18](./images/unity-webcam-compute-shader-fps-resnet18.png)
 
 **Compute Shader Backend: ResNet34**
 
-![unity-webcam-compute-shader-fps-resnet34](../images/fastai-to-unity-tutorial/part-3/unity-webcam-compute-shader-fps-resnet34.png)
+![unity-webcam-compute-shader-fps-resnet34](./images/unity-webcam-compute-shader-fps-resnet34.png)
 
 
 
 **Compute Shader Backend with asynchronous GPU readback: ResNet18**
 
-![unity-webcam-compute-shader-async-fps-resnet18](../images/fastai-to-unity-tutorial/part-3/unity-webcam-compute-shader-async-fps-resnet18.png)
+![unity-webcam-compute-shader-async-fps-resnet18](./images/unity-webcam-compute-shader-async-fps-resnet18.png)
 
 **Compute Shader Backend with asynchronous GPU readback: ResNet34**
 
-![unity-webcam-compute-shader-async-fps-resnet34](../images/fastai-to-unity-tutorial/part-3/unity-webcam-compute-shader-async-fps-resnet34.png)
+![unity-webcam-compute-shader-async-fps-resnet34](./images/unity-webcam-compute-shader-async-fps-resnet34.png)
 
 
 
@@ -71,7 +71,7 @@ We first need to create a [new GitHub repository](https://github.com/new) to sto
 
 
 
-![github-desktop-create-new-repository](../images/fastai-to-unity-tutorial/part-3/github-desktop-create-new-repository.png)
+![github-desktop-create-new-repository](./images/github-desktop-create-new-repository.png)
 
 
 
@@ -79,7 +79,7 @@ Open the Settings tab for the new repository on GitHub.
 
 
 
-![github-new-repository](../images/fastai-to-unity-tutorial/part-3/github-new-repository.png)
+![github-new-repository](./images/github-new-repository.png)
 
 
 
@@ -87,7 +87,7 @@ Open the Pages section and select the main branch as the source for GitHub Pages
 
 
 
-![github-pages-select-main-branch](../images/fastai-to-unity-tutorial/part-3/github-pages-select-main-branch.png)
+![github-pages-select-main-branch](./images/github-pages-select-main-branch.png)
 
 
 
@@ -95,7 +95,7 @@ Click the Save button to start the automated build process.
 
 
 
-![github-pages-click-save](../images/fastai-to-unity-tutorial/part-3/github-pages-click-save.png)
+![github-pages-click-save](./images/github-pages-click-save.png)
 
 
 
@@ -103,7 +103,7 @@ GitHub will provide a URL for accessing the web demo once it finishes building.
 
 
 
-![github-pages-get-url](../images/fastai-to-unity-tutorial/part-3/github-pages-get-url.png)
+![github-pages-get-url](./images/github-pages-get-url.png)
 
 
 
@@ -111,7 +111,7 @@ We can check the GitHub Pages build progress under the Actions tab for the repos
 
 
 
-![github-pages-check-build-progress](../images/fastai-to-unity-tutorial/part-3/github-pages-check-build-progress.png)
+![github-pages-check-build-progress](./images/github-pages-check-build-progress.png)
 
 
 
@@ -119,7 +119,7 @@ The web page will be accessible once the "pages build and deployment" workflow c
 
 
 
-![github-pages-build-complete](../images/fastai-to-unity-tutorial/part-3/github-pages-build-complete.png)
+![github-pages-build-complete](./images/github-pages-build-complete.png)
 
 
 
@@ -131,7 +131,7 @@ The web page will be accessible once the "pages build and deployment" workflow c
 
 In the Unity project, select `File → Build Settings...` in the top menu bar to open the Build Settings window.
 
-![unity-open-build-settings](../images/fastai-to-unity-tutorial/part-3/unity-open-build-settings.png)
+![unity-open-build-settings](./images/unity-open-build-settings.png)
 
 
 
@@ -139,7 +139,7 @@ Select `WebGL` from the list of platforms and click Switch Platform.
 
 
 
-![unity-build-settings-switch-to-webgl](../images/fastai-to-unity-tutorial/part-3/unity-build-settings-switch-to-webgl.png)
+![unity-build-settings-switch-to-webgl](./images/unity-build-settings-switch-to-webgl.png)
 
 
 
@@ -147,7 +147,7 @@ Unity enables compression by default for WebGL builds, which GitHub Pages does n
 
 
 
-![unity-build-settings-open-player-settings](../images/fastai-to-unity-tutorial/part-3/unity-build-settings-open-player-settings.png)
+![unity-build-settings-open-player-settings](./images/unity-build-settings-open-player-settings.png)
 
 
 
@@ -155,7 +155,7 @@ Select `Disabled` from the Compression Format dropdown menu and close the Projec
 
 
 
-![unity-player-settings-disable-webgl-compression](../images/fastai-to-unity-tutorial/part-3/unity-player-settings-disable-webgl-compression.png)
+![unity-player-settings-disable-webgl-compression](./images/unity-player-settings-disable-webgl-compression.png)
 
 
 
@@ -163,7 +163,7 @@ We can test the WebGL build locally by clicking Build and Run in the Build Setti
 
 
 
-![unity-build-settings-build-and-run](../images/fastai-to-unity-tutorial/part-3/unity-build-settings-build-and-run.png)
+![unity-build-settings-build-and-run](./images/unity-build-settings-build-and-run.png)
 
 
 
@@ -171,7 +171,7 @@ Unity will prompt us to select a folder to store the build files.
 
 
 
-![unity-select-build-folder](../images/fastai-to-unity-tutorial/part-3/unity-select-build-folder.png)
+![unity-select-build-folder](./images/unity-select-build-folder.png)
 
 
 
@@ -179,7 +179,7 @@ Navigate to the local folder for the GitHub Pages repository and click Select Fo
 
 
 
-![unity-build-select-github-pages-repo-folder](../images/fastai-to-unity-tutorial/part-3/unity-build-select-github-pages-repo-folder.png)
+![unity-build-select-github-pages-repo-folder](./images/unity-build-select-github-pages-repo-folder.png)
 
 
 
@@ -187,7 +187,7 @@ Once the build completes, Unity will launch the demo in the default web browser.
 
 
 
-![unity-webgl-build-local-test](../images/fastai-to-unity-tutorial/part-3/unity-webgl-build-local-test.png)
+![unity-webgl-build-local-test](./images/unity-webgl-build-local-test.png)
 
 
 
@@ -195,7 +195,7 @@ If we examine the repository folder, we can see a new `Build` folder, a `Streami
 
 
 
-![github-pages-repo-folder-after-webgl-build](../images/fastai-to-unity-tutorial/part-3/github-pages-repo-folder-after-webgl-build.png)
+![github-pages-repo-folder-after-webgl-build](./images/github-pages-repo-folder-after-webgl-build.png)
 
 
 
@@ -203,7 +203,7 @@ We can push the local changes to GitHub, which will automatically trigger the "p
 
 
 
-![github-pages-check-webgl-build-progress](../images/fastai-to-unity-tutorial/part-3/github-pages-check-webgl-build-progress.png)
+![github-pages-check-webgl-build-progress](./images/github-pages-check-webgl-build-progress.png)
 
 
 
@@ -215,7 +215,7 @@ We can push the local changes to GitHub, which will automatically trigger the "p
 
 We can test the web demo at the URL provided by GitHub once the build workflow completes.
 
-![github-pages-webgl-demo](../images/fastai-to-unity-tutorial/part-3/github-pages-webgl-demo.png)
+![github-pages-webgl-demo](./images/github-pages-webgl-demo.png)
 
 
 

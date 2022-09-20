@@ -7,6 +7,7 @@ date: 2022-6-6
 description: This beginner tutorial covers how to train an image classifier using
   the fastai library and implement it in a Unity game engine project using the Barracuda
   inference library. Part 1 covers training and exporting a model.
+image: ./images/fastai.png
 hide: false
 layout: post
 search_exclude: false
@@ -86,7 +87,7 @@ The Kaggle API tool requires an API Key for a Kaggle account. Sign in or create 
 
 * **Kaggle Account Settings:** [https://www.kaggle.com/me/account](https://www.kaggle.com/me/account)
 
-![kaggle-create-new-api-token](../images/fastai-to-unity-tutorial/part-1/kaggle-create-new-api-token.png)
+![kaggle-create-new-api-token](./images/kaggle-create-new-api-token.png)
 
 Kaggle will generate and download a `kaggle.json` file containing your username and new API token. Paste the values for each in the code cell below.
 
@@ -491,7 +492,7 @@ img
     Image Dims: (200, 200)
 ```
 
-![png](../images/fastai-to-unity-tutorial/part-1/output_28_1.png)
+![png](./images/output_28_1.png)
 
 
 
@@ -745,14 +746,14 @@ Let's verify the DataLoaders object works as expected before training a model.
 ```python
 dls.train.show_batch()
 ```
-![png](../images/fastai-to-unity-tutorial/part-1/output_40_0.png)
+![png](./images/output_40_0.png)
 
 We can see that the DataLoaders object applies the transforms to the training split, including mirroring the image. However, it does not appear to mirror images from the validation split.
 
 ```python
 dls.valid.show_batch()
 ```
-![png](../images/fastai-to-unity-tutorial/part-1/output_41_0.png)
+![png](./images/output_41_0.png)
 
 We can get around this by using a solution provided on the [fastai forums](https://forums.fast.ai/t/how-to-apply-aug-transforms-to-validation-set-while-training/79417/10?u=cjmills) to apply the training split transforms to the validation split. It is not strictly necessary to mirror the validation split, but the accuracy metrics would be confusing during training without it.
 
@@ -764,7 +765,7 @@ We can get around this by using a solution provided on the [fastai forums](https
 ```python
 with dls.valid.dataset.set_split_idx(0): dls[1].show_batch()
 ```
-![png](../images/fastai-to-unity-tutorial/part-1/output_43_0.png)
+![png](./images/output_43_0.png)
 
 
 
@@ -991,7 +992,7 @@ suggest_funcs = [valley, minimum, steep]
 ```python
 with dls.valid.dataset.set_split_idx(0): learn.lr_find(suggest_funcs=suggest_funcs)
 ```
-![png](../images/fastai-to-unity-tutorial/part-1/output_56_2.png)
+![png](./images/output_56_2.png)
     
 
 
@@ -1183,7 +1184,7 @@ test_file.name
 test_img = PIL.Image.open(test_file)
 test_img
 ```
-![png](../images/fastai-to-unity-tutorial/part-1/output_67_0.png)
+![png](./images/output_67_0.png)
 
 
 
@@ -1216,7 +1217,7 @@ learn.predict(PILImage(test_img.transpose(Image.Transpose.FLIP_LEFT_RIGHT)))
 ```python
 with dls.valid.dataset.set_split_idx(0): learn.show_results()
 ```
-![png](../images/fastai-to-unity-tutorial/part-1/output_71_2.png)
+![png](./images/output_71_2.png)
     
 
 
@@ -1234,7 +1235,7 @@ with dls.valid.dataset.set_split_idx(0): interp = Interpretation.from_learner(le
 ```python
 with dls.valid.dataset.set_split_idx(0): interp.plot_top_losses(k=9, figsize=(15,10))
 ```
-![png](../images/fastai-to-unity-tutorial/part-1/output_75_2.png)
+![png](./images/output_75_2.png)
 
 
 
@@ -1282,7 +1283,7 @@ learn.dls.after_batch
 test_img = PIL.Image.open(test_file)
 test_img
 ```
-![png](../images/fastai-to-unity-tutorial/part-1/output_81_0.png)
+![png](./images/output_81_0.png)
 
 
 
@@ -1291,7 +1292,7 @@ test_img
 test_img = test_img.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
 test_img
 ```
-![png](../images/fastai-to-unity-tutorial/part-1/output_82_0.png)
+![png](./images/output_82_0.png)
 
 
 
@@ -1346,7 +1347,7 @@ inp_dims
 resized_img = test_img.resize(inp_dims)
 resized_img
 ```
-![png](../images/fastai-to-unity-tutorial/part-1/output_89_0.png)
+![png](./images/output_89_0.png)
 
 
 
