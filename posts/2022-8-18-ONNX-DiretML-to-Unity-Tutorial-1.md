@@ -51,11 +51,7 @@ We'll use the ONNX model [exported](https://christianjmills.com/IceVision-to-Ope
 
 #### Unity Demo
 
-<center>
-	<video style="width:auto;max-width:100%;height:auto;" controls loop>
-		<source src="../videos/onnx-directml-unity-tutorial/unity-onnx-directml-demo.mp4" type="video/mp4">
-	</video>
-</center>
+![unity-onnx-directml-demo](../videos/onnx-directml-unity-tutorial/unity-onnx-directml-demo.mp4)
 
 
 

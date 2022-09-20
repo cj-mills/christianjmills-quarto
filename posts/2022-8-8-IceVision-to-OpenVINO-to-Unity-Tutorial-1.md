@@ -140,13 +140,7 @@ One could use a model trained on this dataset to map hand gestures and locations
 
 
 #### Unity Demo
-
-<center>
-	<video style="width:auto;max-width:100%;height:auto;" controls loop>
-		<source src="../videos/icevision-openvino-unity-tutorial/HaGRID-demo.mp4" type="video/mp4">
-	</video>
-</center>
-
+![HaGRID-demo](../videos/icevision-openvino-unity-tutorial/HaGRID-demo.mp4)
 
 
 

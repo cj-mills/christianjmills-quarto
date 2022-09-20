@@ -212,11 +212,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>The previous <a href="https://christianjmills.com/Fastai-to-Unity-Tutorial-1/">fastai-to-unity</a> tutorial series implemented a <a href="https://arxiv.org/abs/1512.03385">ResNet</a>-based image classifier in <a href="https://unity.com/">Unity</a> with the <a href="https://docs.unity3d.com/Packages/com.unity.barracuda@3.0/manual/index.html">Barracuda</a> inference library. The Barracuda library works well with the older ResNet architecture but does not support more recent ones like <a href="https://arxiv.org/abs/2201.03545">ConvNeXt</a> and <a href="https://arxiv.org/abs/2110.02178">MobileViT</a> at the time of writing.</p>
 <p>This follow-up series covers using <a href="https://pytorch.org/cppdocs/installing.html">LibTorch</a>, the C++ distribution of <a href="https://pytorch.org/">PyTorch</a>, to perform inference with these newer model architectures. We’ll modify the original tutorial code and create a dynamic link library (<a href="https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library">DLL</a>) file to access the LibTorch functionality in Unity.</p>
-<center>
-<video style="width:auto;max-width:100%;height:auto;" controls="" loop="">
-<source src="../videos/fastai-libtorch-unity-tutorial/libtorch-plugin-demo.mp4" type="video/mp4">
-</video>
-</center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="../videos/fastai-libtorch-unity-tutorial/libtorch-plugin-demo.mp4" class="img-fluid" controls=""><a href="../videos/fastai-libtorch-unity-tutorial/libtorch-plugin-demo.mp4">Video</a></video></p>
+<p></p><figcaption class="figure-caption">libtorch-plugin-demo</figcaption><p></p>
+</figure>
+</div>
 </section>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
