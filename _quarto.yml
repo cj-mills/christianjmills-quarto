@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "christianjmills-quarto"
@@ -7,9 +8,9 @@ website:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/cj-mills
       - icon: twitter
-        href: https://twitter.com
+        href: https://twitter.com/cdotjdotmills
 format:
   html:
     theme: cosmo
