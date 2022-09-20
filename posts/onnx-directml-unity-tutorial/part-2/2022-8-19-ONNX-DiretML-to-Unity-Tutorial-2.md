@@ -9,7 +9,7 @@ categories:
 description: Part 2 covers performing object detection in a Unity project with ONNX
   Runtime and DirectML.
 hide: false
-image: images/onnx-directml-unity-tutorial/social-media/hero.jpg
+image: ../social-media/cover.jpg
 layout: post
 permalink: /:title/
 search_exclude: false
@@ -44,7 +44,7 @@ toc: false
 
 Open the Unity Hub and click New Project.
 
-![unity-hub-new-project](../images/onnx-directml-unity-tutorial/part-2/unity-hub-new-project.png)
+![unity-hub-new-project](./images/unity-hub-new-project.png)
 
 
 
@@ -52,7 +52,7 @@ Select the target editor version from the Editor Version dropdown menu. We'll us
 
 
 
-![unity-hub-new-project-select-unity-version](../images/onnx-directml-unity-tutorial/part-2/unity-hub-new-project-select-unity-version.png)
+![unity-hub-new-project-select-unity-version](./images/unity-hub-new-project-select-unity-version.png)
 
 
 
@@ -60,7 +60,7 @@ Select the `2D Core` template.
 
 
 
-![unity-hub-new-project-select-2D-template](../images/onnx-directml-unity-tutorial/part-2/unity-hub-new-project-select-2D-template.png)
+![unity-hub-new-project-select-2D-template](./images/unity-hub-new-project-select-2D-template.png)
 
 
 
@@ -68,7 +68,7 @@ Pick a name for the project and a location for the project folder before clickin
 
 
 
-![unity-hub-new-project-name-project](../images/onnx-directml-unity-tutorial/part-2/unity-hub-new-project-name-project.png)
+![unity-hub-new-project-name-project](./images/unity-hub-new-project-name-project.png)
 
 
 
@@ -78,7 +78,7 @@ Pick a name for the project and a location for the project folder before clickin
 
 Once the project loads, we'll store the DLL files from part 2 in a new folder called `Plugins`. Right-click a space in the Assets section and select `Create → Folder` from the popup menu.
 
-![unity-create-folder](../images/onnx-directml-unity-tutorial/part-2/unity-create-folder.png)
+![unity-create-folder](./images/unity-create-folder.png)
 
 
 
@@ -88,7 +88,7 @@ The DLL targets 64-bit x86 architectures, so we need to place the DLL files in a
 
   
 
-![unity-create-plugins-folder](../images/onnx-directml-unity-tutorial/part-2/unity-create-plugins-folder.png)
+![unity-create-plugins-folder](./images/unity-create-plugins-folder.png)
 
 
 
@@ -98,7 +98,7 @@ The DLL targets 64-bit x86 architectures, so we need to place the DLL files in a
 
 Copy all the DLL files into the `Assets/Plugins/x86_64` folder. We then need to close and reopen the Unity Editor to load the plugin files.
 
-![unity-onnx-plugins-folder](../images/onnx-directml-unity-tutorial/part-2/unity-onnx-plugins-folder.png)
+![unity-onnx-plugins-folder](./images/unity-onnx-plugins-folder.png)
 
 
 
@@ -108,7 +108,7 @@ After restarting the Unity Editor, create a new folder called `Colormaps` to sto
 
 * [Colormaps Folder Google Drive](https://drive.google.com/drive/folders/1rs2eD9_3Tyg4ADLbF6CNqwRdnhpsiHgk?usp=sharing)
 
-![unity-colormaps-folder](../images/onnx-directml-unity-tutorial/part-2/unity-colormaps-folder.png)
+![unity-colormaps-folder](./images/unity-colormaps-folder.png)
 
 
 
@@ -118,7 +118,7 @@ We'll place any test images into a new folder called `Images`.
 
 
 
-![unity-import-image-assets](../images/onnx-directml-unity-tutorial/part-2/unity-import-image-assets.png)
+![unity-import-image-assets](./images/unity-import-image-assets.png)
 
 
 
@@ -126,7 +126,7 @@ Next, we'll create a folder to store the ONNX models. We need to place the `.onn
 
 * [ONNXModels Folder Google Drive](https://drive.google.com/drive/folders/1r543Rs85Qs78_iaP5_npY0Oi2cC5BLdc?usp=sharing)
 
-![unity-onnx-models-folder](../images/onnx-directml-unity-tutorial/part-2/unity-onnx-models-folder.png)
+![unity-onnx-models-folder](./images/unity-onnx-models-folder.png)
 
 
 
@@ -136,7 +136,7 @@ Next, we'll create a folder to store the ONNX models. We need to place the `.onn
 
 Rather than copying the input image from Unity to the plugin, we'll pass a pointer to the pixel data. First, we need to allow unsafe code for the Unity project. Select `Edit → Project Settings...` from the top menu.
 
-![unity-open-project-settings](../images/onnx-directml-unity-tutorial/part-2/unity-open-project-settings.png)
+![unity-open-project-settings](./images/unity-open-project-settings.png)
 
 
 
@@ -144,7 +144,7 @@ Open the `Player → Other Settings` dropdown and scroll down to the `Allow 'uns
 
 
 
-![unity-allow-unsafe-code](../images/onnx-directml-unity-tutorial/part-2/unity-allow-unsafe-code.png)
+![unity-allow-unsafe-code](./images/unity-allow-unsafe-code.png)
 
 
 
@@ -156,7 +156,7 @@ Now we can start coding.
 
 The input image gets flipped upside down when we send it to the plugin. We can pre-flip the image in a [Compute Shader](https://docs.unity3d.com/Manual/class-ComputeShader.html). We'll add the Compute Shader in a new folder called `Shaders`. Right-click a space in the `Shaders` folder and select `Create → Shader → Compute Shader`.
 
-![unity-create-compute-shader](../images/onnx-directml-unity-tutorial/part-2/unity-create-compute-shader.png)
+![unity-create-compute-shader](./images/unity-create-compute-shader.png)
 
 
 
@@ -225,7 +225,7 @@ void FlipXAxis(uint3 id : SV_DispatchThreadID)
 
 We'll store the C# script that interacts with the plugin in a new `Scripts` folder. Right-click a space inside it and select `Create → C# Script`. 
 
-![unity-create-c-sharp-script](../images/onnx-directml-unity-tutorial/part-2/unity-create-c-sharp-script.png)
+![unity-create-c-sharp-script](./images/unity-create-c-sharp-script.png)
 
 
 
@@ -233,7 +233,7 @@ Name the script `ObjectDetector` and open it in the code editor.
 
 
 
-![unity-create-object-detector-script](../images/onnx-directml-unity-tutorial/part-2/unity-create-object-detector-script.png)
+![unity-create-object-detector-script](./images/unity-create-object-detector-script.png)
 
 
 
@@ -332,11 +332,11 @@ public class Startup
 
 We use the `UNITY_EDITOR` [scripting symbol](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) to check whether we are in the Unity Editor. We are in the Editor, so it returns true, and the code executes.
 
-![unity_scripting_symbol_in_editor](../images/onnx-directml-unity-tutorial/part-2/unity_scripting_symbol_in_editor.png)
+![unity_scripting_symbol_in_editor](./images/unity_scripting_symbol_in_editor.png)
 
 If we check if we are not in the Unity Editor, it returns false, and the code block does not execute.
 
-![unity_scripting_symbol_not_in_editor](../images/onnx-directml-unity-tutorial/part-2/unity_scripting_symbol_not_in_editor.png)
+![unity_scripting_symbol_not_in_editor](./images/unity_scripting_symbol_not_in_editor.png)
 
 
 
@@ -344,7 +344,7 @@ We can verify the code works by saving the script and going to the parent folder
 
 
 
-![unity-verify-initializeonload](../images/onnx-directml-unity-tutorial/part-2/unity-verify-initializeonload.png)
+![unity-verify-initializeonload](./images/unity-verify-initializeonload.png)
 
 
 
@@ -1521,7 +1521,7 @@ Now we can start setting up our Unity scene. We need a screen to display the web
 
 Right-click a space in the Hierarchy tab and select `3D Object → Quad`. We can name the new object Screen.
 
-![unity-create-quad](../images/onnx-directml-unity-tutorial/part-2/unity-create-quad.png)
+![unity-create-quad](./images/unity-create-quad.png)
 
 
 
@@ -1529,7 +1529,7 @@ Right-click a space in the Hierarchy tab and select `3D Object → Quad`. We can
 
 Next, drag and drop a test image from the `Assets → Images` folder onto the Screen object in the Scene view. Note that the Screen looks a bit dim. We need to change the shader for the Screen's Material so that it does not require an external light source.
 
-![unity-attach-image-to-screen](../images/onnx-directml-unity-tutorial/part-2/unity-attach-image-to-screen.png)
+![unity-attach-image-to-screen](./images/unity-attach-image-to-screen.png)
 
 
 
@@ -1537,7 +1537,7 @@ Select the Screen in the Hierarchy tab and open the `Shader` dropdown menu in th
 
 
 
-![unity-update-screen-material-shader](../images/onnx-directml-unity-tutorial/part-2/unity-update-screen-material-shader.png)
+![unity-update-screen-material-shader](./images/unity-update-screen-material-shader.png)
 
 
 
@@ -1547,13 +1547,13 @@ Select the Screen in the Hierarchy tab and open the `Shader` dropdown menu in th
 
 Right-click a space in the Hierarchy tab and select `Create Empty`. Name the empty object `InferenceManager`.
 
-![unity-create-empty-gameobject](../images/onnx-directml-unity-tutorial/part-2/unity-create-empty-gameobject.png)
+![unity-create-empty-gameobject](./images/unity-create-empty-gameobject.png)
 
 
 
 With the `InferenceManager` object selected, drag the `ObjectDetector` script into the Inspector tab.
 
-![unity-attach-object-detector-script](../images/onnx-directml-unity-tutorial/part-2/unity-attach-object-detector-script.png)
+![unity-attach-object-detector-script](./images/unity-attach-object-detector-script.png)
 
 
 
@@ -1569,13 +1569,13 @@ We still need to create the GUI controls. To save time, I made a [Prefab](https:
 
 Drag and drop the Canvas prefab into a new folder called Prefabs. 
 
-![unity-import-canvas-prefab](../images/onnx-directml-unity-tutorial/part-2/unity-import-canvas-prefab.png)
+![unity-import-canvas-prefab](./images/unity-import-canvas-prefab.png)
 
 
 
 From there, drag the prefab into the Hierarchy tab. We can see the GUI by switching to the `Game` view.
 
-![unity-add-canvas-to-hierarchy-tab](../images/onnx-directml-unity-tutorial/part-2/unity-add-canvas-to-hierarchy-tab.png)
+![unity-add-canvas-to-hierarchy-tab](./images/unity-add-canvas-to-hierarchy-tab.png)
 
 
 
@@ -1583,19 +1583,19 @@ From there, drag the prefab into the Hierarchy tab. We can see the GUI by switch
 
 Next, we need to pair the `WebcamToggle` with the `UpdateWebcamToggle` function in the `ObjectDetector` script. Expand the Canvas object and select the `WebcamToggle`.
 
-![unity-select-webcamtoggle](../images/onnx-directml-unity-tutorial/part-2/unity-select-webcamtoggle.png)
+![unity-select-webcamtoggle](./images/unity-select-webcamtoggle.png)
 
 
 
 Click and drag the `InferenceManager` into the `On Value Changed` field.
 
-![unity-webcamtoggle-assign-inference-manager](../images/onnx-directml-unity-tutorial/part-2/unity-webcamtoggle-assign-inference-manager.png)
+![unity-webcamtoggle-assign-inference-manager](./images/unity-webcamtoggle-assign-inference-manager.png)
 
 
 
 Open the `No Function` dropdown menu and select `ObjectDetector → UpdateWebcamToggle`.
 
-![unity-webcamtoggle-assign-inference-manager-function](../images/onnx-directml-unity-tutorial/part-2/unity-webcamtoggle-assign-inference-manager-function.png)
+![unity-webcamtoggle-assign-inference-manager-function](./images/unity-webcamtoggle-assign-inference-manager-function.png)
 
 
 
@@ -1603,35 +1603,35 @@ Open the `No Function` dropdown menu and select `ObjectDetector → UpdateWebcam
 
 We can follow the same steps to pair the `WebcamDropdown` with the `UpdateWebcamDevice` function in the `ObjectDetector` script.
 
-![unity-webcamdropdown-assign-inference-manager](../images/onnx-directml-unity-tutorial/part-2/unity-webcamdropdown-assign-inference-manager.png)
+![unity-webcamdropdown-assign-inference-manager](./images/unity-webcamdropdown-assign-inference-manager.png)
 
 This time select `ObjectDetector → UpdateWebcamDevice`.
 
-![unity-webcamdropdown-assign-inference-manager-function](../images/onnx-directml-unity-tutorial/part-2/unity-webcamdropdown-assign-inference-manager-function.png)
+![unity-webcamdropdown-assign-inference-manager-function](./images/unity-webcamdropdown-assign-inference-manager-function.png)
 
 
 
 **Configure `ONNXModelDropdown` On Value Changed Event**
 
-![unity-update-onnx-model-dropdown-on-value-changed](../images/onnx-directml-unity-tutorial/part-2/unity-update-onnx-model-dropdown-on-value-changed.png)
+![unity-update-onnx-model-dropdown-on-value-changed](./images/unity-update-onnx-model-dropdown-on-value-changed.png)
 
 
 
 **Configure `ONNXExecutionProviderDropdown` On Value Changed Event**
 
-![unity-update-onnx-provider-dropdown-on-value-changed](../images/onnx-directml-unity-tutorial/part-2/unity-update-onnx-provider-dropdown-on-value-changed.png)
+![unity-update-onnx-provider-dropdown-on-value-changed](./images/unity-update-onnx-provider-dropdown-on-value-changed.png)
 
 
 
 **Configure `ConfidenceThresholdSlider` On Value Changed Event**
 
-![unity-update-confidence-threshold-slider-on-value-changed](../images/onnx-directml-unity-tutorial/part-2/unity-update-confidence-threshold-slider-on-value-changed.png)
+![unity-update-confidence-threshold-slider-on-value-changed](./images/unity-update-confidence-threshold-slider-on-value-changed.png)
 
 
 
 **Configure `QuitButton` On Click Event** 
 
-![unity-quit-button-on-click](../images/onnx-directml-unity-tutorial/part-2/unity-quit-button-on-click.png)
+![unity-quit-button-on-click](./images/unity-quit-button-on-click.png)
 
 
 
@@ -1639,7 +1639,7 @@ This time select `ObjectDetector → UpdateWebcamDevice`.
 
 We can now assign the GUI objects to their respective fields for the `ObjectDetector` script.
 
-![unity-inference-manager-assign-gui-objects](../images/onnx-directml-unity-tutorial/part-2/unity-inference-manager-assign-gui-objects.png)
+![unity-inference-manager-assign-gui-objects](./images/unity-inference-manager-assign-gui-objects.png)
 
 
 
@@ -1647,7 +1647,7 @@ We can now assign the GUI objects to their respective fields for the `ObjectDete
 
 Before we can use the GUI, we need to add an Event System. Right-click a space in the Hierarchy tab and select `UI → Event System`.
 
-![unity-add-eventsystem](../images/onnx-directml-unity-tutorial/part-2/unity-add-eventsystem.png)
+![unity-add-eventsystem](./images/unity-add-eventsystem.png)
 
 
 
@@ -1655,7 +1655,7 @@ Before we can use the GUI, we need to add an Event System. Right-click a space i
 
 Click the play button in the top-middle of the Editor window to test the project.
 
-![unity-click-play-button](../images/onnx-directml-unity-tutorial/part-2/unity-click-play-button.png)
+![unity-click-play-button](./images/unity-click-play-button.png)
 
 
 
@@ -1663,11 +1663,11 @@ There should be a bounding box for the call sign and one for the idle hand.
 
 **CPU Execution Provider**
 
-![unity-test-in-editor-cpu](../images/onnx-directml-unity-tutorial/part-2/unity-test-in-editor-cpu.png)
+![unity-test-in-editor-cpu](./images/unity-test-in-editor-cpu.png)
 
 **DirectML Execution Provider**
 
-![unity-test-in-editor-dml](../images/onnx-directml-unity-tutorial/part-2/unity-test-in-editor-dml.png)
+![unity-test-in-editor-dml](./images/unity-test-in-editor-dml.png)
 
 
 

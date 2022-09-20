@@ -50,10 +50,7 @@ We'll use the ONNX model [exported](https://christianjmills.com/IceVision-to-Ope
 
 
 #### Unity Demo
-
-![unity-onnx-directml-demo](../videos/onnx-directml-unity-tutorial/unity-onnx-directml-demo.mp4)
-
-
+![unity-onnx-directml-demo](./videos/unity-onnx-directml-demo.mp4)
 
 
 
