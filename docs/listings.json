@@ -2,7 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/onnx-directml-unity-tutorial/part-2/ONNX-DiretML-to-Unity-Tutorial-2.html",
+      "/posts/onnx-directml-unity-tutorial/part-2/index.html",
       "/posts/onnx-directml-unity-tutorial/part-1/index.html",
       "/posts/2022-8-10-IceVision-to-OpenVINO-to-Unity-Tutorial-3.html",
       "/posts/2022-8-9-IceVision-to-OpenVINO-to-Unity-Tutorial-2.html",
@@ -116,10 +116,10 @@
       "/posts/2021-3-20-End-To-End-In-Game-Style-Transfer-Tutorial-Addendum.html",
       "/posts/2021-3-20-Crop-Images-on-the-GPU-In-Unity.html",
       "/posts/2021-3-12-Weekly-Recap-5.html",
-      "/posts/end-to-end-in-game-style-transfer-tutorial/part-3/End-To-End-In-Game-Style-Transfer-Tutorial-3.html",
-      "/posts/end-to-end-in-game-style-transfer-tutorial/part-1/End-To-End-In-Game-Style-Transfer-Tutorial-1.html",
-      "/posts/end-to-end-in-game-style-transfer-tutorial/part-1-5/End-To-End-In-Game-Style-Transfer-Tutorial-1-5.html",
-      "/posts/end-to-end-in-game-style-transfer-tutorial/part-2/End-To-End-In-Game-Style-Transfer-Tutorial-2.html",
+      "/posts/end-to-end-in-game-style-transfer-tutorial/part-3/index.html",
+      "/posts/end-to-end-in-game-style-transfer-tutorial/part-1/index.html",
+      "/posts/end-to-end-in-game-style-transfer-tutorial/part-1-5/index.html",
+      "/posts/end-to-end-in-game-style-transfer-tutorial/part-2/index.html",
       "/posts/2021-2-17-In-Game-Style-Transfer-Experiments-6.html",
       "/posts/2021-2-17-Weekly-Recap-4.html",
       "/posts/2021-2-8-Weekly-Recap-3.html",
@@ -143,11 +143,11 @@
       "/posts/2020-10-25-Barracuda-PoseNet-Tutorial-1.html",
       "/posts/2020-10-21-How-to-Convert-a-TensorFlow-SavedModel-to-ONNX.html",
       "/posts/2020-10-19-In-Game-Style-Transfer.html",
-      "/posts/barracuda-pose-estimation-project-log/part-5/Barracuda-Pose-Estimation-Project-Log-5.html",
-      "/posts/barracuda-pose-estimation-project-log/part-4/Barracuda-Pose-Estimation-Project-Log-4.html",
-      "/posts/barracuda-pose-estimation-project-log/part-3/Barracuda-Pose-Estimation-Project-Log-3.html",
-      "/posts/barracuda-pose-estimation-project-log/part-2/Barracuda-Pose-Estimation-Project-Log-2.html",
-      "/posts/barracuda-pose-estimation-project-log/part-1/Barracuda-Pose-Estimation-Project-Log-1.html",
+      "/posts/barracuda-pose-estimation-project-log/part-5/index.html",
+      "/posts/barracuda-pose-estimation-project-log/part-4/index.html",
+      "/posts/barracuda-pose-estimation-project-log/part-3/index.html",
+      "/posts/barracuda-pose-estimation-project-log/part-2/index.html",
+      "/posts/barracuda-pose-estimation-project-log/part-1/index.html",
       "/posts/How-to-Convert-a-TensorFlow-js-Graph-Model-to-a-Tensorflow-SavedModel.html"
     ]
   }
