@@ -14,7 +14,6 @@ description: Part 2 covers performing object detection in a Unity project with O
 hide: false
 image: ../social-media/cover.jpg
 layout: post
-permalink: /:title/
 search_exclude: false
 title: Object Detection for Unity With ONNX Runtime and DirectML Pt. 2
 toc: false
