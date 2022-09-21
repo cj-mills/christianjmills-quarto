@@ -1,23 +1,26 @@
 ---
-categories:
-- icevision
-- openvino
-- yolox
-- object-detection
-- unity
-- tutorial
+title: End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1
 date: 2022-8-8
+image: ../social-media/cover.jpg
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
+categories: [icevision, openvino, yolox, object-detection, unity, tutorial]
 description: This tutorial covers training an object detection model using IceVision
   and creating an OpenVINO plugin for the Unity game engine to perform inference with
   the trained model. Part 1 covers training and exporting the model.
-hide: false
-image: ../social-media/hero.jpg
-layout: post
-search_exclude: false
-title: End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1
-toc: false
 
+twitter-card:
+  creator: "@cdotjdotmills"
+  site: "@cdotjdotmills"
+  image: ../social-media/cover.jpg
+open-graph:
+  image: ../social-media/cover.jpg
 ---
+
+
 
 * [Introduction](#introduction)
 * [Overview](#overview)

@@ -3577,7 +3577,7 @@
   <category>tutorial</category>
   <guid>https://cj-mills.github.io/christianjmills-quarto/posts/icevision-openvino-unity-tutorial/part-3/index.html</guid>
   <pubDate>Wed, 10 Aug 2022 07:00:00 GMT</pubDate>
-  <media:content url="https://cj-mills.github.io/christianjmills-quarto/posts/icevision-openvino-unity-tutorial/social-media/hero.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://cj-mills.github.io/christianjmills-quarto/posts/icevision-openvino-unity-tutorial/social-media/cover.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 2</title>
@@ -4402,7 +4402,7 @@
   <category>tutorial</category>
   <guid>https://cj-mills.github.io/christianjmills-quarto/posts/icevision-openvino-unity-tutorial/part-2/index.html</guid>
   <pubDate>Tue, 09 Aug 2022 07:00:00 GMT</pubDate>
-  <media:content url="https://cj-mills.github.io/christianjmills-quarto/posts/icevision-openvino-unity-tutorial/social-media/hero.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://cj-mills.github.io/christianjmills-quarto/posts/icevision-openvino-unity-tutorial/social-media/cover.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1</title>
@@ -7428,7 +7428,7 @@ call
   <category>tutorial</category>
   <guid>https://cj-mills.github.io/christianjmills-quarto/posts/icevision-openvino-unity-tutorial/part-1/index.html</guid>
   <pubDate>Mon, 08 Aug 2022 07:00:00 GMT</pubDate>
-  <media:content url="https://cj-mills.github.io/christianjmills-quarto/posts/icevision-openvino-unity-tutorial/social-media/hero.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://cj-mills.github.io/christianjmills-quarto/posts/icevision-openvino-unity-tutorial/social-media/cover.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>How to Create an OpenVINO Plugin for Unity on Windows Pt. 3</title>

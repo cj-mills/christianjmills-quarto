@@ -1,21 +1,21 @@
 ---
-categories:
-- icevision
-- openvino
-- yolox
-- object-detection
-- unity
-- tutorial
+title: End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 2
 date: 2022-8-9
+image: ../social-media/cover.jpg
+layout: post
+toc: false
+hide: false
+search_exclude: false
+categories: [icevision, openvino, yolox, object-detection, unity, tutorial]
 description: Part 2 covers creating a dynamic link library (DLL) file in Visual Studio
   to perform inference with the object detection model.
-hide: false
-image: ../social-media/hero.jpg
-layout: post
-search_exclude: false
-title: End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 2
-toc: false
 
+twitter-card:
+  creator: "@cdotjdotmills"
+  site: "@cdotjdotmills"
+  image: ../social-media/cover.jpg
+open-graph:
+  image: ../social-media/cover.jpg
 ---
 
 * [Overview](#overview)
