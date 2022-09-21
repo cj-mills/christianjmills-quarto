@@ -1,21 +1,22 @@
 ---
-categories:
-- onnx
-- directml
-- yolox
-- object-detection
-- unity
-- tutorial
+title: Object Detection for Unity With ONNX Runtime and DirectML Pt. 2
 date: 8/19/2022
+image: ../social-media/cover.jpg
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: Part 2 covers performing object detection in a Unity project with ONNX
   Runtime and DirectML.
-hide: false
-image: ../social-media/cover.jpg
-layout: post
-search_exclude: false
-title: Object Detection for Unity With ONNX Runtime and DirectML Pt. 2
-toc: false
+categories: [onnx, directml, yolox, object-detection, unity, tutorial]
 
+twitter-card:
+  creator: "@cdotjdotmills"
+  site: "@cdotjdotmills"
+  image: ../social-media/cover.jpg
+open-graph:
+  image: ../social-media/cover.jpg
 ---
 
 * [Overview](#overview)
