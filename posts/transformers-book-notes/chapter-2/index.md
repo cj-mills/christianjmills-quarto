@@ -933,7 +933,7 @@ plt.show()
 # Reset the figure size
 plt.rcParams["figure.figsize"] = plt.rcParamsDefault["figure.figsize"]
 ```
-![png](../images/notes-transformers-book/chapter-2/output_54_0.png)
+![png](./images/output_54_0.png)
 
 
 **Note:** Messages expressing joy and sadness are about 5-10 times more common than messages expressing love and surprise.
@@ -969,7 +969,7 @@ plt.show()
 # Reset the figure size
 plt.rcParams["figure.figsize"] = plt.rcParamsDefault["figure.figsize"]
 ```
-![png](../images/notes-transformers-book/chapter-2/output_58_0.png)
+![png](./images/output_58_0.png)
 
 
 **Note:** Most tweets are between 15 and 20 words long, with a max length of around 50 words.
@@ -2013,7 +2013,7 @@ for i, (label, cmap) in enumerate(zip(labels, cmaps)):
 plt.tight_layout()
 plt.show()
 ```
-![png](../images/notes-transformers-book/chapter-2/output_151_0.png)
+![png](./images/output_151_0.png)
 
 
 **Note:**
@@ -2117,7 +2117,7 @@ def plot_confusion_matrix(y_preds, y_true, labels):
 y_preds = lr_clf.predict(X_valid)
 plot_confusion_matrix(y_preds, y_valid, labels)
 ```
-![png](../images/notes-transformers-book/chapter-2/output_165_0.png)
+![png](./images/output_165_0.png)
 
 
 **Note:**
@@ -2642,7 +2642,7 @@ y_preds = np.argmax(preds_output.predictions, axis=1)
 ```python
 plot_confusion_matrix(y_preds, y_valid, labels)
 ```
-![png](../images/notes-transformers-book/chapter-2/output_207_0.png)
+![png](./images/output_207_0.png)
 
 
 **Note:** 
@@ -2949,7 +2949,7 @@ plt.title(f'"{custom_tweet}"')
 plt.ylabel("Class probability (%)")
 plt.show()
 ```
-![png](../images/notes-transformers-book/chapter-2/output_224_0.png)
+![png](./images/output_224_0.png)
 
 
 
@@ -2966,7 +2966,7 @@ plt.title(f'"{custom_tweet}"')
 plt.ylabel("Class probability (%)")
 plt.show()
 ```
-![png](../images/notes-transformers-book/chapter-2/output_226_0.png)
+![png](./images/output_226_0.png)
 
 
 
@@ -2983,7 +2983,7 @@ plt.title(f'"{custom_tweet}"')
 plt.ylabel("Class probability (%)")
 plt.show()
 ```
-![png](../images/notes-transformers-book/chapter-2/output_228_0.png)
+![png](./images/output_228_0.png)
 
 
 

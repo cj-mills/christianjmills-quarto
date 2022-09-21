@@ -1286,7 +1286,7 @@ axes[1].set_xlabel("Length")
 plt.tight_layout()
 plt.show()
 ```
-![png](../images/notes-transformers-book/chapter-6/output_144_0.png)
+![png](./images/output_144_0.png)
 
 
 **Note:**

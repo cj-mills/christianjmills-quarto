@@ -2837,7 +2837,7 @@ def plot_confusion_matrix(y_preds, y_true, labels):
 plot_confusion_matrix(df_tokens["labels"], df_tokens["predicted_label"],
                       tags.names)
 ```
-![png](../images/notes-transformers-book/chapter-4/output_155_0.png)
+![png](./images/output_155_0.png)
 
 **Note:** The model often confuses the beginning subword (`B-ORG`) of an organizational entity with the subsequent subwords (`I-ORG`).
 
@@ -3733,7 +3733,7 @@ plt.xlabel("Number of Training Samples")
 plt.ylabel("F1 Score")
 plt.show()
 ```
-![png](../images/notes-transformers-book/chapter-4/output_192_0.png)
+![png](./images/output_192_0.png)
 
 
 **Note:** 

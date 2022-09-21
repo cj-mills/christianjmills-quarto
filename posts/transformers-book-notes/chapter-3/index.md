@@ -199,7 +199,7 @@ model = BertModel.from_pretrained(model_ckpt)
 text = "time flies like an arrow"
 show(model, "bert", tokenizer, text, display_mode="light", layer=0, head=8)
 ```
-![png](../images/notes-transformers-book/chapter-3/query-vector-to-key-vector-visualization.png)
+![png](./images/query-vector-to-key-vector-visualization.png)
 
 
 **Note:** The `query` vector for "flies" has the most overlap with the `key` vector for "arrow."

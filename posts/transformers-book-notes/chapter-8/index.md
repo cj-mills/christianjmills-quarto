@@ -1590,7 +1590,7 @@ def plot_metrics(perf_metrics, current_optim_type):
     
 plot_metrics(perf_metrics, optim_type)
 ```
-![png](../images/notes-transformers-book/chapter-8/output_108_0.png)
+![png](./images/output_108_0.png)
 
 **Note:** The student is twice as fast and nearly as accurate.
 
@@ -1640,7 +1640,7 @@ plt.show()
 ```
 
 
-![png](../images/notes-transformers-book/chapter-8/output_115_0.png)
+![png](./images/output_115_0.png)
 
 **Note:** In Optuna, we can find the minimum of the $f(x,y)$ function by defining an `objective()` function that returns the value of the $f(x,y)$.
 
@@ -1709,7 +1709,7 @@ ax.set_xlim(-1.3, 1.3)
 ax.set_ylim(-0.9, 1.7)
 plt.show()
 ```
-![png](../images/notes-transformers-book/chapter-8/output_125_0.png)
+![png](./images/output_125_0.png)
 
 **Note:** Optuna managed to find values for x and y that are reasonably close to the global minimum.
 
@@ -1937,7 +1937,7 @@ perf_metrics.update(pb.run_benchmark())
 ```python
 plot_metrics(perf_metrics, optim_type)
 ```
-![png](../images/notes-transformers-book/chapter-8/output_153_0.png)
+![png](./images/output_153_0.png)
 
 
 **Note:** 
@@ -1985,7 +1985,7 @@ weights = state_dict["distilbert.transformer.layer.0.attention.out_lin.weight"]
 plt.hist(weights.flatten().numpy(), bins=250, range=(-0.3,0.3), edgecolor="C0")
 plt.show()
 ```
-![png](../images/notes-transformers-book/chapter-8/output_158_0.png)
+![png](./images/output_158_0.png)
 
 
 **Note:** The weight values fall in the range $\left[ -0.1, 0.1 \right]$ around zero.
@@ -2088,7 +2088,7 @@ axins.axes.yaxis.set_visible(False)
 mark_inset(ax, axins, loc1=2, loc2=4, fc="none", ec="0.5")
 plt.show()
 ```
-![png](../images/notes-transformers-book/chapter-8/output_171_0.png)
+![png](./images/output_171_0.png)
 
 ------
 
@@ -2238,7 +2238,7 @@ perf_metrics.update(pb.run_benchmark())
 ```python
 plot_metrics(perf_metrics, optim_type)
 ```
-![png](../images/notes-transformers-book/chapter-8/output_191_0.png)
+![png](./images/output_191_0.png)
 
 
 **Note:** The quantized model is nearly half the size of the distilled model and gained a slight accuracy boost.
@@ -2500,7 +2500,7 @@ perf_metrics.update(pb.run_benchmark())
 ```python
 plot_metrics(perf_metrics, optim_type)
 ```
-![png](../images/notes-transformers-book/chapter-8/output_226_0.png)
+![png](./images/output_226_0.png)
 
 **Note:** Converting the distilled model to ONNX format decreased latency.
 
@@ -2592,7 +2592,7 @@ perf_metrics.update(pb.run_benchmark())
 ```python
 plot_metrics(perf_metrics, optim_type)
 ```
-![png](../images/notes-transformers-book/chapter-8/output_234_0.png)
+![png](./images/output_234_0.png)
 
 
 **Note:** 
@@ -2667,7 +2667,7 @@ ax.set_ylabel("Sparsity")
 plt.grid(linestyle="dashed")
 plt.show()
 ```
-![png](../images/notes-transformers-book/chapter-8/output_240_0.png)
+![png](./images/output_240_0.png)
 
 ------
 

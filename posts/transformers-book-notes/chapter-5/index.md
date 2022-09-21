@@ -598,7 +598,7 @@ plt.xlabel("Sorted token probabilities")
 plt.ylabel("Probability")
 plt.show()
 ```
-![png](../images/notes-transformers-book/chapter-5/output_51_0.png)
+![png](./images/output_51_0.png)
 
 -----
 
@@ -721,7 +721,7 @@ axes[1].hlines(y=0.95, xmin=0, xmax=10000, color='C1', label=top_p_label, linest
 axes[1].legend(loc='lower right')
 plt.tight_layout()
 ```
-![png](../images/notes-transformers-book/chapter-5/output_69_0.png)
+![png](./images/output_69_0.png)
 
 **Note:**
 * The histogram has a peak around 10^-8 and a second smaller peak around 10^-4, followed by a sharp drop.

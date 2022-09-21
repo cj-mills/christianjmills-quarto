@@ -136,7 +136,7 @@ ax.grid(True)
 plt.subplots_adjust(top=1.2)
 plt.show()
 ```
-![png](../images/notes-transformers-book/chapter-11/output_5_0.png)
+![png](./images/output_5_0.png)
 
 ------
 
@@ -275,7 +275,7 @@ plt.imshow(image)
 plt.axis("off")
 plt.show()
 ```
-![png](../images/notes-transformers-book/chapter-11/output_17_0.png)
+![png](./images/output_17_0.png)
 
 ------
 
@@ -406,7 +406,7 @@ preds_df
 * Table Parser (TAPAS) applies the Transformer architecture to tables by combining the tabular information with the query.
 * [TAPAS: Weakly Supervised Table Parsing via Pre-training](https://arxiv.org/abs/2004.02349)
 
-<img alt="tapas-architecture" width="800" caption="Architecture of TAPAS (courtesy of Jonathan Herzig)" src="../images/notes-transformers-book/chapter-11/chapter11_tapas-architecture.png" id="tapas-architecture"/>
+<img alt="tapas-architecture" width="800" caption="Architecture of TAPAS (courtesy of Jonathan Herzig)" src="./images/chapter11_tapas-architecture.png" id="tapas-architecture"/>
 
 **Create some sample table data**
 
@@ -935,7 +935,7 @@ print(pred)
 
 ------
 
-<img alt="wav2vec-u" width="800" caption="Training scheme for wav2vec-U (courtesy of Alexsei Baevski)" src="../images/notes-transformers-book/chapter-11/chapter11_wav2vec-u.png" id="wav2vec-u"/>
+<img alt="wav2vec-u" width="800" caption="Training scheme for wav2vec-U (courtesy of Alexsei Baevski)" src="./images/chapter11_wav2vec-u.png" id="wav2vec-u"/>
 
 ### Vision and Text
 * There have been several developments in combining visual and textual information.
@@ -952,7 +952,7 @@ print(pred)
 * LayoutLM models pre-train on millions of scanned documents and can transfer to various downstream tasks, similar to BERT for NLP.
 * LayoutLM models are the current state of the art for analyzing scanned business documents like receipts, invoices, or reports.
 
-<img alt="layoutlm" width="500" caption="The model architecture and pretraining strategies for LayoutLMv2 (courtesy of Yang Xu)" src="../images/notes-transformers-book/chapter-11/chapter11_layoutlm.png" id="layoutlm"/> 
+<img alt="layoutlm" width="500" caption="The model architecture and pretraining strategies for LayoutLMv2 (courtesy of Yang Xu)" src="./images/chapter11_layoutlm.png" id="layoutlm"/> 
 
 #### DALL·E
 * DALLE uses the GPT architecture and autoregressive modeling to generate images from text.
@@ -967,7 +967,7 @@ print(pred)
 * We need to instantiate a processor that contains a feature extractor and a tokenizer for image-to-text tasks.
 * The feature extractor converts the image into a form suitable for the model, while the tokenizer decodes the model predictions into text.
 
-<img alt="clip-arch" width="800" caption="Architecture of CLIP (courtesy of Alec Radford)" src="../images/notes-transformers-book/chapter-11/chapter11_clip-arch.png" id="clip-arch"/>
+<img alt="clip-arch" width="800" caption="Architecture of CLIP (courtesy of Alec Radford)" src="./images/chapter11_clip-arch.png" id="clip-arch"/>
 
 ------
 
@@ -1046,7 +1046,7 @@ plt.imshow(image)
 plt.axis("off")
 plt.show()
 ```
-![png](../images/notes-transformers-book/chapter-11/output_86_0.png)
+![png](./images/output_86_0.png)
 
 ------
 
