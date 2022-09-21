@@ -183,7 +183,6 @@ import pickle5 as pickle
     * `is_slippery=False`: The agent always moves in the intended direction due to the non-slippery nature of the frozen lake.
     * `is_slippery=True`: The agent may not always move in the intended direction due to the slippery nature of the frozen lake (stochastic).
 
-![frozen_lake.gif](https://www.gymlibrary.ml/_images/frozen_lake.gif)
 
 **Create a FrozenLake-v1 environment with a 4x4 non-slippery map**
 
@@ -205,7 +204,7 @@ gym.make('FrozenLake-v1', desc=desc, is_slippery=True)
 ```
 **Note:** This custom grid arrangement would like like the map below.
 
-![frozen_lake.gif](https://www.gymlibrary.ml/_images/frozen_lake.gif)
+
 
 ### Inspect the environment
 

@@ -8,7 +8,6 @@ categories:
 date: '2020-09-16'
 description: The journey so far.
 hide: false
-image: images/pexels_peter_simmons_66218_1080p.jpg
 layout: post
 search_exclude: false
 title: Barracuda Pose Estimation Project Log Pt. 1

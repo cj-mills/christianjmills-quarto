@@ -392,12 +392,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><code>is_slippery=True</code>: The agent may not always move in the intended direction due to the slippery nature of the frozen lake (stochastic).</li>
 </ul></li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.gymlibrary.ml/_images/frozen_lake.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">frozen_lake.gif</figcaption><p></p>
-</figure>
-</div>
 <p><strong>Create a FrozenLake-v1 environment with a 4x4 non-slippery map</strong></p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>env <span class="op">=</span> gym.make(<span class="st">"FrozenLake-v1"</span>, map_name<span class="op">=</span><span class="ss">f"4x4"</span>, is_slippery<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>(Optional)</strong> Define a custom grid: * “S”: start position * “F”: frozen tile * “H”: hole tile * “G”: gift tile</p>
@@ -405,12 +399,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>desc<span class="op">=</span>[<span class="st">"SFFF"</span>, <span class="st">"FHFH"</span>, <span class="st">"FFFH"</span>, <span class="st">"HFFG"</span>]</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>gym.make(<span class="st">'FrozenLake-v1'</span>, desc<span class="op">=</span>desc, is_slippery<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Note:</strong> This custom grid arrangement would like like the map below.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.gymlibrary.ml/_images/frozen_lake.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">frozen_lake.gif</figcaption><p></p>
-</figure>
-</div>
 </section>
 <section id="inspect-the-environment" class="level3">
 <h3 class="anchored" data-anchor-id="inspect-the-environment">Inspect the environment</h3>
