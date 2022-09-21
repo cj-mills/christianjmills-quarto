@@ -3,7 +3,9 @@ project:
   output-dir: docs
 
 website:
-  title: "christianjmills-quarto"
+  favicon: images/favicon.ico
+  site-url: "https://cj-mills.github.io/christianjmills-quarto/"
+  title: "Christian Mills"
   navbar:
     right:
       - about.qmd
@@ -11,6 +13,8 @@ website:
         href: https://github.com/cj-mills
       - icon: twitter
         href: https://twitter.com/cdotjdotmills
+  twitter-card: true
+  open-graph: true
 format:
   html:
     theme:

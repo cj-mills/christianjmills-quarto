@@ -9,7 +9,7 @@ description: Chapter 9 provides a deep dive into tabular modeling.
 hide: false
 layout: post
 search_exclude: false
-title: Notes on fastai Book Ch. 9
+title: Notes on fastai Book Ch. 09
 toc: false
 
 ---
