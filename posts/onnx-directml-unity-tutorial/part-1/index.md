@@ -1,29 +1,24 @@
 ---
-categories:
-- onnx
-- directml
-- yolox
-- object-detection
-- unity
-- tutorial
+title: Object Detection for Unity With ONNX Runtime and DirectML Pt. 1
 date: 8/18/2022
+image: ../social-media/cover.jpg
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: This tutorial covers creating an object detection plugin for a Unity
   game engine project using ONNX Runtime and DirectML. Part 1 covers creating a dynamic
   link library (DLL) file in Visual Studio to perform inference with the object detection
   model.
-hide: false
-image: ../social-media/cover.jpg
-layout: post
-search_exclude: false
-title: Object Detection for Unity With ONNX Runtime and DirectML Pt. 1
-toc: false
-title-block-categories: false
+categories: [onnx, directml, yolox, object-detection, unity, tutorial]
+
 twitter-card:
-    creator: "@cdotjdotmills"
-    site: "@cdotjdotmills"
-    image: ../social-media/cover.jpg
+  creator: "@cdotjdotmills"
+  site: "@cdotjdotmills"
+  image: ../social-media/cover.jpg
 open-graph:
-    image: ../social-media/cover.jpg
+  image: ../social-media/cover.jpg
 ---
 
 * [Introduction](#introduction)
