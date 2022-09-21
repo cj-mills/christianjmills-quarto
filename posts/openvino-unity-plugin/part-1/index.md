@@ -31,7 +31,7 @@ We will be using a computationally demanding [style transfer](https://github.com
 
 In this first part, we will ensure the prerequisite software is installed on our system and convert a pretrained model from [ONNX](https://onnx.ai/) format to the OpenVINO [Intermediate Representation](https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_IR_and_opsets.html) format.
 
-<iframe width=auto height="480" src="https://www.youtube.com/embed/uSmczpnPam8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width=100% height="480" src="https://www.youtube.com/embed/uSmczpnPam8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
