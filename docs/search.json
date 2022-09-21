@@ -812,6 +812,48 @@
     "text": "This was such an intriguing idea that I decided to give it a shot before getting started on my pose estimation project. One concern I had going in was performance. The style transfer models I’d used previously weren’t exactly designed for real-time inference. This concern turned out to be well founded. The frame rates for my first attempt were so low it looked like a stop motion film.\nAt the time, I’d assumed the low frame rates were purely due to the performance demands of the style transfer model. I didn’t realize that my methods for pre and post processing were needlessly inefficient. What’s more, the output looked really bad. I learned much later that this was because I wasn’t implementing the processing steps correctly. I decided to drop the whole endeavor and moved on to pose estimation.\nWorking on my pose estimation project taught me a lot about how to speed up the processing steps in Unity. Most importantly, I learned how to use compute shaders to perform preprocessing steps on the GPU. I decided to see if this was enough to get a style transfer model to run at playable frame rates. I decided to use the demo project for Unity’s Kinematica package to make things more interesting to look at.\n\nFor testing purposes, I started with one of the pretrained fast style transfer models provided in the ONNX model zoo. This particular model was trained to apply the style of the mosaic image below. I plan to use my own style transfer models in the future.\n\n\n\nmosaic\n\n\nMoving the processing steps from the CPU to the GPU allowed me to get “cinematic” frame rates. However, I needed to keep the resolution at or below 720p. Even at those resolutions, my GPU was pinned at 99-100% utilization the whole time. This might make a decent benchmark for the new RTX 3000 cards.\nMoving both the pre and post processing steps to the GPU also made it easier to find out what I did wrong with my initial implementation. First, the RGB values for the input image need to be in the range of [0, 255]. This is worth noting because of an odd characteristic of the Barracuda library. When a tensor is created from a Texture2D (i.e. a regular image) its values are normalized to the range [0, 1].\nIf you need your values to be outside the default range, you have two options. You can create the tensor using a float array, which needs to be done on the CPU. Or, you can use an HDR texture. Fortunately, I already learned how to use HDR textures while working on my pose estimation project.\nThe output of the model is also in the general range of [0, 255]. Although, you do need to clip the values just in case the model overshoots a bit. Since color values in Unity are typically in the range of [0, 1], you also need to scale the output back down to that range. This is the main reason my first attempt looked so bad. Trying to load the raw model output back into a Texture2D made nearly every pixel value pure white. It was relatively easy to implement the proper post processing steps with a compute shader after some research.\nMy current results might need a seizure warning, but they are still way better than my first attempt. The flickering effect is there because the model I’m using doesn’t account for temporal cohesion between frames. Hopefully, I will be able to get a style transfer model working in Unity that’s meant for video in the near future.\n\nMy Results:\n\n\n\n\n\n\n\nFuture Work:\nThis recently released project on GitHub is very promising. Not only does it perform way better with videos, but it’s also possible to modify the style while your using it. I haven’t tried exporting the model to ONNX yet but I plan to fairly soon. Even if it’s fully supported by ONNX, I’ll still need to see if the Barracuda library supports it. But, it should be worth the effort to get it working. You can see just how much smoother video from this new model is in this short sample I made with it.\n\n\n\n\n\nIt’s not 100% perfect. There’s still a tiny bit of flickering in the background. However, this was made with just two sample frames. Also that mosaic image makes it more likely for such flickering to appear. If we use a different style image, the flickering is basically nonexistent. The noise is present because the Gif below was made from an mp4 rather than PNGs.\n\n\n\nlynx_facets2"
   },
   {
+    "objectID": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html",
+    "href": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html",
+    "title": "In-Game Style Transfer Experiments Pt.1",
+    "section": "",
+    "text": "Introduction\nKinematica Image Dataset\nVideo Stylization Model\nUnity’s Implementation: First Impressions\nConclusion"
+  },
+  {
+    "objectID": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#introduction",
+    "href": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#introduction",
+    "title": "In-Game Style Transfer Experiments Pt.1",
+    "section": "Introduction",
+    "text": "Introduction\nI spent a bit of time this week messing around with different style transfer experiments. I wanted to see if training the fast_neural_style model on images from the Kinematica demo would improve the output quality. I also got the model from the Interactive Video Stylization Using Few-Shot Patch-Based Training project working in Unity. Lastly, I started exploring Unity’s style transfer project. Let’s just say that calling my implementation basic was an understatement."
+  },
+  {
+    "objectID": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#kinematica-image-dataset",
+    "href": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#kinematica-image-dataset",
+    "title": "In-Game Style Transfer Experiments Pt.1",
+    "section": "Kinematica Image Dataset",
+    "text": "Kinematica Image Dataset\nI used OBS to record an approximately 13 minute video of the character running around the Kinematica demo. I then split the video into separate frames using ffmpeg. I also created mirrored copies of the frames to double the size of my dataset. I ended up resizing the images to 640 x 480 to speed up training. My experiment resulted in noticeably less flickering when running the demo. Although, I still find the flickering in my results a bit distracting. I’m curious if I could further reduce flickering by training the model for longer. There are also some slight changes in color between the two models. However, the differences were mostly lost when creating the Gifs below.\n\nCOCO 2014 Training Images Dataset\n\n\n\nbase_mosaic_3\n\n\n\n\nKinematica Demo Image Dataset\n\n\n\nmy_mosaic"
+  },
+  {
+    "objectID": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#video-stylization-model",
+    "href": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#video-stylization-model",
+    "title": "In-Game Style Transfer Experiments Pt.1",
+    "section": "Video Stylization Model",
+    "text": "Video Stylization Model\nTraining this style transfer model is a bit more involved than the one I’ve been using so far. First, this model doesn’t learn from a source style image like the one below.\n\n\n\nmosaic\n\n\nInstead, you need to provide a few stylized examples of images from your training dataset. I just used the fast_neural_style model to generate these examples. However, you need to put in a bit more work to get the best results. This involves creating masks for each image in the dataset like the one below.\n\n\n\n111_mask\n\n\nYou also need to generate noise for these masks as shown below.\n\n\n\n111_noise\n\n\nYou can technically just make masks and noise for the whole image rather than for specific parts. However, I didn’t feel like doing that just yet. I wanted to see how the model ran in Unity first, so I used one of the sample training datasets provided for the project. Specifically, I used the lynx dataset.\n\n\n\nlynx_000\n\n\n\nTraining Results\nAs you can see below, this model produces much less flickering than the fast_neural_style model. The next step was to see how well this transferred to Unity.\n\n\n\n\n\n\n\nUnity Performance\nThe model did a surprisingly okay job stylizing the Kinematica demo despite having only trained on one hundred images of a lynx. Flickering is significantly reduced and it didn’t even give me any headaches importing the ONNX file into Unity. The only catch was performance.\n\n\n\nfew_shot_mosaic\n\n\nOn my desktop, the fast_neural_style model I’ve been using runs 720 x 540 at approximately 25fps. This new model runs the same resolution at about 9fps. You’d probably need to wait a few generations of GPUs before you could get playable frame rates with the model as is. It would take some insane optimization to make this viable for in-game style transfer. Fortunately, Unity has already figured out how to do some insane optimization for their style transfer project."
+  },
+  {
+    "objectID": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#unitys-implementation-first-impressions",
+    "href": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#unitys-implementation-first-impressions",
+    "title": "In-Game Style Transfer Experiments Pt.1",
+    "section": "Unity’s Implementation: First Impressions",
+    "text": "Unity’s Implementation: First Impressions\nIn short, I have some homework to do. I’ve only glanced through the code for Unity’s project so far, but it’s easy to see why they took so long to release it. They’ve put a lot of work into optimizing the performance of their model. With the default settings, I was consistently getting around 400fps.\nNote: Performance dropped slightly when recording for the Gifs below. Hence, the displayed fps is a bit lower.\n\n\n\n\n\nThe actual scene is about as simple as it gets so I can’t directly compare the lack of flickering just yet. I’ll wait until I get this running in the Kinematica demo for that.\n\n\n\nunity_style_transfer_scene\n\n\nHowever, the performance numbers speak for themselves. The team at Unity did a fantastic job with optimization. What’s more, their method for optimizing the performance looks like it should transfer to other models. I want to try applying their method to the PoseNet project as well as the style transfer models I’ve been working with. Although, the optimization process appears quite involved so I’ll need to study it a bit more before attempting that."
+  },
+  {
+    "objectID": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#conclusion",
+    "href": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#conclusion",
+    "title": "In-Game Style Transfer Experiments Pt.1",
+    "section": "Conclusion",
+    "text": "Conclusion\nMy experiments provided some useful insights in how I should move forward with future style transfer experiments. Training the models on images from the target game seems worthwhile to reduce flickering. I’ll see if letting the model train overnight will further reduce flickering.\nThe performance from the video stylization model was lower than I expected. I thought there might be some decrease in frame rate, but I did not expect it to drop by roughly two thirds. In hindsight, I guess it’s not unreasonable. The video stylization model is double the size at 13MB versus 6.5MB for the fast_neural_style model.\nI’m now even more grateful that Unity has released their example project. It applies a level of expertise that would have taken me a long time to figure out on my own. However, it also shows just how much work still remains in optimizing more sophisticated models for end-user devices. I’m curious if it’s feasible to automate this optimization process."
+  },
+  {
     "objectID": "posts/2020-12-8-Basic-In-Game-Style-Transfer-Tutorial.html",
     "href": "posts/2020-12-8-Basic-In-Game-Style-Transfer-Tutorial.html",
     "title": "Basic In-Game Style Transfer Tutorial",
@@ -2196,48 +2238,6 @@
     "title": "How to Convert TensorFlow Models to ONNX with tf2onnx",
     "section": "Next Steps",
     "text": "Next Steps\nBe sure to check out the GitHub repo if you want to learn what else you can do with the tool. The README page goes in to greater detail about the following:\n\nCurrent TensorFlow support\nParameter options\nAdvanced use cases\nHow the tool converts TensorFlow Models"
-  },
-  {
-    "objectID": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html",
-    "href": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html",
-    "title": "In-Game Style Transfer Experiments Pt.1",
-    "section": "",
-    "text": "Introduction\nKinematica Image Dataset\nVideo Stylization Model\nUnity’s Implementation: First Impressions\nConclusion"
-  },
-  {
-    "objectID": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#introduction",
-    "href": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#introduction",
-    "title": "In-Game Style Transfer Experiments Pt.1",
-    "section": "Introduction",
-    "text": "Introduction\nI spent a bit of time this week messing around with different style transfer experiments. I wanted to see if training the fast_neural_style model on images from the Kinematica demo would improve the output quality. I also got the model from the Interactive Video Stylization Using Few-Shot Patch-Based Training project working in Unity. Lastly, I started exploring Unity’s style transfer project. Let’s just say that calling my implementation basic was an understatement."
-  },
-  {
-    "objectID": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#kinematica-image-dataset",
-    "href": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#kinematica-image-dataset",
-    "title": "In-Game Style Transfer Experiments Pt.1",
-    "section": "Kinematica Image Dataset",
-    "text": "Kinematica Image Dataset\nI used OBS to record an approximately 13 minute video of the character running around the Kinematica demo. I then split the video into separate frames using ffmpeg. I also created mirrored copies of the frames to double the size of my dataset. I ended up resizing the images to 640 x 480 to speed up training. My experiment resulted in noticeably less flickering when running the demo. Although, I still find the flickering in my results a bit distracting. I’m curious if I could further reduce flickering by training the model for longer. There are also some slight changes in color between the two models. However, the differences were mostly lost when creating the Gifs below.\n\nCOCO 2014 Training Images Dataset\n\n\n\nbase_mosaic_3\n\n\n\n\nKinematica Demo Image Dataset\n\n\n\nmy_mosaic"
-  },
-  {
-    "objectID": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#video-stylization-model",
-    "href": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#video-stylization-model",
-    "title": "In-Game Style Transfer Experiments Pt.1",
-    "section": "Video Stylization Model",
-    "text": "Video Stylization Model\nTraining this style transfer model is a bit more involved than the one I’ve been using so far. First, this model doesn’t learn from a source style image like the one below.\n\n\n\nmosaic\n\n\nInstead, you need to provide a few stylized examples of images from your training dataset. I just used the fast_neural_style model to generate these examples. However, you need to put in a bit more work to get the best results. This involves creating masks for each image in the dataset like the one below.\n\n\n\n111_mask\n\n\nYou also need to generate noise for these masks as shown below.\n\n\n\n111_noise\n\n\nYou can technically just make masks and noise for the whole image rather than for specific parts. However, I didn’t feel like doing that just yet. I wanted to see how the model ran in Unity first, so I used one of the sample training datasets provided for the project. Specifically, I used the lynx dataset.\n\n\n\nlynx_000\n\n\n\nTraining Results\nAs you can see below, this model produces much less flickering than the fast_neural_style model. The next step was to see how well this transferred to Unity.\n\n\n\n\n\n\n\nUnity Performance\nThe model did a surprisingly okay job stylizing the Kinematica demo despite having only trained on one hundred images of a lynx. Flickering is significantly reduced and it didn’t even give me any headaches importing the ONNX file into Unity. The only catch was performance.\n\n\n\nfew_shot_mosaic\n\n\nOn my desktop, the fast_neural_style model I’ve been using runs 720 x 540 at approximately 25fps. This new model runs the same resolution at about 9fps. You’d probably need to wait a few generations of GPUs before you could get playable frame rates with the model as is. It would take some insane optimization to make this viable for in-game style transfer. Fortunately, Unity has already figured out how to do some insane optimization for their style transfer project."
-  },
-  {
-    "objectID": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#unitys-implementation-first-impressions",
-    "href": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#unitys-implementation-first-impressions",
-    "title": "In-Game Style Transfer Experiments Pt.1",
-    "section": "Unity’s Implementation: First Impressions",
-    "text": "Unity’s Implementation: First Impressions\nIn short, I have some homework to do. I’ve only glanced through the code for Unity’s project so far, but it’s easy to see why they took so long to release it. They’ve put a lot of work into optimizing the performance of their model. With the default settings, I was consistently getting around 400fps.\nNote: Performance dropped slightly when recording for the Gifs below. Hence, the displayed fps is a bit lower.\n\n\n\n\n\nThe actual scene is about as simple as it gets so I can’t directly compare the lack of flickering just yet. I’ll wait until I get this running in the Kinematica demo for that.\n\n\n\nunity_style_transfer_scene\n\n\nHowever, the performance numbers speak for themselves. The team at Unity did a fantastic job with optimization. What’s more, their method for optimizing the performance looks like it should transfer to other models. I want to try applying their method to the PoseNet project as well as the style transfer models I’ve been working with. Although, the optimization process appears quite involved so I’ll need to study it a bit more before attempting that."
-  },
-  {
-    "objectID": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#conclusion",
-    "href": "posts/2020-12-18-In-Game-Style-Transfer-Experiments-1.html#conclusion",
-    "title": "In-Game Style Transfer Experiments Pt.1",
-    "section": "Conclusion",
-    "text": "Conclusion\nMy experiments provided some useful insights in how I should move forward with future style transfer experiments. Training the models on images from the target game seems worthwhile to reduce flickering. I’ll see if letting the model train overnight will further reduce flickering.\nThe performance from the video stylization model was lower than I expected. I thought there might be some decrease in frame rate, but I did not expect it to drop by roughly two thirds. In hindsight, I guess it’s not unreasonable. The video stylization model is double the size at 13MB versus 6.5MB for the fast_neural_style model.\nI’m now even more grateful that Unity has released their example project. It applies a level of expertise that would have taken me a long time to figure out on my own. However, it also shows just how much work still remains in optimizing more sophisticated models for end-user devices. I’m curious if it’s feasible to automate this optimization process."
   },
   {
     "objectID": "posts/2020-12-20-In-Game-Style-Transfer-Experiments-2.html",
@@ -4295,7 +4295,7 @@
     "href": "posts/barracuda-posenet-tutorial/part-2-5/index.html#test-the-new-screen",
     "title": "Barracuda PoseNet Tutorial Pt. 2.5 (Outdated)",
     "section": "Test the New Screen",
-    "text": "Test the New Screen\nMake sure the Display Input checkbox is ticked in the Inspector tab. It will be easier to see the changes to the preprocessed images if we use a full color video. We can set the Video Clip for the Video Player to the pexels_woman_dancing file that we downloaded in Part 1."
+    "text": "Test the New Screen\nMake sure the Display Input checkbox is ticked in the Inspector tab. It will be easier to see the changes to the preprocessed images if we use a full color video. We can set the Video Clip for the Video Player to the pexels_woman_dancing file that we downloaded in Part 1.\nVideo"
   },
   {
     "objectID": "posts/barracuda-posenet-tutorial/part-2-5/index.html#rescale-pixel-values",
@@ -4477,7 +4477,7 @@
     "href": "posts/barracuda-posenet-tutorial/part-6/index.html#try-it-out",
     "title": "Barracuda PoseNet Tutorial Pt. 6 (Outdated)",
     "section": "Try It Out",
-    "text": "Try It Out\nIf you press the play button, you should see something like this.\n\n\n\nVariable\nValue\n\n\n\n\nimageHeight\n720\n\n\nimageWidth\n720\n\n\nminConfidence\n85"
+    "text": "Try It Out\nIf you press the play button, you should see something like this.\n\n\n\nVariable\nValue\n\n\n\n\nimageHeight\n720\n\n\nimageWidth\n720\n\n\nminConfidence\n85\n\n\n\nVideo"
   },
   {
     "objectID": "posts/barracuda-posenet-tutorial/part-6/index.html#summary",
@@ -4575,7 +4575,7 @@
     "href": "posts/barracuda-posenet-tutorial/part-8/index.html#try-it-out",
     "title": "Barracuda PoseNet Tutorial Pt. 8 (Outdated)",
     "section": "Try It Out",
-    "text": "Try It Out\nNow we can test the modifications on some vertical videos from Pexels.\n\nWoman Doing a Jump Rope Exercise\nMan Dancing Hip-Hop"
+    "text": "Try It Out\nNow we can test the modifications on some vertical videos from Pexels.\n\nWoman Doing a Jump Rope Exercise\nMan Dancing Hip-Hop\n\nVideo"
   },
   {
     "objectID": "posts/barracuda-posenet-tutorial/part-8/index.html#summary",

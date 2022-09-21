@@ -144,12 +144,7 @@ Now we can test the modifications on some vertical videos from [Pexels](https://
 2. [Man Dancing Hip-Hop](https://www.pexels.com/video/man-dancing-hip-hop-2795742/)
 
 
-
-<center>
-	<video style="width:auto;max-width:100%;height:auto;" controls loop>
-		<source src="../videos/barracuda-posenet-tutorial/part-8/jump_rope_pose_estimation_4.mp4" type="video/mp4">
-	</video>
-</center>
+![](./videos/barracuda-posenet-tutorial/part-8/jump_rope_pose_estimation_4.mp4)
 
 
 

@@ -175,12 +175,7 @@ If you press the play button, you should see something like this.
 | `minConfidence` |  85   |
 
 
-<center>
-	<video style="width:auto;max-width:100%;height:auto;" controls loop>
-		<source src="../videos/barracuda-posenet-tutorial/part-6/pose_skeleton_480p_90c.mp4" type="video/mp4">
-	</video>
-</center>
-
+![](./videos/barracuda-posenet-tutorial/part-6/pose_skeleton_480p_90c.mp4)
 
 
 ## Summary
