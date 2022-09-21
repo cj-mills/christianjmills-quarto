@@ -18,6 +18,12 @@ search_exclude: false
 title: Object Detection for Unity With ONNX Runtime and DirectML Pt. 1
 toc: false
 title-block-categories: false
+twitter-card:
+    creator: "@cdotjdotmills"
+    site: "@cdotjdotmills"
+    image: ../social-media/cover.jpg
+open-graph:
+    image: ../social-media/cover.jpg
 ---
 
 * [Introduction](#introduction)
