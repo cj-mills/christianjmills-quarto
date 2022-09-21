@@ -6,6 +6,7 @@ website:
   favicon: images/favicon.ico
   site-url: "https://cj-mills.github.io/christianjmills-quarto/"
   title: "Christian Mills"
+  image: images/logo.png
   navbar:
     right:
       - about.qmd
@@ -13,8 +14,11 @@ website:
         href: https://github.com/cj-mills
       - icon: twitter
         href: https://twitter.com/cdotjdotmills
-  twitter-card: true
+  twitter-card:
+    creator: "@cdotjdotmills"
+    site: "@cdotjdotmills"
   open-graph: true
+
 format:
   html:
     theme:
