@@ -17,7 +17,9 @@ website:
   twitter-card:
     creator: "@cdotjdotmills"
     site: "@cdotjdotmills"
-  open-graph: true
+    image: images/logo.png
+  open-graph:
+    image: images/logo.png
 
 format:
   html:
