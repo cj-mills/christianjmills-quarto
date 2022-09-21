@@ -58,11 +58,7 @@ You can technically just make masks and noise for the whole image rather than fo
 
 As you can see below, this model produces much less flickering than the `fast_neural_style` model. The next step was to see how well this transferred to Unity.
 
-<center>
-	<video style="width:auto;max-width:100%;height:auto;" controls loop>
-		<source src="../videos/in-game-style-transfer-experiments\part-1\lynx_380p_cropped.mp4" type="video/mp4">
-	</video>
-</center>
+![](./videos/lynx_380p_cropped.mp4)
 
 
 
@@ -80,11 +76,7 @@ In short, I have some homework to do. I've only glanced through the code for Uni
 
 **Note:** Performance dropped slightly when recording for the Gifs below. Hence, the displayed fps is a bit lower.
 
-<center>
-	<video style="width:auto;max-width:100%;height:auto;" controls loop>
-		<source src="../videos/in-game-style-transfer-experiments\part-1\unity_style_transfer.mp4" type="video/mp4">
-	</video>
-</center>
+![](./videos/unity_style_transfer.mp4)
 
 
 The actual scene is about as simple as it gets so I can't directly compare the lack of flickering just yet. I'll wait until I get this running in the Kinematica demo for that.
