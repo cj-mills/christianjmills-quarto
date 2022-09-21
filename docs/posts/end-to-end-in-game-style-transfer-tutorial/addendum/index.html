@@ -25,22 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -62,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">christianjmills-quarto</span>
     </a>
   </div>
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">About</a>
+    <a class="nav-link" href="../../../about.html">About</a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/cj-mills"><i class="bi bi-github" role="img">
@@ -182,14 +182,14 @@ ul.task-list li input[type="checkbox"] {
 <p>The only thing we need to add to the Unity project are some new image processing functions in the <code>ComputeShader</code> we made in <a href="https://christianjmills.com/End-To-End-In-Game-Style-Transfer-Tutorial-3/#create-compute-shader">Part 3</a>. This time, we need to remap the RGB values from <code>[0,1]</code> to <code>[-1,1]</code> instead of <code>[0,255]</code>. You can either swap out the code for the existing processing functions or make new ones like in the image below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\images\end-to-end-in-game-style-transfer-tutorial\unity-updated-compute-shader.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-updated-compute-shader.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-updated-compute-shader</figcaption><p></p>
 </figure>
 </div>
 <p>If you make new functions, be sure to replace the function names in the <code>StyleTransfer.cs</code> script.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\images\end-to-end-in-game-style-transfer-tutorial\unity-update-styleTransfer-script.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-update-styleTransfer-script.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-update-styleTransfer-script</figcaption><p></p>
 </figure>
 </div>
@@ -203,7 +203,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Now we just need to assign the ONNX file to the <code>modelAsset</code> variable in the <code>Inspector</code> tab. This model is less efficient than the one used earlier in this series so we’ll lower the <code>targetHeight</code> as well.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\images\end-to-end-in-game-style-transfer-tutorial\unity-inspector-add-video-final.png" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-inspector-add-video-final.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-inspector-add-video-final</figcaption><p></p>
 </figure>
 </div>
@@ -214,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 <p>You’ll probably notice that this model doesn’t preserve as much fine detail as the other model. This is because I had to significantly reduce the size of the model to get playable frame rates. The full size model is able to preserve much more detail, but is too large to get playable frame rates on any modern graphics card. Additionally, the model doesn’t completely get rid of the flickering effect.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\images\end-to-end-in-game-style-transfer-tutorial\unity-video-style-transfer-screenshot.jpg" class="img-fluid figure-img"></p>
+<p><img src="./images/unity-video-style-transfer-screenshot.jpg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">unity-video-style-transfer-screenshot</figcaption><p></p>
 </figure>
 </div>
