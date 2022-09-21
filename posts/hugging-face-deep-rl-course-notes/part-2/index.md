@@ -6,6 +6,7 @@ categories:
 - notes
 date: 2022-5-26
 description: Unit 2 introduces monte carlo, temporal difference learning, and Q-learning.
+image: ./images/frozen_lake.gif
 hide: false
 layout: post
 search_exclude: false
