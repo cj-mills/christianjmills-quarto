@@ -36,13 +36,13 @@ There are many potential ways to leverage deep learning in Unity applications, i
 
 #### In-Game Style Transfer
 
-![in-game-style-transfer]("./videos/in-game-style-transfer.mp4")
+![in-game-style-transfer](./videos/in-game-style-transfer.mp4)
 
 #### Pose Estimation
-![multipose-demo-1]("./videos/multipose-demo-1.mp4")
+![multipose-demo-1](./videos/multipose-demo-1.mp4)
 
 #### Object Detection
-![openvino-yolox-object-detection-short]("./videos/openvino-yolox-object-detection-short.mp4")
+![openvino-yolox-object-detection-short](./videos/openvino-yolox-object-detection-short.mp4)
 
 
 These examples only scratch the surface of what's possible by combining deep learning models with powerful real-time creation tools like Unity and [Unreal Engine](https://www.unrealengine.com/en-US). The Barracuda library makes it easy to start exploring these possibilities.
