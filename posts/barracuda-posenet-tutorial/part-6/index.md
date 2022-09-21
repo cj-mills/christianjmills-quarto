@@ -175,7 +175,7 @@ If you press the play button, you should see something like this.
 | `minConfidence` |  85   |
 
 
-![](./videos/barracuda-posenet-tutorial/part-6/pose_skeleton_480p_90c.mp4)
+![](./videos/pose_skeleton_480p_90c.mp4)
 
 
 ## Summary
