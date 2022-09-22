@@ -688,7 +688,7 @@ Now we can compare the estimated key point locations to the source video feed.
 
 
 
-**Previous:** [Part 6](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-6/)
+**Previous:** [Part 6](../part-6/)
 
 **Project Resources:** [GitHub Repository](https://github.com/cj-mills/Barracuda-PoseNet-Tutorial)
 

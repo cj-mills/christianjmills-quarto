@@ -626,9 +626,9 @@ Now that we have prepared the input, we are ready to feed it to the model. In th
 
 
 
-**Previous:** [Part 2](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-2/)
+**Previous:** [Part 2](../part-2/)
 
-**Next:** [Part 4](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-4/)
+**Next:** [Part 4](../part-4/)
 
 **Project Resources:** [GitHub Repository](https://github.com/cj-mills/Barracuda-PoseNet-Tutorial)
 

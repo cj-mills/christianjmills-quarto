@@ -407,9 +407,9 @@ We now have a general idea of how both models perform on GPU and CPU. In the nex
 
 
 
-**Previous:** [Part 3](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-3/)
+**Previous:** [Part 3](../part-3/)
 
-**Next:** [Part 5](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-5/)
+**Next:** [Part 5](../part-5/)
 
 **Project Resources:** [GitHub Repository](https://github.com/cj-mills/Barracuda-PoseNet-Tutorial)
 

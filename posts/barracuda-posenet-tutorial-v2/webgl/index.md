@@ -812,7 +812,7 @@ We now have a way to use the Barracuda inference engine in WebGL builds.
 
 
 
-**Previous:** [Part 7](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-7/)
+**Previous:** [Part 7](../part-7/)
 
 **Project Resources:** [GitHub Repository](https://github.com/cj-mills/Barracuda-PoseNet-Tutorial/tree/WebGL)
 

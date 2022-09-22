@@ -194,7 +194,7 @@ Back in the Assets section, create a new folder called `Models`. Drag and drop t
 
 That takes care of the preliminary setup for the project. The next post will cover how to play and view videos inside Unity from both video files and a webcam.
 
-**Next:** [Part 2](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-2/)
+**Next:** [Part 2](../part-2/)
 
 **Project Resources:** [GitHub Repository](https://github.com/cj-mills/Barracuda-PoseNet-Tutorial)
 
