@@ -2,6 +2,14 @@
 title: Barracuda PoseNet WebGL Tutorial
 date: 2022-3-10
 image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
+comments:
+  utterances:
+    repo: cj-mills/christianjmills
 description: This post covers how to modify the Barracuda PoseNet project to run in
   the browser using WebGL.
 categories: [unity, barracuda, webgl, tutorial]

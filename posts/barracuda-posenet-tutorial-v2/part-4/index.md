@@ -7,6 +7,9 @@ layout: post
 toc: false
 hide: false
 search_exclude: false
+comments:
+  utterances:
+    repo: cj-mills/christianjmills
 description: This post covers how to load, modify, and execute the PoseNet models.
 categories: [unity, barracuda, tutorial]
 

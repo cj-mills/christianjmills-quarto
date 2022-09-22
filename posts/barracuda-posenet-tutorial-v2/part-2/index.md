@@ -7,6 +7,9 @@ layout: post
 toc: false
 hide: false
 search_exclude: false
+comments:
+  utterances:
+    repo: cj-mills/christianjmills
 description: This post covers how to set up a video player and webcam in Unity. We'll
   be using the video player to check the accuracy of the PoseNet model.
 categories: [unity, barracuda, tutorial]

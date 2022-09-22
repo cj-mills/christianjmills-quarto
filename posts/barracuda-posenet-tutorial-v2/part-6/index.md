@@ -1,17 +1,18 @@
 ---
-categories:
-- unity
-- barracuda
-- tutorial
+title: Barracuda PoseNet Tutorial 2nd Edition Pt. 6
 date: 2021-7-30
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
+comments:
+  utterances:
+    repo: cj-mills/christianjmills
 description: This post covers how to implement the post processing steps for multi-pose
   estimation.
-hide: false
-layout: post
-search_exclude: false
-title: Barracuda PoseNet Tutorial 2nd Edition Pt. 6
-toc: false
-
+categories: [unity, barracuda, tutorial]
 ---
 
 * [Overview](#overview)

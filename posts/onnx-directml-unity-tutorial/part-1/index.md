@@ -7,6 +7,9 @@ layout: post
 toc: false
 hide: false
 search_exclude: false
+comments:
+  utterances:
+    repo: cj-mills/christianjmills
 description: This tutorial covers creating an object detection plugin for a Unity
   game engine project using ONNX Runtime and DirectML. Part 1 covers creating a dynamic
   link library (DLL) file in Visual Studio to perform inference with the object detection
