@@ -12,8 +12,9 @@ description: This beginner tutorial covers how to train an image classifier usin
   inference library. Part 1 covers training and exporting a model.
 categories: [fastai, unity, barracuda]
 
-
 ---
+
+
 
 * [Introduction](#introduction)
 * [Overview](#overview)

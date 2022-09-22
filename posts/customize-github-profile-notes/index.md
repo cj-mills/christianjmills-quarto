@@ -1,14 +1,9 @@
 ---
-categories:
-- github
-- notes
-date: 2021-12-9
-description: My notes from learning how to customize my GitHub profile.
-hide: false
-layout: post
-search_exclude: false
 title: Notes on Customizing Your GitHub Profile
-toc: false
+date: 2021-12-9
+image: /images/empty.gif
+description: My notes from learning how to customize my GitHub profile.
+categories: [github, notes]
 
 ---
 

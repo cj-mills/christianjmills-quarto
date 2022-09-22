@@ -2,7 +2,6 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/fastai-to-unity-tutorial/part-1/index.html",
       "/posts/onnx-directml-unity-tutorial/part-2/index.html",
       "/posts/onnx-directml-unity-tutorial/part-1/index.html",
       "/posts/icevision-openvino-unity-tutorial/part-3/index.html",
@@ -16,6 +15,7 @@
       "/posts/fastai-libtorch-unity-tutorial/part-1/index.html",
       "/posts/fastai-to-unity-tutorial/part-3/index.html",
       "/posts/fastai-to-unity-tutorial/part-2/index.html",
+      "/posts/fastai-to-unity-tutorial/part-1/index.html",
       "/posts/deep-learning-unity-intro/index.html",
       "/posts/no-ml-degree-book-notes/index.html",
       "/posts/hugging-face-deep-rl-course-notes/part-2/index.html",
