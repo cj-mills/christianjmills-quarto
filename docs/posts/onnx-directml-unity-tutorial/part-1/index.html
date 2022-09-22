@@ -231,11 +231,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>A <a href="https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/">previous tutorial series</a> covered training an object detection model using <a href="https://airctic.com/0.12.0/">IceVision</a> and creating an <a href="https://docs.openvino.ai/latest/index.html">OpenVINO</a> plugin for the <a href="https://unity.com/">Unity</a> game engine to perform inference with the trained model. OpenVINO can provide fast inference speeds but only targets Intel hardware. Not everyone has an Intel CPU, and discrete Intel GPUs are not yet widely available.</p>
+<p>A <a href="../../icevision-openvino-unity-tutorial/part-1/">previous tutorial series</a> covered training an object detection model using <a href="https://airctic.com/0.12.0/">IceVision</a> and creating an <a href="https://docs.openvino.ai/latest/index.html">OpenVINO</a> plugin for the <a href="https://unity.com/">Unity</a> game engine to perform inference with the trained model. OpenVINO can provide fast inference speeds but only targets Intel hardware. Not everyone has an Intel CPU, and discrete Intel GPUs are not yet widely available.</p>
 <p>This follow-up tutorial covers building a plugin using <a href="https://onnxruntime.ai/docs/">ONNX Runtime</a> and <a href="https://docs.microsoft.com/en-us/windows/ai/directml/dml">DirectML</a> to enable inference on non-Intel CPUs and GPUs. ONNX Runtime is a cross-platform model accelerator that works with several hardware acceleration libraries. DirectML is a hardware-accelerated DirectX 12 library for machine learning on Windows.</p>
-<p>We’ll use the ONNX model <a href="https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/#export-the-model">exported</a> in the original tutorial, so no modifications to the training code are required.</p>
+<p>We’ll use the ONNX model <a href="../../icevision-openvino-unity-tutorial/part-1/#export-the-model">exported</a> in the original tutorial, so no modifications to the training code are required.</p>
 <ul>
-<li><strong>Model Training Tutorial:</strong> <a href="https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/">End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1</a></li>
+<li><strong>Model Training Tutorial:</strong> <a href="../../icevision-openvino-unity-tutorial/part-1/">End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1</a></li>
 </ul>
 <section id="unity-demo" class="level4">
 <h4 class="anchored" data-anchor-id="unity-demo">Unity Demo</h4>
@@ -676,7 +676,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> provider_names<span class="op">[</span>index<span class="op">];</span></span>
 <span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Define method to generate stride values to navigate the raw model output</strong></p>
-<p>The method for generating the offset values used to traverse the output array is almost identical to the Python implementation from the <a href="https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/#define-post-processing-steps">training tutorial</a>.</p>
+<p>The method for generating the offset values used to traverse the output array is almost identical to the Python implementation from the <a href="../../icevision-openvino-unity-tutorial/part-1/#define-post-processing-steps">training tutorial</a>.</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">/// </span><span class="kw">&lt;summary&gt;</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">/// Generate offset values to navigate the raw model output</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">/// </span><span class="kw">&lt;/summary&gt;</span></span>
@@ -1103,8 +1103,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <p>This post covered creating a dynamic link library (<a href="https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library">DLL</a>) file to perform inference with a YOLOX model using <a href="https://onnxruntime.ai/docs/">ONNX Runtime</a> and <a href="https://docs.microsoft.com/en-us/windows/ai/directml/dml">DirectML</a>. In part 2, we’ll build a project in <a href="https://unity.com/">Unity</a> that uses this DLL.</p>
-<p><strong>Training Tutorial:</strong> <a href="https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/">End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1</a></p>
-<p><strong>Next:</strong> <a href="https://christianjmills.com/ONNX-DiretML-to-Unity-Tutorial-2/">Object Detection for Unity With ONNX Runtime and DirectML Pt. 2</a></p>
+<p><strong>Training Tutorial:</strong> <a href="../../icevision-openvino-unity-tutorial/part-1/">End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1</a></p>
+<p><strong>Next:</strong> <a href="../part-2/">Object Detection for Unity With ONNX Runtime and DirectML Pt. 2</a></p>
 <p><strong>Project Resources:</strong> <a href="https://github.com/cj-mills/onnx-directml-unity-tutorial">GitHub Repository</a></p>
 
 

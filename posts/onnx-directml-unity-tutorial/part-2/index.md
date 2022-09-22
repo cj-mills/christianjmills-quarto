@@ -33,11 +33,11 @@ open-graph:
 
 ## Overview
 
-[Part 1](https://christianjmills.com/ONNX-DiretML-to-Unity-Tutorial-1/) covered creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file to perform object detection using ONNX Runtime and DirectML. This post covers building a project in Unity that leverages the DLL.
+[Part 1](../part-1/) covered creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file to perform object detection using ONNX Runtime and DirectML. This post covers building a project in Unity that leverages the DLL.
 
 
 
-> **Important:** This post assumes you already have [Unity Hub](https://unity3d.com/get-unity/download) on your system. Check out [this section](https://christianjmills.com/Fastai-to-Unity-Tutorial-2/#set-up-unity-hub) from a previous tutorial if this is not the case ([link](https://christianjmills.com/Fastai-to-Unity-Tutorial-2/#set-up-unity-hub)).
+> **Important:** This post assumes you already have [Unity Hub](https://unity3d.com/get-unity/download) on your system. Check out [this section](../../fastai-to-unity-tutorial/part-2/#set-up-unity-hub) from a previous tutorial if this is not the case ([link](../../fastai-to-unity-tutorial/part-2/#set-up-unity-hub)).
 
 
 
@@ -105,7 +105,7 @@ Copy all the DLL files into the `Assets/Plugins/x86_64` folder. We then need to 
 
 
 
-After restarting the Unity Editor, create a new folder called `Colormaps` to store the JSON file from the [training tutorial](https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/#generate-colormap).
+After restarting the Unity Editor, create a new folder called `Colormaps` to store the JSON file from the [training tutorial](../../icevision-openvino-unity-tutorial/part-1/#generate-colormap).
 
 * [Colormaps Folder Google Drive](https://drive.google.com/drive/folders/1rs2eD9_3Tyg4ADLbF6CNqwRdnhpsiHgk?usp=sharing)
 
@@ -1680,7 +1680,7 @@ In this tutorial series, we created a DLL to perform object detection using ONNX
 
 
 
-**Previous:** [Object Detection for Unity With ONNX Runtime and DirectML Pt. 1](https://christianjmills.com/ONNX-DiretML-to-Unity-Tutorial-1/)
+**Previous:** [Object Detection for Unity With ONNX Runtime and DirectML Pt. 1](../part-1/)
 
 
 

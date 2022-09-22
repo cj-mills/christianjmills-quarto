@@ -29,7 +29,7 @@ toc: false
 
 ## Overview
 
-[Part 2](https://christianjmills.com/Fastai-to-OpenVINO-to-Unity-Tutorial-Windows-2/) covered creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file to perform image classification using [OpenVINO](https://docs.openvino.ai/latest/index.html). This post covers the required modifications for the Unity project from the [fastai-to-unity tutorial](https://christianjmills.com/Fastai-to-Unity-Tutorial-1/) to use this DLL.
+[Part 2](../part-2/) covered creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file to perform image classification using [OpenVINO](https://docs.openvino.ai/latest/index.html). This post covers the required modifications for the Unity project from the [fastai-to-unity tutorial](../../fastai-to-unity-tutorial/part-1/) to use this DLL.
 
 
 
@@ -41,11 +41,9 @@ Open the [Fastai-Unity-Tutorial](https://github.com/cj-mills/fastai-to-unity-tut
 
 
 
-
-
 ## Add New Asset Files
 
-We'll store the [DLL files](https://christianjmills.com/Fastai-to-OpenVINO-to-Unity-Tutorial-Windows-2/#gather-dependencies) from part 2 in a new folder called `Plugins`. The DLL targets 64-bit x86 architectures, so we need to place the DLL files in a subfolder named `x86_64`.
+We'll store the [DLL files](../../fastai-openvino-unity-tutorial/part-2/#gather-dependencies) from part 2 in a new folder called `Plugins`. The DLL targets 64-bit x86 architectures, so we need to place the DLL files in a subfolder named `x86_64`.
 
 * [Plugins Folder Google Drive](https://drive.google.com/drive/folders/1zPHOeYB9jOlPG_KSZyvUVipmBDbV2p76?usp=sharing)
 
@@ -903,7 +901,7 @@ This tutorial series covered creating an OpenVINO plugin to improve inference sp
 
 
 
-**Previous:** [How to Create an OpenVINO Plugin for Unity on Windows Pt. 2](https://christianjmills.com/Fastai-to-OpenVINO-to-Unity-Tutorial-Windows-2/)
+**Previous:** [How to Create an OpenVINO Plugin for Unity on Windows Pt. 2](../part-2/)
 
 
 

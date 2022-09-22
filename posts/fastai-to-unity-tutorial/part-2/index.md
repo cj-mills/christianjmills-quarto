@@ -31,7 +31,7 @@ toc: false
 
 ## Overview
 
-[Part 1](https://christianjmills.com/Fastai-to-Unity-Tutorial-1/) covered training an image classification model using the fastai library and exporting it to ONNX. In this post, we'll cover implementing a trained image classification model in a Unity project using the Barracuda library.
+[Part 1](../part-1) covered training an image classification model using the fastai library and exporting it to ONNX. In this post, we'll cover implementing a trained image classification model in a Unity project using the Barracuda library.
 
 
 
@@ -378,7 +378,7 @@ public WorkerFactory.Type workerType = WorkerFactory.Type.Auto;
 
 **Define output processing variables**
 
-As mentioned in the [previous post](https://christianjmills.com/Deep-Learning-in-Unity/#retrieving-model-output), reading model output from the GPU to the CPU can cause a significant performance bottleneck. Therefore, we will add the option to read the model output asynchronously at the cost of a few frames of latency. Unfortunately, this feature does not work with the inference backend used for WebGL builds.
+As mentioned in a [previous post](../../deep-learning-unity-intro/), reading model output from the GPU to the CPU can cause a significant performance bottleneck. Therefore, we will add the option to read the model output asynchronously at the cost of a few frames of latency. Unfortunately, this feature does not work with the inference backend used for WebGL builds.
 
 We pass in the JSON file containing the class labels as a [TextAsset](https://docs.unity3d.com/ScriptReference/TextAsset.html).
 
@@ -1546,9 +1546,9 @@ This post covered implementing an image classification model in a Unity project 
 
 
 
-**Previous:** [Fastai to Unity Tutorial Pt. 1](https://christianjmills.com/Fastai-to-Unity-Tutorial-1/)
+**Previous:** [Fastai to Unity Tutorial Pt. 1](../part-1/)
 
-**Next:** [Fastai to Unity Tutorial Pt. 3](https://christianjmills.com/Fastai-to-Unity-Tutorial-3/)
+**Next:** [Fastai to Unity Tutorial Pt. 3](../part-3/)
 
 **Project Resources:** [GitHub Repository](https://github.com/cj-mills/fastai-to-unity-tutorial)
 

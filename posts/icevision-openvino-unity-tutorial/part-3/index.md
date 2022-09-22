@@ -32,11 +32,11 @@ open-graph:
 
 ## Overview
 
-[Part 2](https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-2/) covered creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file to perform object detection using [OpenVINO](https://docs.openvino.ai/latest/index.html). This post covers building a project in Unity that leverages this DLL.
+[Part 2](../part-2/) covered creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file to perform object detection using [OpenVINO](https://docs.openvino.ai/latest/index.html). This post covers building a project in Unity that leverages this DLL.
 
 
 
-> **Important:** This post assumes you already have [Unity Hub](https://unity3d.com/get-unity/download) on your system. Check out [this section](https://christianjmills.com/Fastai-to-Unity-Tutorial-2/#set-up-unity-hub) from a previous tutorial if this is not the case ([link](https://christianjmills.com/Fastai-to-Unity-Tutorial-2/#set-up-unity-hub)).
+> **Important:** This post assumes you already have [Unity Hub](https://unity3d.com/get-unity/download) on your system. Check out [this section](../../fastai-to-unity-tutorial/part-2/#set-up-unity-hub) from a previous tutorial if this is not the case ([link](../../fastai-to-unity-tutorial/part-2/#set-up-unity-hub)).
 
 
 
@@ -84,7 +84,7 @@ Finally, click `Create Project` in the lower right-hand corner.
 
 ## Import Assets
 
-Once the project loads, we'll store the [DLL files](https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-2/#gather-dependencies) from part 2 in a new folder called `Plugins`. Right-click a space in the Assets section and select `Create → Folder` from the popup menu.
+Once the project loads, we'll store the [DLL files](../part-2/#gather-dependencies) from part 2 in a new folder called `Plugins`. Right-click a space in the Assets section and select `Create → Folder` from the popup menu.
 
 ![unity-create-folder](./images/unity-create-folder.png)
 
@@ -112,7 +112,7 @@ Copy all the DLL files and the `plugins.xml` file into the `Assets/Plugins/x86_6
 
 
 
-Back in the Unity Editor, create a new folder called `Colormaps` to store the JSON file from [part 1](https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/#generate-colormap).
+Back in the Unity Editor, create a new folder called `Colormaps` to store the JSON file from [part 1](../part-1/#generate-colormap).
 
 * [Colormaps Folder Google Drive](https://drive.google.com/drive/folders/1rs2eD9_3Tyg4ADLbF6CNqwRdnhpsiHgk?usp=sharing)
 
@@ -1656,7 +1656,7 @@ In this tutorial series, we covered how to train a YOLOX model with the IceVisio
 
 
 
-**Previous:** [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 2](https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-2/)
+**Previous:** [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 2](../part-2/)
 
 
 

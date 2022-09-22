@@ -237,7 +237,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p><a href="https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/">Part 1</a> covered finetuning an object detection model using the IceVision library and exporting it as an OpenVINO IR model. This post covers creating a dynamic link library (<a href="https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library">DLL</a>) file in Visual Studio to perform inference with this model using <a href="https://docs.openvino.ai/latest/index.html">OpenVINO</a>.</p>
+<p><a href="../part-1/">Part 1</a> covered finetuning an object detection model using the IceVision library and exporting it as an OpenVINO IR model. This post covers creating a dynamic link library (<a href="https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library">DLL</a>) file in Visual Studio to perform inference with this model using <a href="https://docs.openvino.ai/latest/index.html">OpenVINO</a>.</p>
 <blockquote class="blockquote">
 <p><strong>Important:</strong> This post assumes <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a> is present on your system.</p>
 </blockquote>
@@ -668,7 +668,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">&amp;</span>available_devices<span class="op">[</span>index<span class="op">];</span></span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Define method to generate stride values to navigate the raw model output</strong></p>
-<p>The method for generating the offset values used to traverse the output array is almost identical to the Python implementation from <a href="https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/#define-post-processing-steps">part 1</a>.</p>
+<p>The method for generating the offset values used to traverse the output array is almost identical to the Python implementation from <a href="../part-1/#define-post-processing-steps">part 1</a>.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">/// </span><span class="kw">&lt;summary&gt;</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">/// Generate offset values to navigate the raw model output</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">/// </span><span class="kw">&lt;/summary&gt;</span></span>
@@ -1021,8 +1021,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <p>This post covered creating a dynamic link library (<a href="https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library">DLL</a>) file to perform inference with a YOLOX model using <a href="https://docs.openvino.ai/latest/index.html">OpenVINO</a>. In part 3, we build a project in <a href="https://unity.com/">Unity</a> that uses this DLL.</p>
-<p><strong>Previous:</strong> <a href="https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/">End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1</a></p>
-<p><strong>Next:</strong> <a href="https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-3/">End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 3</a></p>
+<p><strong>Previous:</strong> <a href="../part-1/">End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1</a></p>
+<p><strong>Next:</strong> <a href="../part-3/">End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 3</a></p>
 <p><strong>Project Resources:</strong> <a href="https://github.com/cj-mills/icevision-openvino-unity-tutorial">GitHub Repository</a></p>
 
 

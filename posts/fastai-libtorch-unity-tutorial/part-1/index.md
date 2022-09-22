@@ -28,7 +28,7 @@ image: ./images/pytorch.png
 
 ## Introduction
 
-The previous [fastai-to-unity](https://christianjmills.com/Fastai-to-Unity-Tutorial-1/) tutorial series implemented a [ResNet](https://arxiv.org/abs/1512.03385)-based image classifier in [Unity](https://unity.com/) with the [Barracuda](https://docs.unity3d.com/Packages/com.unity.barracuda@3.0/manual/index.html) inference library. The Barracuda library works well with the older ResNet architecture but does not support more recent ones like [ConvNeXt](https://arxiv.org/abs/2201.03545) and [MobileViT](https://arxiv.org/abs/2110.02178) at the time of writing. 
+The previous [fastai-to-unity](../../fastai-to-unity-tutorial/part-1/) tutorial series implemented a [ResNet](https://arxiv.org/abs/1512.03385)-based image classifier in [Unity](https://unity.com/) with the [Barracuda](https://docs.unity3d.com/Packages/com.unity.barracuda@3.0/manual/index.html) inference library. The Barracuda library works well with the older ResNet architecture but does not support more recent ones like [ConvNeXt](https://arxiv.org/abs/2201.03545) and [MobileViT](https://arxiv.org/abs/2110.02178) at the time of writing. 
 
 This follow-up series covers using [LibTorch](https://pytorch.org/cppdocs/installing.html), the C++ distribution of [PyTorch](https://pytorch.org/), to perform inference with these newer model architectures. We'll modify the original tutorial code and create a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file to access the LibTorch functionality in Unity.
 
@@ -1543,15 +1543,15 @@ with open(normalization_stats_file_name, "w") as write_file:
 
 ## Summary
 
-This post covered how to modify the training code from the [fastai-to-unity tutorial ](https://christianjmills.com/Fastai-to-Unity-Tutorial-1/)to finetune models from the Timm library and export them as TorchScript modules. Part 2 will cover creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file in Visual Studio to perform inference with these TorchScript modules using [LibTorch](https://pytorch.org/cppdocs/installing.html).
+This post covered how to modify the training code from the [fastai-to-unity tutorial ](../../fastai-to-unity-tutorial/part-1/)to finetune models from the Timm library and export them as TorchScript modules. Part 2 will cover creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file in Visual Studio to perform inference with these TorchScript modules using [LibTorch](https://pytorch.org/cppdocs/installing.html).
 
 
 
 
 
-**Previous:** [Fastai to Unity Tutorial Pt. 3](https://christianjmills.com/Fastai-to-Unity-Tutorial-3/)
+**Previous:** [Fastai to Unity Tutorial Pt. 3](../../fastai-to-unity-tutorial/part-3/)
 
-**Next:** [How to Create a LibTorch Plugin for Unity on Windows Pt.2](https://christianjmills.com/Fastai-to-LibTorch-to-Unity-Tutorial-Windows-2/)
+**Next:** [How to Create a LibTorch Plugin for Unity on Windows Pt.2](../part-2/)
 
 
 

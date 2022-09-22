@@ -237,7 +237,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p><a href="https://christianjmills.com/Fastai-to-Unity-Tutorial-1/">Part 1</a> covered training an image classification model using the fastai library and exporting it to ONNX. In this post, we’ll cover implementing a trained image classification model in a Unity project using the Barracuda library.</p>
+<p><a href="../part-1">Part 1</a> covered training an image classification model using the fastai library and exporting it to ONNX. In this post, we’ll cover implementing a trained image classification model in a Unity project using the Barracuda library.</p>
 </section>
 <section id="set-up-unity-hub" class="level2">
 <h2 class="anchored" data-anchor-id="set-up-unity-hub">Set Up Unity Hub</h2>
@@ -499,7 +499,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="op">[</span><span class="fu">Tooltip</span><span class="op">(</span><span class="st">"The model execution backend"</span><span class="op">)]</span></span>
 <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> WorkerFactory<span class="op">.</span><span class="fu">Type</span> workerType <span class="op">=</span> WorkerFactory<span class="op">.</span><span class="fu">Type</span><span class="op">.</span><span class="fu">Auto</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Define output processing variables</strong></p>
-<p>As mentioned in the <a href="https://christianjmills.com/Deep-Learning-in-Unity/#retrieving-model-output">previous post</a>, reading model output from the GPU to the CPU can cause a significant performance bottleneck. Therefore, we will add the option to read the model output asynchronously at the cost of a few frames of latency. Unfortunately, this feature does not work with the inference backend used for WebGL builds.</p>
+<p>As mentioned in a <a href="../../deep-learning-unity-intro/">previous post</a>, reading model output from the GPU to the CPU can cause a significant performance bottleneck. Therefore, we will add the option to read the model output asynchronously at the cost of a few frames of latency. Unfortunately, this feature does not work with the inference backend used for WebGL builds.</p>
 <p>We pass in the JSON file containing the class labels as a <a href="https://docs.unity3d.com/ScriptReference/TextAsset.html">TextAsset</a>.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode c# code-with-copy"><code class="sourceCode cs"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">[</span><span class="fu">Header</span><span class="op">(</span><span class="st">"Output Processing"</span><span class="op">)]</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="op">[</span><span class="fu">Tooltip</span><span class="op">(</span><span class="st">"Asynchronously download model output from the GPU to the CPU."</span><span class="op">)]</span></span>
@@ -1385,8 +1385,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <p>This post covered implementing an image classification model in a Unity project using the Barracuda library. Part 3 will cover building the Unity project to run in a web browser and hosting it using GitHub Pages.</p>
-<p><strong>Previous:</strong> <a href="https://christianjmills.com/Fastai-to-Unity-Tutorial-1/">Fastai to Unity Tutorial Pt. 1</a></p>
-<p><strong>Next:</strong> <a href="https://christianjmills.com/Fastai-to-Unity-Tutorial-3/">Fastai to Unity Tutorial Pt. 3</a></p>
+<p><strong>Previous:</strong> <a href="../part-1/">Fastai to Unity Tutorial Pt. 1</a></p>
+<p><strong>Next:</strong> <a href="../part-3/">Fastai to Unity Tutorial Pt. 3</a></p>
 <p><strong>Project Resources:</strong> <a href="https://github.com/cj-mills/fastai-to-unity-tutorial">GitHub Repository</a></p>
 
 

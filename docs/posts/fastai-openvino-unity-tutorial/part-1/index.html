@@ -235,7 +235,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>This tutorial is a follow-up to the <a href="https://christianjmills.com/Fastai-to-Unity-Tutorial-1/">fastai-to-unity</a> tutorial series and covers using <a href="https://docs.openvino.ai/latest/index.html">OpenVINO</a>, an open-source toolkit for optimizing model inference, instead of Unity’s Barracuda library. OpenVINO enables significantly faster CPU inference than Barracuda and supports more model types. It also supports GPU inference for integrated and discrete Intel GPUs and will be able to leverage the AI hardware acceleration available in Intel’s upcoming ARC GPUs.</p>
+<p>This tutorial is a follow-up to the <a href="../../fastai-to-unity-tutorial/part-1">fastai-to-unity</a> tutorial series and covers using <a href="https://docs.openvino.ai/latest/index.html">OpenVINO</a>, an open-source toolkit for optimizing model inference, instead of Unity’s Barracuda library. OpenVINO enables significantly faster CPU inference than Barracuda and supports more model types. It also supports GPU inference for integrated and discrete Intel GPUs and will be able to leverage the AI hardware acceleration available in Intel’s upcoming ARC GPUs.</p>
 <p>We’ll modify the <a href="https://github.com/cj-mills/fastai-to-unity-tutorial">original tutorial code</a> and create a dynamic link library (<a href="https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library">DLL</a>) file to access the OpenVINO functionality in Unity.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -246,7 +246,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This post covers the required modifications to the <a href="https://github.com/cj-mills/fastai-to-unity-tutorial#training-code">original training code</a>. We’ll finetune models from the <a href="https://github.com/rwightman/pytorch-image-models">Timm library</a> on the same <a href="https://www.kaggle.com/datasets/belalelwikel/asl-and-some-words">ASL dataset</a> as the original tutorial, just like in this <a href="https://christianjmills.com/Fastai-to-LibTorch-to-Unity-Tutorial-Windows-1/">previous follow-up</a>. Below is a link to the complete modified training code, along with links for running the notebook on Google Colab and Kaggle.</p>
+<p>This post covers the required modifications to the <a href="https://github.com/cj-mills/fastai-to-unity-tutorial#training-code">original training code</a>. We’ll finetune models from the <a href="https://github.com/rwightman/pytorch-image-models">Timm library</a> on the same <a href="https://www.kaggle.com/datasets/belalelwikel/asl-and-some-words">ASL dataset</a> as the original tutorial, just like in this <a href="../../fastai-libtorch-unity-tutorial/part-1/">previous follow-up</a>. Below is a link to the complete modified training code, along with links for running the notebook on Google Colab and Kaggle.</p>
 <table class="table">
 <thead>
 <tr class="header">
@@ -2977,9 +2977,9 @@ test_input_size
 </section>
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>This post covered how to modify the training code from the <a href="https://christianjmills.com/Fastai-to-Unity-Tutorial-1/">fastai-to-unity tutorial</a>to finetune models from the Timm library and export them as OpenVINO IR models. Part 2 will cover creating a dynamic link library (<a href="https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library">DLL</a>) file in Visual Studio to perform inference with these models using <a href="https://docs.openvino.ai/latest/index.html">OpenVINO</a>.</p>
-<p><strong>Previous:</strong> <a href="https://christianjmills.com/Fastai-to-Unity-Tutorial-3/">Fastai to Unity Tutorial Pt. 3</a></p>
-<p><strong>Next:</strong> <a href="https://christianjmills.com/Fastai-to-OpenVINO-to-Unity-Tutorial-Windows-2/">How to Create an OpenVINO Plugin for Unity on Windows Pt. 2</a></p>
+<p>This post covered how to modify the training code from the <a href="../../fastai-to-unity-tutorial/part-1">fastai-to-unity tutorial</a>to finetune models from the Timm library and export them as OpenVINO IR models. Part 2 will cover creating a dynamic link library (<a href="https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library">DLL</a>) file in Visual Studio to perform inference with these models using <a href="https://docs.openvino.ai/latest/index.html">OpenVINO</a>.</p>
+<p><strong>Previous:</strong> <a href="../../fastai-to-unity-tutorial/part-3/">Fastai to Unity Tutorial Pt. 3</a></p>
+<p><strong>Next:</strong> <a href="../part-2/">How to Create an OpenVINO Plugin for Unity on Windows Pt. 2</a></p>
 <p><strong>Project Resources:</strong> <a href="https://github.com/cj-mills/fastai-to-openvino-to-unity-tutorial">GitHub Repository</a></p>
 
 

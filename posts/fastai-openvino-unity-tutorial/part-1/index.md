@@ -30,7 +30,7 @@ toc: false
 
 ## Introduction
 
-This tutorial is a follow-up to the [fastai-to-unity](https://christianjmills.com/Fastai-to-Unity-Tutorial-1/) tutorial series and covers using [OpenVINO](https://docs.openvino.ai/latest/index.html), an open-source toolkit for optimizing model inference, instead of Unity's Barracuda library. OpenVINO enables significantly faster CPU inference than Barracuda and supports more model types. It also supports GPU inference for integrated and discrete Intel GPUs and will be able to leverage the AI hardware acceleration available in Intel's upcoming ARC GPUs.
+This tutorial is a follow-up to the [fastai-to-unity](../../fastai-to-unity-tutorial/part-1) tutorial series and covers using [OpenVINO](https://docs.openvino.ai/latest/index.html), an open-source toolkit for optimizing model inference, instead of Unity's Barracuda library. OpenVINO enables significantly faster CPU inference than Barracuda and supports more model types. It also supports GPU inference for integrated and discrete Intel GPUs and will be able to leverage the AI hardware acceleration available in Intel's upcoming ARC GPUs.
 
 We'll modify the [original tutorial code](https://github.com/cj-mills/fastai-to-unity-tutorial) and create a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file to access the OpenVINO functionality in Unity.
 
@@ -40,7 +40,7 @@ We'll modify the [original tutorial code](https://github.com/cj-mills/fastai-to-
 
 ## Overview
 
-This post covers the required modifications to the [original training code](https://github.com/cj-mills/fastai-to-unity-tutorial#training-code). We'll finetune models from the [Timm library](https://github.com/rwightman/pytorch-image-models) on the same [ASL dataset](https://www.kaggle.com/datasets/belalelwikel/asl-and-some-words) as the original tutorial, just like in this [previous follow-up](https://christianjmills.com/Fastai-to-LibTorch-to-Unity-Tutorial-Windows-1/). Below is a link to the complete modified training code, along with links for running the notebook on Google Colab and Kaggle.
+This post covers the required modifications to the [original training code](https://github.com/cj-mills/fastai-to-unity-tutorial#training-code). We'll finetune models from the [Timm library](https://github.com/rwightman/pytorch-image-models) on the same [ASL dataset](https://www.kaggle.com/datasets/belalelwikel/asl-and-some-words) as the original tutorial, just like in this [previous follow-up](../../fastai-libtorch-unity-tutorial/part-1/). Below is a link to the complete modified training code, along with links for running the notebook on Google Colab and Kaggle.
 
 | GitHub Repository                                            | Colab                                                        | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kaggle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -1847,15 +1847,15 @@ OpenVINO is easily faster than PyTorch for CPU inference.
 
 ## Summary
 
-This post covered how to modify the training code from the [fastai-to-unity tutorial ](https://christianjmills.com/Fastai-to-Unity-Tutorial-1/)to finetune models from the Timm library and export them as OpenVINO IR models. Part 2 will cover creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file in Visual Studio to perform inference with these models using [OpenVINO](https://docs.openvino.ai/latest/index.html).
+This post covered how to modify the training code from the [fastai-to-unity tutorial ](../../fastai-to-unity-tutorial/part-1)to finetune models from the Timm library and export them as OpenVINO IR models. Part 2 will cover creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file in Visual Studio to perform inference with these models using [OpenVINO](https://docs.openvino.ai/latest/index.html).
 
 
 
 
 
-**Previous:** [Fastai to Unity Tutorial Pt. 3](https://christianjmills.com/Fastai-to-Unity-Tutorial-3/)
+**Previous:** [Fastai to Unity Tutorial Pt. 3](../../fastai-to-unity-tutorial/part-3/)
 
-**Next:** [How to Create an OpenVINO Plugin for Unity on Windows Pt. 2](https://christianjmills.com/Fastai-to-OpenVINO-to-Unity-Tutorial-Windows-2/)
+**Next:** [How to Create an OpenVINO Plugin for Unity on Windows Pt. 2](../part-2/)
 
 
 

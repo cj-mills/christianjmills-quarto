@@ -34,7 +34,7 @@ open-graph:
 
 ## Overview
 
-[Part 1](https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/) covered finetuning an object detection model using the IceVision library and exporting it as an OpenVINO IR model. This post covers creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file in Visual Studio to perform inference with this model using [OpenVINO](https://docs.openvino.ai/latest/index.html).
+[Part 1](../part-1/) covered finetuning an object detection model using the IceVision library and exporting it as an OpenVINO IR model. This post covers creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file in Visual Studio to perform inference with this model using [OpenVINO](https://docs.openvino.ai/latest/index.html).
 
 > **Important:** This post assumes [Visual Studio](https://visualstudio.microsoft.com/downloads/) is present on your system.
 
@@ -528,7 +528,7 @@ DLLExport std::string* GetDeviceName(int index) {
 
 **Define method to generate stride values to navigate the raw model output**
 
-The method for generating the offset values used to traverse the output array is almost identical to the Python implementation from [part 1](https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/#define-post-processing-steps).
+The method for generating the offset values used to traverse the output array is almost identical to the Python implementation from [part 1](../part-1/#define-post-processing-steps).
 
 ```c++
 /// <summary>
@@ -959,9 +959,9 @@ This post covered creating a dynamic link library ([DLL](https://docs.microsoft.
 
 
 
-**Previous:** [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1](https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/)
+**Previous:** [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1](../part-1/)
 
-**Next:** [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 3](https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-3/)
+**Next:** [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 3](../part-3/)
 
 
 

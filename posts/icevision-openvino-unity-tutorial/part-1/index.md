@@ -2790,11 +2790,11 @@ In this post, we finetuned an object detection model using the IceVision library
 
 
 
-**Beginner Tutorial:** [Fastai to Unity Beginner Tutorial Pt. 1](https://christianjmills.com/Fastai-to-Unity-Tutorial-1/)
+**Beginner Tutorial:** [Fastai to Unity Beginner Tutorial Pt. 1](../../fastai-to-unity-tutorial/part-1/)
 
-**Next:** [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 2](https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-2/)
+**Next:** [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 2](../part-2/)
 
-**Alternative Next:** [Object Detection for Unity With ONNX Runtime and DirectML Pt. 1](https://christianjmills.com/ONNX-DiretML-to-Unity-Tutorial-1/)
+**Alternative Next:** [Object Detection for Unity With ONNX Runtime and DirectML Pt. 1](../../onnx-directml-unity-tutorial/part-1/)
 
 
 

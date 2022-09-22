@@ -35,7 +35,7 @@ toc: false
 
 ## Introduction
 
-In this tutorial series, we will walk through training an image classifier using the [fastai library](https://docs.fast.ai/) and implementing it in a [Unity](https://unity.com/) game engine project using the [Barracuda](https://docs.unity3d.com/Packages/com.unity.barracuda@3.0/manual/index.html) inference library. Check out [this post](https://christianjmills.com/Deep-Learning-in-Unity/) for more information about Barracuda. We will then build the Unity project to run in a web browser and host it using [GitHub Pages](https://pages.github.com/).
+In this tutorial series, we will walk through training an image classifier using the [fastai library](https://docs.fast.ai/) and implementing it in a [Unity](https://unity.com/) game engine project using the [Barracuda](https://docs.unity3d.com/Packages/com.unity.barracuda@3.0/manual/index.html) inference library. Check out [this post](../../deep-learning-unity-intro/) for more information about Barracuda. We will then build the Unity project to run in a web browser and host it using [GitHub Pages](https://pages.github.com/).
 
 The tutorial uses this [American Sign Language (ASL) dataset](https://www.kaggle.com/datasets/belalelwikel/asl-and-some-words) from Kaggle but feel free to follow along with a different dataset. The dataset contains sample images for digits 1-9, letters A-Z, and some common words. One could use a model trained on this dataset to map hand gestures to user input or make an ASL education game.
 
@@ -510,7 +510,7 @@ We can train with a square aspect ratio and crop the webcam input in Unity, but 
 
 Alternatively, we can expand the training images to a more typical aspect ratio like 4:3 or 16:9. This approach will allow us to use the entire webcam input, so we'll go with this one.
 
-I have a [separate tutorial](https://christianjmills.com/Crop-Images-on-the-GPU-In-Unity/) for cropping images on the GPU in Unity for anyone that wants to try the other approach.
+I have a [separate tutorial](../../crop-images-on-gpu-tutorial/) for cropping images on the GPU in Unity for anyone that wants to try the other approach.
 
 Below are some sample input dimensions in different aspect ratios.
 
@@ -527,7 +527,7 @@ size_16_9 = (216, 384)
 
 Something else to consider is that the webcam input in Unity mirrors the actual image. Mirrored input would likely not be an issue for something like a pet classifier, but hand orientation matters for ASL. We either need to flip the input image each time in Unity, or we can train the model with pre-flipped images. It is easier to mirror the training images, so we'll use the [FlipItem](https://docs.fast.ai/vision.augment.html#FlipItem) transform with a probability of 1.0 to flip every training sample.
 
-I have a [separate tutorial](https://christianjmills.com/How-to-Flip-an-Image-With-a-Compute-Shader/) covering how to flip images on the GPU in Unity for anyone that wants to try that approach.
+I have a [separate tutorial](../../flip-image-compute-shader-tutorial/) covering how to flip images on the GPU in Unity for anyone that wants to try that approach.
 
 Since we are resizing to a different aspect ratio, we need to choose a padding method. The default reflection padding might add more fingers, changing an image's meaning. The zeros padding option might work, but most user backgrounds will not be pure black. Therefore, we'll go with border padding.
 
@@ -1606,9 +1606,9 @@ In this post, we walked through how to finetune a ResNet model for image classif
 
 
 
-**Previous:** [Getting Started With Deep Learning in Unity](https://christianjmills.com/Deep-Learning-in-Unity/)
+**Previous:** [Getting Started With Deep Learning in Unity](../../deep-learning-unity-intro/)
 
-**Next:** [Fastai to Unity Tutorial Pt. 2](https://christianjmills.com/Fastai-to-Unity-Tutorial-2/)
+**Next:** [Fastai to Unity Tutorial Pt. 2](../part-2/)
 
 
 

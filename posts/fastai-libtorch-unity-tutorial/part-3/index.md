@@ -29,13 +29,13 @@ toc: false
 
 ## Overview
 
-[Part 2](https://christianjmills.com/Fastai-to-LibTorch-to-Unity-Tutorial-Windows-2/) covered creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file to perform image classification with TorchScript modules using [LibTorch](https://pytorch.org/cppdocs/installing.html). This post covers the required modifications for the Unity project from the fastai-to-unity tutorial to use this DLL.
+[Part 2](../part-2/) covered creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file to perform image classification with TorchScript modules using [LibTorch](https://pytorch.org/cppdocs/installing.html). This post covers the required modifications for the Unity project from the fastai-to-unity tutorial to use this DLL.
 
 
 
 ## Open Unity Project
 
-Open the [Fastai-Unity-Tutorial](https://github.com/cj-mills/fastai-to-unity-tutorial/tree/main/Fastai-Unity-Tutorial) project in the Unity Editor. The project is available in the GitHub repository linked below for anyone who did not follow the previous tutorial series.
+Open the [Fastai-Unity-Tutorial](../../fastai-to-unity-tutorial/part-1/) project in the Unity Editor. The project is available in the GitHub repository linked below for anyone who did not follow the previous tutorial series.
 
 * **[fastai-to-unity-tutorial GitHub repository](https://github.com/cj-mills/fastai-to-unity-tutorial)**
 
@@ -45,7 +45,7 @@ Open the [Fastai-Unity-Tutorial](https://github.com/cj-mills/fastai-to-unity-tut
 
 ## Add New Asset Files
 
-First, we'll create a new folder to store the [DLL files](https://christianjmills.com/Fastai-to-LibTorch-to-Unity-Tutorial-Windows-2/#gather-dependencies) from part 2. Create a new folder called `Plugins`, then create a subfolder named `x86_64`.
+First, we'll create a new folder to store the [DLL files](../part-2/#gather-dependencies) from part 2. Create a new folder called `Plugins`, then create a subfolder named `x86_64`.
 
 
 
@@ -749,7 +749,7 @@ This tutorial series covered creating a LibTorch plugin to perform inference wit
 
 
 
-**Previous:** [How to Create a LibTorch Plugin for Unity on Windows Pt.2](https://christianjmills.com/Fastai-to-LibTorch-to-Unity-Tutorial-Windows-2/)
+**Previous:** [How to Create a LibTorch Plugin for Unity on Windows Pt.2](../part-2/)
 
 
 

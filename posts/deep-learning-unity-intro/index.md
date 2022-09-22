@@ -303,15 +303,7 @@ This post introduced the Barracuda inference library for the Unity game engine. 
 
 
 
-**Next:** [Fastai to Unity Tutorial Pt. 1](https://christianjmills.com/Fastai-to-Unity-Tutorial-1/)
-
-
-
-
-
-
-
-
+**Next:** [Fastai to Unity Tutorial Pt. 1](../fastai-to-unity-tutorial/part-1/)
 
 
 

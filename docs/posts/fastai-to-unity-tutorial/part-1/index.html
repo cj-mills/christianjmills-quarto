@@ -239,7 +239,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>In this tutorial series, we will walk through training an image classifier using the <a href="https://docs.fast.ai/">fastai library</a> and implementing it in a <a href="https://unity.com/">Unity</a> game engine project using the <a href="https://docs.unity3d.com/Packages/com.unity.barracuda@3.0/manual/index.html">Barracuda</a> inference library. Check out <a href="https://christianjmills.com/Deep-Learning-in-Unity/">this post</a> for more information about Barracuda. We will then build the Unity project to run in a web browser and host it using <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+<p>In this tutorial series, we will walk through training an image classifier using the <a href="https://docs.fast.ai/">fastai library</a> and implementing it in a <a href="https://unity.com/">Unity</a> game engine project using the <a href="https://docs.unity3d.com/Packages/com.unity.barracuda@3.0/manual/index.html">Barracuda</a> inference library. Check out <a href="../../deep-learning-unity-intro/">this post</a> for more information about Barracuda. We will then build the Unity project to run in a web browser and host it using <a href="https://pages.github.com/">GitHub Pages</a>.</p>
 <p>The tutorial uses this&nbsp;<a href="https://www.kaggle.com/datasets/belalelwikel/asl-and-some-words">American Sign Language (ASL) dataset</a>&nbsp;from Kaggle but feel free to follow along with a different dataset. The dataset contains sample images for digits 1-9, letters A-Z, and some common words. One could use a model trained on this dataset to map hand gestures to user input or make an ASL education game.</p>
 <p><strong>Live Demo:</strong> <a href="https://cj-mills.github.io/Fastai-ASL-Classification-WebGL-Demo/">ASL Classifier</a></p>
 </section>
@@ -824,7 +824,7 @@ nothing
 <p>The Unity project will take input from a webcam, and most webcams don’t have a square aspect ratio like the training samples. We will need to account for this to get more accurate predictions.</p>
 <p>We can train with a square aspect ratio and crop the webcam input in Unity, but that might make users feel cramped when using the application.</p>
 <p>Alternatively, we can expand the training images to a more typical aspect ratio like 4:3 or 16:9. This approach will allow us to use the entire webcam input, so we’ll go with this one.</p>
-<p>I have a <a href="https://christianjmills.com/Crop-Images-on-the-GPU-In-Unity/">separate tutorial</a> for cropping images on the GPU in Unity for anyone that wants to try the other approach.</p>
+<p>I have a <a href="../../crop-images-on-gpu-tutorial/">separate tutorial</a> for cropping images on the GPU in Unity for anyone that wants to try the other approach.</p>
 <p>Below are some sample input dimensions in different aspect ratios.</p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># size_1_1 = (224, 224)</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co"># size_3_2 = (224, 336)</span></span>
@@ -833,7 +833,7 @@ nothing
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="co"># size_16_9_l = (288, 512)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Define Transforms</strong></p>
 <p>Something else to consider is that the webcam input in Unity mirrors the actual image. Mirrored input would likely not be an issue for something like a pet classifier, but hand orientation matters for ASL. We either need to flip the input image each time in Unity, or we can train the model with pre-flipped images. It is easier to mirror the training images, so we’ll use the <a href="https://docs.fast.ai/vision.augment.html#FlipItem">FlipItem</a> transform with a probability of 1.0 to flip every training sample.</p>
-<p>I have a <a href="https://christianjmills.com/How-to-Flip-an-Image-With-a-Compute-Shader/">separate tutorial</a> covering how to flip images on the GPU in Unity for anyone that wants to try that approach.</p>
+<p>I have a <a href="../../flip-image-compute-shader-tutorial/">separate tutorial</a> covering how to flip images on the GPU in Unity for anyone that wants to try that approach.</p>
 <p>Since we are resizing to a different aspect ratio, we need to choose a padding method. The default reflection padding might add more fingers, changing an image’s meaning. The zeros padding option might work, but most user backgrounds will not be pure black. Therefore, we’ll go with border padding.</p>
 <p>We can add some batch transforms like tweaking the contrast, saturation, hue, zoom, brightness, and warping to help crappify the images. However, we need to disable the <code>do_flip</code> and <code>max_rotate</code> options in <code>aug_transforms</code>.</p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>inspect_default_args(aug_transforms)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2042,8 +2042,8 @@ time
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <p>In this post, we walked through how to finetune a ResNet model for image classification using the fastai library and export it to ONNX format. Part 2 will cover implementing the trained model in a Unity project using the Barracuda library.</p>
-<p><strong>Previous:</strong> <a href="https://christianjmills.com/Deep-Learning-in-Unity/">Getting Started With Deep Learning in Unity</a></p>
-<p><strong>Next:</strong> <a href="https://christianjmills.com/Fastai-to-Unity-Tutorial-2/">Fastai to Unity Tutorial Pt. 2</a></p>
+<p><strong>Previous:</strong> <a href="../../deep-learning-unity-intro/">Getting Started With Deep Learning in Unity</a></p>
+<p><strong>Next:</strong> <a href="../part-2/">Fastai to Unity Tutorial Pt. 2</a></p>
 <p><strong>Project Resources:</strong> <a href="https://github.com/cj-mills/fastai-to-unity-tutorial">GitHub Repository</a></p>
 
 

@@ -26,7 +26,7 @@ toc: false
 
 ## Overview
 
-[Part 1](https://christianjmills.com/Fastai-to-Unity-Tutorial-1/) covered training an image classification model using the fastai library and exporting it to ONNX. [Part 2](https://christianjmills.com/Fastai-to-Unity-Tutorial-2/) covered implementing a trained image classification model in a Unity project using the Barracuda library. In this post, we'll build a Unity project as a shareable web demo and host it for free using GitHub Pages. The image classifier will execute locally in the user's web browser. 
+[Part 1](../part-1) covered training an image classification model using the fastai library and exporting it to ONNX. [Part 2](../part-2/) covered implementing a trained image classification model in a Unity project using the Barracuda library. In this post, we'll build a Unity project as a shareable web demo and host it for free using GitHub Pages. The image classifier will execute locally in the user's web browser. 
 
 WebGL builds use Barracuda's Pixel Shader backend, which is not nearly as performant as the Compute Shader backend. Therefore, I recommend using WebGL for sharing prototypes and target operating systems for final projects.
 
@@ -232,13 +232,13 @@ This post covered how to build a Unity project as a shareable web demo and host 
 
 
 
-**Previous:** [Fastai to Unity Tutorial Pt. 2](https://christianjmills.com/Fastai-to-Unity-Tutorial-2/)
+**Previous:** [Fastai to Unity Tutorial Pt. 2](../part-2)
 
-**Follow Up:** [How to Create a LibTorch Plugin for Unity on Windows Pt.1](https://christianjmills.com/Fastai-to-LibTorch-to-Unity-Tutorial-Windows-1/)
+**Follow Up:** [How to Create a LibTorch Plugin for Unity on Windows Pt.1](../../fastai-libtorch-unity-tutorial/part-1)
 
-**Follow Up:** [How to Create an OpenVINO Plugin for Unity on Windows Pt. 1](https://christianjmills.com/Fastai-to-OpenVINO-to-Unity-Tutorial-Windows-1/)
+**Follow Up:** [How to Create an OpenVINO Plugin for Unity on Windows Pt. 1](../../fastai-openvino-unity-tutorial/part-1)
 
-**Intermediate Tutorial:** [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1](https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/)
+**Intermediate Tutorial:** [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1](../../icevision-openvino-unity-tutorial/part-1)
 
 
 

@@ -31,7 +31,7 @@ toc: false
 
 ## Overview
 
-[Part 1](https://christianjmills.com/Fastai-to-LibTorch-to-Unity-Tutorial-Windows-1/) covered modifying the training code from the [fastai-to-unity tutorial ](https://christianjmills.com/Fastai-to-Unity-Tutorial-1/)to finetune models from the Timm library and export them as TorchScript modules. This post covers creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file in Visual Studio to perform inference with these TorchScript modules using [LibTorch](https://pytorch.org/cppdocs/installing.html).
+[Part 1](../part-1/) covered modifying the training code from the [fastai-to-unity tutorial](../../fastai-to-unity-tutorial/part-1/) to finetune models from the Timm library and export them as TorchScript modules. This post covers creating a dynamic link library ([DLL](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library)) file in Visual Studio to perform inference with these TorchScript modules using [LibTorch](https://pytorch.org/cppdocs/installing.html).
 
 
 
@@ -545,9 +545,9 @@ This post covered creating a dynamic link library ([DLL](https://docs.microsoft.
 
 
 
-**Previous:** [How to Create a LibTorch Plugin for Unity on Windows Pt.1](https://christianjmills.com/Fastai-to-LibTorch-to-Unity-Tutorial-Windows-1/)
+**Previous:** [How to Create a LibTorch Plugin for Unity on Windows Pt.1](../part-1/)
 
-**Next:** [How to Create a LibTorch Plugin for Unity on Windows Pt.3](https://christianjmills.com/Fastai-to-LibTorch-to-Unity-Tutorial-Windows-3/)
+**Next:** [How to Create a LibTorch Plugin for Unity on Windows Pt.3](../part-3/)
 
 
 
