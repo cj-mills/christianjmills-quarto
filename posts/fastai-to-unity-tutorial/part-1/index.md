@@ -1,7 +1,7 @@
 ---
 title: Fastai to Unity Beginner Tutorial Pt. 1
 date: 2022-6-6
-image: ./images/fastai.png
+image: /images/empty.gif
 title-block-categories: false
 layout: post
 toc: false
@@ -12,12 +12,7 @@ description: This beginner tutorial covers how to train an image classifier usin
   inference library. Part 1 covers training and exporting a model.
 categories: [fastai, unity, barracuda]
 
-twitter-card:
-  creator: "@cdotjdotmills"
-  site: "@cdotjdotmills"
-  image: ./images/fastai.png
-open-graph:
-  image: ./images/fastai.png
+
 ---
 
 * [Introduction](#introduction)

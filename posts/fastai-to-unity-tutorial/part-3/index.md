@@ -1,7 +1,7 @@
 ---
 title: Fastai to Unity Beginner Tutorial Pt. 3
 date: 2022-6-8
-image: ./images/fastai.png
+image: /images/empty.gif
 title-block-categories: false
 layout: post
 toc: false
@@ -11,12 +11,6 @@ description: Part 3 covers building a Unity project to run in a web browser and 
   it using GitHub Pages.
 categories: [fastai, unity, barracuda]
 
-twitter-card:
-  creator: "@cdotjdotmills"
-  site: "@cdotjdotmills"
-  image: ./images/fastai.png
-open-graph:
-  image: ./images/fastai.png
 ---
 
 * [Overview](#overview)
