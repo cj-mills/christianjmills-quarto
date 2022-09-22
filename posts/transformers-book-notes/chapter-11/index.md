@@ -1,18 +1,18 @@
 ---
-categories:
-- ai
-- huggingface
-- nlp
-- notes
+title: Notes on Transformers Book Ch. 11
 date: 2022-4-26
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
+comments:
+  utterances:
+    repo: cj-mills/christianjmills
 description: Chapter 11 explores scaling up transformers, methods to make self-attention
   more efficient, and multimodel transformers.
-hide: false
-layout: post
-search_exclude: false
-title: Notes on Transformers Book Ch. 11
-toc: false
-
+categories: [ai, huggingface, nlp, notes]
 ---
 
 * [Scaling Transformers](#scaling-transformers)
