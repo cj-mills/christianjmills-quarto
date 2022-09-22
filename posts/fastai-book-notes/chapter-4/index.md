@@ -1,17 +1,15 @@
 ---
-categories:
-- ai
-- fastai
-- notes
-- pytorch
+title: Notes on fastai Book Ch. 4
 date: 2022-3-14
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: Chapter 4 covers broadcasting, stochastic gradient descent, the MNIST
   loss function, and the sigmoid activation functions.
-hide: false
-layout: post
-search_exclude: false
-title: Notes on fastai Book Ch. 4
-toc: false
+categories: [ai, fastai, notes, pytorch]
 
 ---
 

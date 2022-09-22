@@ -1,17 +1,15 @@
 ---
-categories:
-- style_transfer
-- pytorch
-- unity
-- tutorial
+title: End-to-End In-Game Style Transfer Tutorial Pt.1
 date: 2/26/2021
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: This tutorial series covers how to train your own style transfer model
   with PyTorch and implement it in Unity using the Barracuda library.
-hide: false
-layout: post
-search_exclude: false
-title: End-to-End In-Game Style Transfer Tutorial Pt.1
-toc: false
+categories: [style_transfer, pytorch, unity, tutorial]
 
 ---
 
@@ -28,8 +26,9 @@ This tutorial series covers how to train your own style transfer model and imple
 In this first post, we'll download our Unity project and install the Barracuda library. We'll also create a folder for our project in Google Drive. This is where we'll store our style images, test images and model checkpoints.
 
 <center>
-	<iframe width=auto; height=480; src="https://www.youtube.com/embed/JhFivpJhV-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width=100%; height=480; src="https://www.youtube.com/embed/JhFivpJhV-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
+
 
 
 

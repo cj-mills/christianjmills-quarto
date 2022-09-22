@@ -1,18 +1,15 @@
 ---
-categories:
-- style_transfer
-- pytorch
-- unity
-- tutorial
+title: End-to-End In-Game Style Transfer Tutorial Pt.1.5 (Optional)
 date: 2/26/2021
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: This post covers how to use the Unity Recorder tool to generate additional
   training data for our style transfer model.
-hide: false
-layout: post
-search_exclude: false
-title: End-to-End In-Game Style Transfer Tutorial Pt.1.5 (Optional)
-toc: false
-
+categories: [style_transfer, pytorch, unity, tutorial]
 ---
 
 ### Previous: [Part 1](https://christianjmills.com/End-To-End-In-Game-Style-Transfer-Tutorial-1/)

@@ -1,17 +1,15 @@
 ---
-categories:
-- style_transfer
-- pytorch
-- unity
-- tutorial
+title: End-to-End In-Game Style Transfer Tutorial Addendum
 date: 2021-3-20
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: This post covers how to use a different style transfer model that is
   specialized for video.
-hide: false
-layout: post
-search_exclude: false
-title: End-to-End In-Game Style Transfer Tutorial Addendum
-toc: false
+categories: [style_transfer, pytorch, unity, tutorial]
 
 ---
 

@@ -1,18 +1,15 @@
 ---
-categories:
-- openvino
-- object-detection
-- yolox
-- tutorial
-- unity
+title: OpenVINO Object Detection for Unity Tutorial Pt.3 (Outdated)
 date: 2021-10-6
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: This post demonstrates how to create a Unity project to access the DLL
   as a plugin.
-hide: false
-layout: post
-search_exclude: false
-title: OpenVINO Object Detection for Unity Tutorial Pt.3 (Outdated)
-toc: false
+categories: [openvino, object-detection, yolox, tutorial, unity]
 
 ---
 

@@ -1,18 +1,16 @@
 ---
-categories:
-- openvino
-- style_transfer
-- tutorial
-- unity
+title: OpenVINO Plugin for Unity Tutorial Pt.1
 date: 2021-7-6
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: This post covers the prerequisite software that need to be installed
   and how to convert a pretrained model from ONNX format to the OpenVINO Intermediate
   Representation format.
-hide: false
-layout: post
-search_exclude: false
-title: OpenVINO Plugin for Unity Tutorial Pt.1
-toc: false
+categories: [openvino, style_transfer, tutorial, unity]
 
 ---
 

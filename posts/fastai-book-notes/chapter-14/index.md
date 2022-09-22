@@ -1,16 +1,14 @@
 ---
-categories:
-- ai
-- fastai
-- notes
-- pytorch
-date: 2022-3-29
-description: Chapter 14 covers building a ResNet from scratch.
-hide: false
-layout: post
-search_exclude: false
 title: Notes on fastai Book Ch. 14
+date: 2022-3-29
+image: /images/empty.gif
+title-block-categories: false
+layout: post
 toc: false
+hide: false
+search_exclude: false
+description: Chapter 14 covers building a ResNet from scratch.
+categories: [ai, fastai, notes, pytorch]
 
 ---
 

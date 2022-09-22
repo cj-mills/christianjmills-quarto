@@ -1,18 +1,15 @@
 ---
-categories:
-- ai
-- fastai
-- notes
-- pytorch
+title: Notes on fastai Book Ch. 1
 date: 2022-3-14
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: Chapter 1 covers the history of artificial neural networks, approaches
   for learning ML/DL, and using the fast.ai library for multiple deep learning tasks.
-hide: false
-layout: post
-search_exclude: false
-title: Notes on fastai Book Ch. 1
-toc: false
-
+categories: [ai, fastai, notes, pytorch]
 ---
 
 * [A Brief History of Neural Networks](#a-brief-history-of-neural-networks)

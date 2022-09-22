@@ -1,17 +1,15 @@
 ---
-categories:
-- openvino
-- style_transfer
-- tutorial
-- unity
+title: OpenVINO Plugin for Unity Tutorial Pt.3
 date: 2021-7-6
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: This post demonstrates how to access the DLL as a plugin inside a Unity
   project.
-hide: false
-layout: post
-search_exclude: false
-title: OpenVINO Plugin for Unity Tutorial Pt.3
-toc: false
+categories: [openvino, style_transfer, tutorial, unity]
 
 ---
 

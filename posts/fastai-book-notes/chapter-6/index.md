@@ -1,17 +1,14 @@
 ---
-categories:
-- ai
-- fastai
-- notes
-- pytorch
-date: 2022-3-14
-description: Chapter 6 covers multi-label classification and image regression.
-hide: false
-layout: post
-search_exclude: false
 title: Notes on fastai Book Ch. 6
+date: 2022-3-14
+image: /images/empty.gif
+title-block-categories: false
+layout: post
 toc: false
-
+hide: false
+search_exclude: false
+description: Chapter 6 covers multi-label classification and image regression.
+categories: [ai, fastai, notes, pytorch]
 ---
 
 * [Multi-Label Classification](#multi-label-classification)

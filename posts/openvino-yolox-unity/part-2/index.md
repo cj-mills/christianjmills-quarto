@@ -1,18 +1,15 @@
 ---
-categories:
-- openvino
-- object-detection
-- yolox
-- tutorial
-- unity
+title: OpenVINO Object Detection for Unity Tutorial Pt.2 (Outdated)
 date: 2021-10-6
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: This post walks through the steps needed to create a Dynamic link library
   (DLL) in Visual Studio to perform inference with the pretrained deep learning model.
-hide: false
-layout: post
-search_exclude: false
-title: OpenVINO Object Detection for Unity Tutorial Pt.2 (Outdated)
-toc: false
+categories: [openvino, object-detection, yolox, tutorial, unity]
 
 ---
 

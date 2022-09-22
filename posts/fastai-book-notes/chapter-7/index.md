@@ -1,17 +1,15 @@
 ---
-categories:
-- ai
-- fastai
-- notes
-- pytorch
+title: Notes on fastai Book Ch. 7
 date: 2022-3-14
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: Chapter 7 covers data normalization, progressive resizing, test-time
   augmentation, mixup, and label smoothing.
-hide: false
-layout: post
-search_exclude: false
-title: Notes on fastai Book Ch. 7
-toc: false
+categories: [ai, fastai, notes, pytorch]
 
 ---
 
