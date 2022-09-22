@@ -1,16 +1,14 @@
 ---
-aliases:
-- /tutorial/unity/2020/11/13/Barracuda-PoseNet-Tutorial-5
-categories:
-- unity
-- tutorial
-date: '2020-11-13'
-description: This post covers how to map the key point locations to GameObjects.
-hide: false
-layout: post
-search_exclude: false
 title: Barracuda PoseNet Tutorial Pt. 5 (Outdated)
+date: '2020-11-13'
+image: /images/empty.gif
+title-block-categories: false
+layout: post
 toc: false
+hide: false
+search_exclude: false
+description: This post covers how to map the key point locations to GameObjects.
+categories: [unity, tutorial]
 
 ---
 

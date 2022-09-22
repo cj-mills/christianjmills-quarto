@@ -1,15 +1,15 @@
 ---
-categories:
-- unity
-- tutorial
+title: Barracuda PoseNet Tutorial Pt. 2 (Outdated)
 date: 2020-11-4
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: This post covers how to implement the preprocessing steps for the PoseNet
   model.
-hide: false
-layout: post
-search_exclude: false
-title: Barracuda PoseNet Tutorial Pt. 2 (Outdated)
-toc: false
+categories: [unity, tutorial]
 
 ---
 

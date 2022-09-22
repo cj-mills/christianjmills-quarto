@@ -1,17 +1,15 @@
 ---
-aliases:
-- /tutorial/unity/2020/11/14/Barracuda-PoseNet-Tutorial-6
-categories:
-- unity
-- tutorial
+title: Barracuda PoseNet Tutorial Pt. 6 (Outdated)
 date: '2020-11-14'
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: This post covers how to create a pose skeleton by drawing lines between
   key points.
-hide: false
-layout: post
-search_exclude: false
-title: Barracuda PoseNet Tutorial Pt. 6 (Outdated)
-toc: false
+categories: [unity, tutorial]
 
 ---
 

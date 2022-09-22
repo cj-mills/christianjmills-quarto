@@ -1,16 +1,14 @@
 ---
-aliases:
-- /tutorial/unity/2020/11/12/Barracuda-PoseNet-Tutorial-4
-categories:
-- unity
-- tutorial
-date: '2020-11-12'
-description: This post covers how to process the output of the PoseNet model.
-hide: false
-layout: post
-search_exclude: false
 title: Barracuda PoseNet Tutorial Pt. 4 (Outdated)
+date: '2020-11-12'
+image: /images/empty.gif
+title-block-categories: false
+layout: post
 toc: false
+hide: false
+search_exclude: false
+description: This post covers how to process the output of the PoseNet model.
+categories: [unity, tutorial]
 
 ---
 

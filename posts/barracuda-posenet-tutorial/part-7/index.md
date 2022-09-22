@@ -1,16 +1,14 @@
 ---
-aliases:
-- /tutorial/unity/2020/11/15/Barracuda-PoseNet-Tutorial-7
-categories:
-- unity
-- tutorial
-date: '2020-11-15'
-description: This post covers how to use a webcam feed as input for the PoseNet model.
-hide: false
-layout: post
-search_exclude: false
 title: Barracuda PoseNet Tutorial Pt. 7 (Outdated)
+date: '2020-11-15'
+image: /images/empty.gif
+title-block-categories: false
+layout: post
 toc: false
+hide: false
+search_exclude: false
+description: This post covers how to use a webcam feed as input for the PoseNet model.
+categories: [unity, tutorial]
 
 ---
 

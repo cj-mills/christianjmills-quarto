@@ -1,18 +1,15 @@
 ---
-aliases:
-- /tutorial/unity/2020/10/25/Barracuda-PoseNet-Tutorial-1
-categories:
-- unity
-- tutorial
+title: Barracuda PoseNet Tutorial Pt. 1 (Outdated)
 date: '2020-10-25'
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: This first post covers how to set up a video player in Unity. We'll be
   using the video player to check the accuracy of the PoseNet model.
-hide: false
-layout: post
-search_exclude: false
-title: Barracuda PoseNet Tutorial Pt. 1 (Outdated)
-toc: false
-
+categories: [unity, tutorial]
 ---
 
 **Version 2:** [Part 1](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-1/) 

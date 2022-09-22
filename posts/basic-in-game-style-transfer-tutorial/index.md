@@ -1,14 +1,14 @@
 ---
-categories:
-- unity
-- tutorial
-date: 2020-12-8
-description: This post provides a basic method for performing in-game style transfer.
-hide: false
-layout: post
-search_exclude: false
 title: Basic In-Game Style Transfer Tutorial (Outdated)
+date: 2020-12-8
+image: /images/empty.gif
+title-block-categories: false
+layout: post
 toc: false
+hide: false
+search_exclude: false
+description: This post provides a basic method for performing in-game style transfer.
+categories: [unity, tutorial]
 
 ---
 

@@ -1,15 +1,15 @@
 ---
-categories:
-- unity
-- log
+title: In-Game Style Transfer Experiments Pt.4
 date: 2021-1-9
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: Examining results from my initial attempts to optimize the few-shot video
   stylization model.
-hide: false
-layout: post
-search_exclude: false
-title: In-Game Style Transfer Experiments Pt.4
-toc: false
+categories: [unity, log]
 
 ---
 

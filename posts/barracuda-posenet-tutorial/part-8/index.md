@@ -1,16 +1,14 @@
 ---
-aliases:
-- /tutorial/unity/2020/11/20/Barracuda-PoseNet-Tutorial-8
-categories:
-- unity
-- tutorial
-date: '2020-11-20'
-description: This post covers how to handle video input with different aspect ratios.
-hide: false
-layout: post
-search_exclude: false
 title: Barracuda PoseNet Tutorial Pt. 8 (Outdated)
+date: '2020-11-20'
+image: /images/empty.gif
+title-block-categories: false
+layout: post
 toc: false
+hide: false
+search_exclude: false
+description: This post covers how to handle video input with different aspect ratios.
+categories: [unity, tutorial]
 
 ---
 

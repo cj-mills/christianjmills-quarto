@@ -1,15 +1,15 @@
 ---
-categories:
-- unity
-- log
+title: In-Game Style Transfer Experiments Pt.3
 date: 2021-1-6
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: Examining results from my initial attempts to optimize the fast neural
   style transfer model.
-hide: false
-layout: post
-search_exclude: false
-title: In-Game Style Transfer Experiments Pt.3
-toc: false
+categories: [unity, log]
 
 ---
 
