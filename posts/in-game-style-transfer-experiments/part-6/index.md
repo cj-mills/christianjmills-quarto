@@ -24,7 +24,7 @@ Every time I think I'm ready to wrap up my style transfer project, I come across
 
 ## Arbitrary Style Transfer
 
-As I mentioned in the [weekly recap](https://christianjmills.com/Weekly-Recap-3/), I came across an [implementation](https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/tf2_arbitrary_image_stylization.ipynb) of the same style transfer model that Unity used for its style transfer project. However, this one hadn't been watered down to run on a PS4 Pro. I was impressed by the results, but it takes days instead of hours to train. Here are a couple examples using style images from Unity's sample project.
+As I mentioned in the [weekly recap](../../weekly-recaps/recap-3/), I came across an [implementation](https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/tf2_arbitrary_image_stylization.ipynb) of the same style transfer model that Unity used for its style transfer project. However, this one hadn't been watered down to run on a PS4 Pro. I was impressed by the results, but it takes days instead of hours to train. Here are a couple examples using style images from Unity's sample project.
 
 ![arbitrary-style-transfer-3](./images/arbitrary-style-transfer-3.jpg)
 

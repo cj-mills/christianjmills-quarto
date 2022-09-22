@@ -1544,6 +1544,6 @@ class Model(Module):
 
 
 
-**Previous:** [Notes on fastai Book Ch. 16](https://christianjmills.com/Notes-on-Fastai-Book-16/)
+**Previous:** [Notes on fastai Book Ch. 16](../chapter-16/)
 
-**Next:** [Notes on fastai Book Ch. 18](https://christianjmills.com/Notes-on-Fastai-Book-18/)
+**Next:** [Notes on fastai Book Ch. 18](../chapter-18/)

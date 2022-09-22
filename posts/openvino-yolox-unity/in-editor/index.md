@@ -16,11 +16,11 @@ categories: [openvino, object-detection, yolox, tutorial, unity]
 ### 8/11/2022:
 
 * This tutorial is outdated. Use the new version at the link below.
-* [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1](https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/)
+* [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1](../../icevision-openvino-unity-tutorial/part-1/)
 
 ------
 
-### Previous: [Part 3](https://christianjmills.com/OpenVINO-Plugin-for-Unity-Tutorial-3/)
+### Previous: [Part 3](../part-3/)
 
 * [Overview](#overview)
 * [Install New OpenVINO Version](#install-new-openvino-version)
@@ -516,7 +516,7 @@ With the modifications we made, we can now build and run the project like any ot
 
 
 
-### Next: [In-Game Camera](https://christianjmills.com/OpenVINO-Object-Detection-for-Unity-Tutorial-In-Game-Camera/)
+### Next: [In-Game Camera](../in-game-camera/)
 
 
 

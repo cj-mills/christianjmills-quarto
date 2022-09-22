@@ -12,11 +12,11 @@ categories: [unity, tutorial]
 
 ---
 
-**Version 2:** [Part 1](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-1/) 
+**Version 2:** [Part 1](../../barracuda-posenet-tutorial-v2/part-1/) 
 
 **Last Updated:** Dec 1, 2020
 
-### Previous: [Part 7](https://christianjmills.com/Barracuda-PoseNet-Tutorial-7/)
+### Previous: [Part 7](../part-7/)
 
 * [Introduction](#introduction)
 * [Add UnityEngine.Video Namespace](#add-unityenginevideo-namespace)

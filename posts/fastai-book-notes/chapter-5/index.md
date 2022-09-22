@@ -1805,9 +1805,9 @@ learn.fine_tune(6, freeze_epochs=3)
 
 
 
-**Previous:** [Notes on fastai Book Ch. 4](https://christianjmills.com/Notes-on-Fastai-Book-04/)
+**Previous:** [Notes on fastai Book Ch. 4](../chapter-4/)
 
-**Next:** [Notes on fastai Book Ch. 6](https://christianjmills.com/Notes-on-Fastai-Book-06/)
+**Next:** [Notes on fastai Book Ch. 6](../chapter-6/)
 
 
 

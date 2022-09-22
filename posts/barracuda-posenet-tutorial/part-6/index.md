@@ -13,11 +13,11 @@ categories: [unity, tutorial]
 
 ---
 
-**Version 2:** [Part 1](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-1/) 
+**Version 2:** [Part 1](../../barracuda-posenet-tutorial-v2/part-1/) 
 
 **Last Updated:** Nov 30, 2020
 
-### Previous: [Part 5](https://christianjmills.com/Barracuda-PoseNet-Tutorial-5/)
+### Previous: [Part 5](../part-5/)
 
 * [Introduction](#introduction)
 * [Create DrawSkeleton Script](#create-drawskeleton-script)
@@ -182,5 +182,5 @@ We now have a complete pose skeleton that we can use for debugging or demos. In 
 
 ### [GitHub Repository - Version 1](https://github.com/cj-mills/Barracuda-PoseNet-Tutorial/tree/Version-1)
 
-### Next: [Part  7](https://christianjmills.com/Barracuda-PoseNet-Tutorial-7/)
+### Next: [Part  7](../part-7/)
 

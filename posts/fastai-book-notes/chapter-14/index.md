@@ -1756,9 +1756,9 @@ learn.fit_one_cycle(100, 1e-3)
 
 
 
-**Previous:** [Notes on fastai Book Ch. 13](https://christianjmills.com/Notes-on-Fastai-Book-13/)
+**Previous:** [Notes on fastai Book Ch. 13](../chapter-13/)
 
-**Next:** [Notes on fastai Book Ch. 15](https://christianjmills.com/Notes-on-Fastai-Book-15/)
+**Next:** [Notes on fastai Book Ch. 15](../chapter-15/)
 
 
 

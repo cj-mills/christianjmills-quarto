@@ -21,7 +21,7 @@ categories: [unity, log]
 
 ## Introduction
 
-I followed up on the [results](https://christianjmills.com/In-Game-Style-Transfer-Experiments-3/#using-a-smaller-model) in the last post by testing how much I could shrink the [video stylization model](https://christianjmills.com/In-Game-Style-Transfer-Experiments-1/#video-stylization-model). I was initially skeptical since that model is twice the size of the `fast_neural_style` model. However, the model was easy to modify using the config files provided in the [GitHub repository](https://github.com/OndrejTexler/Few-Shot-Patch-Based-Training). The hard part turned out to be getting the output in Unity to match the output during training.
+I followed up on the [results](../part-3/#using-a-smaller-model) in the last post by testing how much I could shrink the [video stylization model](../part-1/#video-stylization-model). I was initially skeptical since that model is twice the size of the `fast_neural_style` model. However, the model was easy to modify using the config files provided in the [GitHub repository](https://github.com/OndrejTexler/Few-Shot-Patch-Based-Training). The hard part turned out to be getting the output in Unity to match the output during training.
 
 ## Shrinking the Model
 
@@ -33,7 +33,7 @@ Fortunately, this didn't seem to have any significant impact on the quality of t
 
 ## Results in Unity
 
-The modified video stylization model has better performance than the original `fast_neural_style` model, but is still far behind the [smaller variant](https://christianjmills.com/In-Game-Style-Transfer-Experiments-3/#resolution-720-x-540). On the plus side, flickering is still significantly reduced over the `fast_neural_style` model. 
+The modified video stylization model has better performance than the original `fast_neural_style` model, but is still far behind the [smaller variant](../part-3/#resolution-720-x-540). On the plus side, flickering is still significantly reduced over the `fast_neural_style` model. 
 
 ### Resolution: 720 x 540
 

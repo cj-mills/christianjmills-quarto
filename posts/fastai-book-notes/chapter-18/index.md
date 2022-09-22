@@ -545,6 +545,6 @@ print_source(ActivationStats)
 
 
 
-**Previous:** [Notes on fastai Book Ch. 17](https://christianjmills.com/Notes-on-Fastai-Book-17/)
+**Previous:** [Notes on fastai Book Ch. 17](../chapter-17/)
 
-**Next:** [Notes on fastai Book Ch. 19](https://christianjmills.com/Notes-on-Fastai-Book-19/)
+**Next:** [Notes on fastai Book Ch. 19](../chapter-19/)

@@ -1793,4 +1793,4 @@ Use Judgment in Defining Test Sets
 
 
 
-**Next:** [Notes on fastai Book Ch. 2](https://christianjmills.com/Notes-on-Fastai-Book-02/)
+**Next:** [Notes on fastai Book Ch. 2](../chapter-2/)

@@ -163,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>I followed up on the <a href="https://christianjmills.com/In-Game-Style-Transfer-Experiments-3/#using-a-smaller-model">results</a> in the last post by testing how much I could shrink the <a href="https://christianjmills.com/In-Game-Style-Transfer-Experiments-1/#video-stylization-model">video stylization model</a>. I was initially skeptical since that model is twice the size of the <code>fast_neural_style</code> model. However, the model was easy to modify using the config files provided in the <a href="https://github.com/OndrejTexler/Few-Shot-Patch-Based-Training">GitHub repository</a>. The hard part turned out to be getting the output in Unity to match the output during training.</p>
+<p>I followed up on the <a href="../part-3/#using-a-smaller-model">results</a> in the last post by testing how much I could shrink the <a href="../part-1/#video-stylization-model">video stylization model</a>. I was initially skeptical since that model is twice the size of the <code>fast_neural_style</code> model. However, the model was easy to modify using the config files provided in the <a href="https://github.com/OndrejTexler/Few-Shot-Patch-Based-Training">GitHub repository</a>. The hard part turned out to be getting the output in Unity to match the output during training.</p>
 </section>
 <section id="shrinking-the-model" class="level2">
 <h2 class="anchored" data-anchor-id="shrinking-the-model">Shrinking the Model</h2>
@@ -178,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="results-in-unity" class="level2">
 <h2 class="anchored" data-anchor-id="results-in-unity">Results in Unity</h2>
-<p>The modified video stylization model has better performance than the original <code>fast_neural_style</code> model, but is still far behind the <a href="https://christianjmills.com/In-Game-Style-Transfer-Experiments-3/#resolution-720-x-540">smaller variant</a>. On the plus side, flickering is still significantly reduced over the <code>fast_neural_style</code> model.</p>
+<p>The modified video stylization model has better performance than the original <code>fast_neural_style</code> model, but is still far behind the <a href="../part-3/#resolution-720-x-540">smaller variant</a>. On the plus side, flickering is still significantly reduced over the <code>fast_neural_style</code> model.</p>
 <section id="resolution-720-x-540" class="level3">
 <h3 class="anchored" data-anchor-id="resolution-720-x-540">Resolution: 720 x 540</h3>
 <div class="quarto-figure quarto-figure-center">

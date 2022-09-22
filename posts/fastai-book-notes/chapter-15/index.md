@@ -791,6 +791,6 @@ def forward(self, x_cat, x_cont=None):
 
 
 
-**Previous:** [Notes on fastai Book Ch. 14](https://christianjmills.com/Notes-on-Fastai-Book-14/)
+**Previous:** [Notes on fastai Book Ch. 14](../chapter-14/)
 
-**Next:** [Notes on fastai Book Ch. 16](https://christianjmills.com/Notes-on-Fastai-Book-16/)
+**Next:** [Notes on fastai Book Ch. 16](../chapter-16/)

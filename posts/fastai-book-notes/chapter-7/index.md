@@ -1107,6 +1107,6 @@ learn.fine_tune(10, 1e-3)
 
 
 
-**Previous:** [Notes on fastai Book Ch. 6](https://christianjmills.com/Notes-on-Fastai-Book-06/)
+**Previous:** [Notes on fastai Book Ch. 6](../chapter-6/)
 
-**Next:** [Notes on fastai Book Ch. 8](https://christianjmills.com/Notes-on-Fastai-Book-08/)
+**Next:** [Notes on fastai Book Ch. 8](../chapter-8/)

@@ -13,7 +13,7 @@ categories: [openvino, style_transfer, tutorial, unity]
 
 ---
 
-### Previous: [Part 1](https://christianjmills.com/OpenVINO-Plugin-for-Unity-Tutorial-1/)
+### Previous: [Part 1](../part-1/)
 
 * [Overview](#overview)
 * [Create a New Visual Studio Project](#create-a-new-visual-studio-project)
@@ -31,7 +31,7 @@ categories: [openvino, style_transfer, tutorial, unity]
 
 ## Overview
 
-In [Part 1](https://christianjmills.com/OpenVINO-Plugin-for-Unity-Tutorial-1/) of the tutorial, we first installed Unity, OpenVINO, and its prerequisite software. We then demonstrated how to use the python conversion script included with the OpenVINO™ Toolkit to convert a pretrained model from [ONNX](https://onnx.ai/) format to the OpenVINO [Intermediate Representation](https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_IR_and_opsets.html) format.
+In [Part 1](../part-1/) of the tutorial, we first installed Unity, OpenVINO, and its prerequisite software. We then demonstrated how to use the python conversion script included with the OpenVINO™ Toolkit to convert a pretrained model from [ONNX](https://onnx.ai/) format to the OpenVINO [Intermediate Representation](https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_IR_and_opsets.html) format.
 
 In this part, we will walk through the steps needed to create a [Dynamic link library (DLL)](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library) in Visual Studio to perform [inference](https://www.intel.com/content/www/us/en/artificial-intelligence/posts/deep-learning-training-and-inference.html) with the pretrained deep learning model.
 
@@ -620,5 +620,5 @@ That is everything we need for the OpenVINO functionality. In the next part, we 
 
 
 
-### Next: [Part 3](https://christianjmills.com/OpenVINO-Plugin-for-Unity-Tutorial-3/)
+### Next: [Part 3](../part-3/)
 

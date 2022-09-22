@@ -15,7 +15,7 @@ toc: false
 
 ---
 
-### Previous: [Part 2](https://christianjmills.com/End-To-End-In-Game-Style-Transfer-Tutorial-2/)
+### Previous: [Part 2](../part-2/)
 
 * [Introduction](#introduction)
 
@@ -310,7 +310,7 @@ The style transfer model used in this tutorial series does not account for consi
 
 ## Test it Out
 
-At last, we can press the play button and see how it runs. If you went through my [previous](https://christianjmills.com/Basic-In-Game-Style-Transfer-Tutorial/) in-game style transfer tutorial, you should see significantly higher frame rates this time.
+At last, we can press the play button and see how it runs. If you went through my [previous](../../basic-in-game-style-transfer-tutorial/) in-game style transfer tutorial, you should see significantly higher frame rates this time.
 
 ![unity-style-transfer-screenshot](./images/unity-style-transfer-screenshot.png)
 

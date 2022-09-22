@@ -2715,7 +2715,7 @@ r_mse(ens_preds,valid_y)
 
 
 
-**Previous:** [Notes on fastai Book Ch. 8](https://christianjmills.com/Notes-on-Fastai-Book-08/)
+**Previous:** [Notes on fastai Book Ch. 8](../chapter-8/)
 
-**Next:** [Notes on fastai Book Ch. 10](https://christianjmills.com/Notes-on-Fastai-Book-10/)
+**Next:** [Notes on fastai Book Ch. 10](../chapter-10/)
 

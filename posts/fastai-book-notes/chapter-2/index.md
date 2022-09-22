@@ -839,6 +839,6 @@ VBox(children=(Dropdown(options=('black', 'grizzly', 'teddy'), value='black'), D
 
 
 
-**Previous:** [Notes on fastai Book Ch. 1](https://christianjmills.com/Notes-on-Fastai-Book-01/)
+**Previous:** [Notes on fastai Book Ch. 1](../chapter-1/)
 
-**Next:** [Notes on fastai Book Ch. 3](https://christianjmills.com/Notes-on-Fastai-Book-03/)
+**Next:** [Notes on fastai Book Ch. 3](../chapter-3/)

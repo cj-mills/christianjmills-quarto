@@ -16,7 +16,7 @@ toc: false
 
 ---
 
-### Previous: [In-Editor](https://christianjmills.com/OpenVINO-Object-Detection-for-Unity-Tutorial-In-Editor/)
+### Previous: [In-Editor](../in-game-camera/)
 
 * [Overview](#overview)
 * [Update BoundingBox Script](#update-boundingbox-script)
@@ -375,7 +375,7 @@ We can delete the `Object Detector` object, as it will not be used anymore.
 
 ## Update GUI Events
 
-Lastly, we need to reassign all the GUI events as show [here](https://christianjmills.com/OpenVINO-Object-Detection-for-Unity-Tutorial-3/#assign-ui-events). This time, we drag and drop the `Main Camera` object from the Hierarchy tab.
+Lastly, we need to reassign all the GUI events as show [here](../part-3//#assign-ui-events). This time, we drag and drop the `Main Camera` object from the Hierarchy tab.
 
 ![reassign-gui-events](./images/reassign-gui-events.png)
 

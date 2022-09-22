@@ -13,11 +13,11 @@ categories: [unity, tutorial]
 
 ---
 
-**Version 2:** [Part 1](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-1/) 
+**Version 2:** [Part 1](../../barracuda-posenet-tutorial-v2/part-1/) 
 
 **Last Updated:** Nov 25, 2020
 
-### Previous: [Part 1](https://christianjmills.com/Barracuda-PoseNet-Tutorial-1/)
+### Previous: [Part 1](../part-1/)
 
 * [Introduction](#introduction)
 * [Create a Compute Shader](#create-a-compute-shader)
@@ -187,5 +187,5 @@ We're now ready to feed video frames to our PoseNet model. In part 3, we'll cove
 
 ### [GitHub Repository - Version 1](https://github.com/cj-mills/Barracuda-PoseNet-Tutorial/tree/Version-1)
 
-### Next: [Part 2.5(Optional)](https://christianjmills.com/Barracuda-PoseNet-Tutorial-2-5/) [Part 3](https://christianjmills.com/Barracuda-PoseNet-Tutorial-3/)
+### Next: [Part 2.5(Optional)](../part-2-5/) [Part 3](../part-3/)
 

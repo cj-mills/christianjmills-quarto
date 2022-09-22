@@ -2153,6 +2153,6 @@ learn = fit(5, lr=0.1)
 
 
 
-**Previous:** [Notes on fastai Book Ch. 12](https://christianjmills.com/Notes-on-Fastai-Book-12/)
+**Previous:** [Notes on fastai Book Ch. 12](../chapter-12/)
 
-**Next:** [Notes on fastai Book Ch. 14](https://christianjmills.com/Notes-on-Fastai-Book-14/)
+**Next:** [Notes on fastai Book Ch. 14](../chapter-14/)

@@ -12,11 +12,11 @@ categories: [unity, tutorial]
 
 ---
 
-**Version 2:** [Part 1](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-1/) 
+**Version 2:** [Part 1](../../barracuda-posenet-tutorial-v2/part-1/) 
 
 **Last Updated:** Nov 30, 2020
 
-### Previous: [Part 2](https://christianjmills.com/Barracuda-PoseNet-Tutorial-2/)
+### Previous: [Part 2](../part-2/)
 
 * [Introduction](#introduction)
 * [Make a New Screen](#make-a-new-screen)
@@ -98,7 +98,7 @@ With the `PoseEstimator` selected in the `Hierarchy` tab, drag and drop the `Inp
 
 ## Test the New Screen
 
-Make sure the `Display Input` checkbox is ticked in the `Inspector` tab. It will be easier to see the changes to the preprocessed images if we use a full color video. We can set the `Video Clip` for the `Video Player` to the `pexels_woman_dancing` file that we downloaded in [Part 1](https://christianjmills.com/Barracuda-PoseNet-Tutorial-1/#import-video-files).
+Make sure the `Display Input` checkbox is ticked in the `Inspector` tab. It will be easier to see the changes to the preprocessed images if we use a full color video. We can set the `Video Clip` for the `Video Player` to the `pexels_woman_dancing` file that we downloaded in [Part 1](../part-1/).
 
 ![](./videos/preprocessed_image_preview6.mp4)
 
@@ -136,4 +136,4 @@ We now have a little screen that we can use to view the processed input image be
 
 ### [GitHub Repository - Version 1](https://github.com/cj-mills/Barracuda-PoseNet-Tutorial/tree/Version-1)
 
-### Next: [Part 3](https://christianjmills.com/Barracuda-PoseNet-Tutorial-3/)
+### Next: [Part 3](../part-3/)

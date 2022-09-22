@@ -27,7 +27,7 @@ It's been a couple weeks since I've posted anything. I've been going back and fo
 
 ## Style Transfer Updates
 
-I spent some more time trying to improve the fast style model. I tried different style transfer methods in addition to customizing the [`fast_neural_style`](https://github.com/onnx/models/tree/master/vision/style_transfer/fast_neural_style) model. I still didn't get satisfactory results for the [digital lynx painting](https://christianjmills.com/In-Game-Style-Transfer-Experiments-5/#difficult-to-learn-styles). 
+I spent some more time trying to improve the fast style model. I tried different style transfer methods in addition to customizing the [`fast_neural_style`](https://github.com/onnx/models/tree/master/vision/style_transfer/fast_neural_style) model. I still didn't get satisfactory results for the [digital lynx painting](../../in-game-style-transfer-experiments/part-5/#difficult-to-learn-styles). 
 
 ![](./images/slow_style_transfer.png)
 

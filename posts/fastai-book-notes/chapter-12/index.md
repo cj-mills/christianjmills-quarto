@@ -1968,6 +1968,6 @@ learn.fit_one_cycle(15, 1e-2, wd=0.1)
 
 
 
-**Previous:** [Notes on fastai Book Ch. 11](https://christianjmills.com/Notes-on-Fastai-Book-11/)
+**Previous:** [Notes on fastai Book Ch. 11](../chapter-11/)
 
-**Next:** [Notes on fastai Book Ch. 13](https://christianjmills.com/Notes-on-Fastai-Book-13/)
+**Next:** [Notes on fastai Book Ch. 13](../chapter-13/)

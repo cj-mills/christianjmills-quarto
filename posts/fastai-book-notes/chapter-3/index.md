@@ -326,6 +326,6 @@ toc: false
 
 
 
-**Previous:** [Notes on fastai Book Ch. 2](https://christianjmills.com/Notes-on-Fastai-Book-02/)
+**Previous:** [Notes on fastai Book Ch. 2](../chapter-2/)
 
-**Next:** [Notes on fastai Book Ch. 4](https://christianjmills.com/Notes-on-Fastai-Book-04/)
+**Next:** [Notes on fastai Book Ch. 4](../chapter-4/)

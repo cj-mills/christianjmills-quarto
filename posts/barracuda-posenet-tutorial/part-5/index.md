@@ -12,11 +12,11 @@ categories: [unity, tutorial]
 
 ---
 
-**Version 2:** [Part 1](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-1/) 
+**Version 2:** [Part 1](../../barracuda-posenet-tutorial-v2/part-1/) 
 
 **Last Updated:** Nov 30, 2020
 
-### Previous: [Part 4](https://christianjmills.com/Barracuda-PoseNet-Tutorial-4/)
+### Previous: [Part 4](../part-4/)
 
 * [Introduction](#introduction)
 * [Create Key Points](#create-key-points)
@@ -25,7 +25,7 @@ categories: [unity, tutorial]
 
 ## Introduction
 
-In this post, we'll make use of the `VideoScreen` we made in [Part 1](https://christianjmills.com/Barracuda-PoseNet-Tutorial-1/) by checking if the estimated key point locations align with the actual locations in the video. We'll know everything is working as intended if the objects get placed in front of the target key points. If not, we'll at least have a visual debugging tool to work out where we things went wrong.
+In this post, we'll make use of the `VideoScreen` we made in [Part 1](../part-1/) by checking if the estimated key point locations align with the actual locations in the video. We'll know everything is working as intended if the objects get placed in front of the target key points. If not, we'll at least have a visual debugging tool to work out where we things went wrong.
 
 ## Create Key Points
 
@@ -169,5 +169,5 @@ We now have a useful debugging tool to gauge our model's performance. In the nex
 
 ### [GitHub Repository - Version 1](https://github.com/cj-mills/Barracuda-PoseNet-Tutorial/tree/Version-1)
 
-### Next: [Part 6](https://christianjmills.com/Barracuda-PoseNet-Tutorial-6/)
+### Next: [Part 6](../part-6/)
 

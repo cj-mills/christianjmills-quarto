@@ -1886,4 +1886,4 @@ plt.plot(onecyc.lrs);
 
 
 
-**Previous:** [Notes on fastai Book Ch. 18](https://christianjmills.com/Notes-on-Fastai-Book-18/)
+**Previous:** [Notes on fastai Book Ch. 18](../chapter-18/)

@@ -16,11 +16,11 @@ categories: [openvino, object-detection, yolox, tutorial, unity]
 ### 8/11/2022:
 
 * This tutorial is outdated. Use the new version at the link below.
-* [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1](https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/)
+* [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1](../../icevision-openvino-unity-tutorial/part-1/)
 
 ------
 
-### Previous: [Part 1](https://christianjmills.com/OpenVINO-Object-Detection-for-Unity-Tutorial-1/)
+### Previous: [Part 1](../part-1/)
 
 * [Overview](#overview)
 * [Create a New Visual Studio Project](#create-a-new-visual-studio-project)
@@ -38,7 +38,7 @@ categories: [openvino, object-detection, yolox, tutorial, unity]
 
 ## Overview
 
-In [Part 1](https://christianjmills.com/OpenVINO-Object-Detection-for-Unity-Tutorial-1/) of the tutorial, we first installed Unity, OpenVINO, and its prerequisite software. We then downloaded some pretrained models that had been converted to the OpenVINO [Intermediate Representation](https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_IR_and_opsets.html) format, along with some test videos.
+In [Part 1](../part-1/) of the tutorial, we first installed Unity, OpenVINO, and its prerequisite software. We then downloaded some pretrained models that had been converted to the OpenVINO [Intermediate Representation](https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_IR_and_opsets.html) format, along with some test videos.
 
 In this part, we will walk through the steps needed to create a [Dynamic link library (DLL)](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library) in Visual Studio to perform [inference](https://www.intel.com/content/www/us/en/artificial-intelligence/posts/deep-learning-training-and-inference.html) with the pretrained deep learning model.
 
@@ -1037,5 +1037,5 @@ That is everything we need for the OpenVINO™ functionality. In the next part, 
 
 
 
-### Next: [Part 3](https://christianjmills.com/OpenVINO-Object-Detection-for-Unity-Tutorial-3/)
+### Next: [Part 3](../part-3/)
 

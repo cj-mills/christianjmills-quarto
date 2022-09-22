@@ -2112,6 +2112,6 @@ learn.fit_one_cycle(2, slice(1e-3/(2.6**4),1e-3))
 
 
 
-**Previous:** [Notes on fastai Book Ch. 9](https://christianjmills.com/Notes-on-Fastai-Book-09/)
+**Previous:** [Notes on fastai Book Ch. 9](../chapter-9/)
 
-**Next:** [Notes on fastai Book Ch. 11](https://christianjmills.com/Notes-on-Fastai-Book-11/)
+**Next:** [Notes on fastai Book Ch. 11](../chapter-11/)

@@ -2069,6 +2069,6 @@ fastai.tabular.model.TabularModel
 
 
 
-**Previous:** [Notes on fastai Book Ch. 7](https://christianjmills.com/Notes-on-Fastai-Book-07/)
+**Previous:** [Notes on fastai Book Ch. 7](../chapter-7/)
 
-**Next:** [Notes on fastai Book Ch. 9](https://christianjmills.com/Notes-on-Fastai-Book-09/)
+**Next:** [Notes on fastai Book Ch. 9](../chapter-9/)

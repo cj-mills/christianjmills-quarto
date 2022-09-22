@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <section id="update-3292021-end-to-end-in-game-style-transfer-tutorial" class="level3">
-<h3 class="anchored" data-anchor-id="update-3292021-end-to-end-in-game-style-transfer-tutorial">Update 3/29/2021: <a href="https://christianjmills.com/End-To-End-In-Game-Style-Transfer-Tutorial-1/">End-to-End In-Game Style Transfer Tutorial</a></h3>
+<h3 class="anchored" data-anchor-id="update-3292021-end-to-end-in-game-style-transfer-tutorial">Update 3/29/2021: <a href="../end-to-end-in-game-style-transfer-tutorial/part-1/">End-to-End In-Game Style Transfer Tutorial</a></h3>
 <ul>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#select-a-unity-project">Select a Unity Project</a></li>
@@ -170,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Unity has finally released the in-game style transfer project they’ve been <a href="https://docs.unity3d.com/Packages/com.unity.barracuda@1.0/manual/images/BarracudaLanding.png">teasing</a> in the Barracuda <a href="https://docs.unity3d.com/Packages/com.unity.barracuda@1.0/manual/index.html">documentation</a>. Their implementation is slightly more polished than my early <a href="https://christianjmills.com/unity/style_transfer/2020/10/19/In-Game-Style-Transfer.html">attempts</a>. And by slightly, I mean they seem to have addressed every major complaint I had with my implementation. Be sure to check out their sample <a href="https://github.com/UnityLabs/barracuda-style-transfer">project</a> as well as the accompanying blog <a href="https://blogs.unity3d.com/2020/11/25/real-time-style-transfer-in-unity-using-deep-neural-networks/">post</a>.</p>
+<p>Unity has finally released the in-game style transfer project they’ve been <a href="https://docs.unity3d.com/Packages/com.unity.barracuda@1.0/manual/images/BarracudaLanding.png">teasing</a> in the Barracuda <a href="https://docs.unity3d.com/Packages/com.unity.barracuda@1.0/manual/index.html">documentation</a>. Their implementation is slightly more polished than my early <a href="../in-game-style-transfer/">attempts</a>. And by slightly, I mean they seem to have addressed every major complaint I had with my implementation. Be sure to check out their sample <a href="https://github.com/UnityLabs/barracuda-style-transfer">project</a> as well as the accompanying blog <a href="https://blogs.unity3d.com/2020/11/25/real-time-style-transfer-in-unity-using-deep-neural-networks/">post</a>.</p>
 <p>It’s exciting that Unity has started releasing projects that explore alternative uses for the Barracuda library. Hopefully, they’ll explore other deep learning applications in future projects. I would love to see projects that use GANs for dynamically generating in-game content.</p>
 <p>I plan to work on a more sophisticated implementation for in-game style transfer in the future, perhaps using some tricks from Unity’s implementation. However, I wanted to start with a basic implementation to serve as a baseline.</p>
 <p>This tutorial will cover how to use trained models from the <a href="https://github.com/pytorch/examples/tree/master/fast_neural_style"><code>fast_neural_style</code></a> project provided by PyTorch. The models take in regular images and return stylized versions. We’ll get our input images from the in-game camera and display the stylized output to the user.</p>

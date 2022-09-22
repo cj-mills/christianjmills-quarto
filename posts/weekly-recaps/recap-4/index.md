@@ -19,7 +19,7 @@ toc: false
 
 ## End-to-End Style Transfer Tutorial
 
-As I noted in my latest [experiment log](https://christianjmills.com/In-Game-Style-Transfer-Experiments-6/), I decided to cut the video style transfer model from the end-to-end tutorial. Instead I've been modifying the `fast_neural_style` model in an effort to improve output quality and increase inference speed. If nothing else, the framerate will be higher than in my [basic style transfer tutorial](https://christianjmills.com/Basic-In-Game-Style-Transfer-Tutorial/).
+As I noted in my latest [experiment log](../../in-game-style-transfer-experiments/part-6/), I decided to cut the video style transfer model from the end-to-end tutorial. Instead I've been modifying the `fast_neural_style` model in an effort to improve output quality and increase inference speed. If nothing else, the framerate will be higher than in my [basic style transfer tutorial](../../basic-in-game-style-transfer-tutorial/).
 
 ## Working With the Blender Python API
 

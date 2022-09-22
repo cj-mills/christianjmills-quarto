@@ -1217,6 +1217,6 @@ _ex_docs
 
 
 
-**Previous:** [Notes on fastai Book Ch. 15](https://christianjmills.com/Notes-on-Fastai-Book-15/)
+**Previous:** [Notes on fastai Book Ch. 15](../chapter-15/)
 
-**Next:** [Notes on fastai Book Ch. 17](https://christianjmills.com/Notes-on-Fastai-Book-17/)
+**Next:** [Notes on fastai Book Ch. 17](../chapter-17/)

@@ -12,7 +12,7 @@ categories: [unity, tutorial]
 
 ---
 
-### Update 3/29/2021: [End-to-End In-Game Style Transfer Tutorial](https://christianjmills.com/End-To-End-In-Game-Style-Transfer-Tutorial-1/)
+### Update 3/29/2021: [End-to-End In-Game Style Transfer Tutorial](../end-to-end-in-game-style-transfer-tutorial/part-1/)
 
 * [Introduction](#introduction)
 * [Select a Unity Project](#select-a-unity-project)
@@ -26,7 +26,7 @@ categories: [unity, tutorial]
 
 ## Introduction
 
-Unity has finally released the in-game style transfer project they've been [teasing](https://docs.unity3d.com/Packages/com.unity.barracuda@1.0/manual/images/BarracudaLanding.png) in the Barracuda [documentation](https://docs.unity3d.com/Packages/com.unity.barracuda@1.0/manual/index.html). Their implementation is slightly more polished than my early [attempts](https://christianjmills.com/unity/style_transfer/2020/10/19/In-Game-Style-Transfer.html). And by slightly, I mean they seem to have addressed every major complaint I had with my implementation. Be sure to check out their sample [project](https://github.com/UnityLabs/barracuda-style-transfer) as well as the accompanying blog [post](https://blogs.unity3d.com/2020/11/25/real-time-style-transfer-in-unity-using-deep-neural-networks/).
+Unity has finally released the in-game style transfer project they've been [teasing](https://docs.unity3d.com/Packages/com.unity.barracuda@1.0/manual/images/BarracudaLanding.png) in the Barracuda [documentation](https://docs.unity3d.com/Packages/com.unity.barracuda@1.0/manual/index.html). Their implementation is slightly more polished than my early [attempts](../in-game-style-transfer/). And by slightly, I mean they seem to have addressed every major complaint I had with my implementation. Be sure to check out their sample [project](https://github.com/UnityLabs/barracuda-style-transfer) as well as the accompanying blog [post](https://blogs.unity3d.com/2020/11/25/real-time-style-transfer-in-unity-using-deep-neural-networks/).
 
 It's exciting that Unity has started releasing projects that explore alternative uses for the Barracuda library. Hopefully, they'll explore other deep learning applications in future projects. I would love to see projects that use GANs for dynamically generating in-game content.
 

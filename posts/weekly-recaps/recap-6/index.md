@@ -23,15 +23,15 @@ toc: false
 
 Well I haven't got around to trying to make daily recaps. I actually didn't even remember that I was thinking about that until I start writing this post. I made a note on my white board so I don't forget tomorrow. On the plus side I managed to complete three tutorial posts over the weekend which I think is a record for me.
 
-## [End-to-End Style Transfer Tutorial Addendum](https://christianjmills.com/End-To-End-In-Game-Style-Transfer-Tutorial-Addendum/)
+## [End-to-End Style Transfer Tutorial Addendum](../../end-to-end-in-game-style-transfer-tutorial/addendum/)
 
 I completed the follow up post I mentioned in the last recap post covering how to use the [video style transfer model](https://github.com/OndrejTexler/Few-Shot-Patch-Based-Training) that I had been experimenting instead of the model used in the main tutorial. I don't recommend using the video model over the one from the tutorial but the instructions are there now for anyone interested.
 
-## [Crop Image on GPU](https://christianjmills.com/Crop-Images-on-the-GPU-In-Unity/)
+## [Crop Image on GPU](../../crop-images-on-gpu-tutorial/)
 
-I had worked out how to efficiently crop images in Unity with a GPU while working on my [PoseNet tutorial](https://christianjmills.com/Barracuda-PoseNet-Tutorial-1/). I didn't end up using it as I decided to just squish the camera input into a square instead. However, this might not always be ideal so I decided to document how in case I need it in the future.
+I had worked out how to efficiently crop images in Unity with a GPU while working on my [PoseNet tutorial](../../barracuda-posenet-tutorial/part-1). I didn't end up using it as I decided to just squish the camera input into a square instead. However, this might not always be ideal so I decided to document how in case I need it in the future.
 
-## [Flip Image with Compute Shaders](https://christianjmills.com/How-to-Flip-an-Image-With-a-Compute-Shader/)
+## [Flip Image with Compute Shaders](../../flip-image-compute-shader-tutorial/)
 
 I also worked out how to flip images using Compute Shaders while working on my PoseNet tutorial. Again, I ended up not using it in the tutorial. I realized after the fact that I could just flip the output of the model instead. This is much less work than flipping the whole image. 
 

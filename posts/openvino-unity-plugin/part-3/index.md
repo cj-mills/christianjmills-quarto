@@ -13,7 +13,7 @@ categories: [openvino, style_transfer, tutorial, unity]
 
 ---
 
-### Previous: [Part 2](https://christianjmills.com/OpenVINO-Plugin-for-Unity-Tutorial-2/)
+### Previous: [Part 2](../part-2/)
 
 * [Overview](#overview)
 * [Create New Project](#create-new-project)
@@ -34,7 +34,7 @@ categories: [openvino, style_transfer, tutorial, unity]
 
 ## Overview
 
-In [Part 1](https://christianjmills.com/OpenVINO-Plugin-for-Unity-Tutorial-1/) of the tutorial, we first installed Unity, OpenVINO, and its prerequisite software. We then demonstrated how to use the python conversion script included with the OpenVINO™ Toolkit to convert a pretrained model from [ONNX](https://onnx.ai/) format to the OpenVINO [Intermediate Representation](https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_IR_and_opsets.html) format. In [Part 2](https://christianjmills.com/OpenVINO-Plugin-for-Unity-Tutorial-2/), we walked through the steps needed to create a [Dynamic link library (DLL)](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library) in Visual Studio to perform [inference](https://www.intel.com/content/www/us/en/artificial-intelligence/posts/deep-learning-training-and-inference.html) with the pretrained deep learning model. In this part, we will demonstrate how to access the DLL as a plugin inside a Unity project.
+In [Part 1](../part-1/) of the tutorial, we first installed Unity, OpenVINO, and its prerequisite software. We then demonstrated how to use the python conversion script included with the OpenVINO™ Toolkit to convert a pretrained model from [ONNX](https://onnx.ai/) format to the OpenVINO [Intermediate Representation](https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_IR_and_opsets.html) format. In [Part 2](../part-2/), we walked through the steps needed to create a [Dynamic link library (DLL)](https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library) in Visual Studio to perform [inference](https://www.intel.com/content/www/us/en/artificial-intelligence/posts/deep-learning-training-and-inference.html) with the pretrained deep learning model. In this part, we will demonstrate how to access the DLL as a plugin inside a Unity project.
 
 
 

@@ -28,7 +28,7 @@ toc: false
 
 ## Overview
 
-In this follow up to the in-game style transfer [tutorial](https://christianjmills.com/End-To-End-In-Game-Style-Transfer-Tutorial-1/), we'll cover a method to stylize specific GameObjects in a Unity. This tutorial builds on the project from the previous tutorial. If you did not follow that tutorial, you can follow the steps to download the project below. 
+In this follow up to the in-game style transfer [tutorial](../end-to-end-in-game-style-transfer-tutorial/part-1/), we'll cover a method to stylize specific GameObjects in a Unity. This tutorial builds on the project from the previous tutorial. If you did not follow that tutorial, you can follow the steps to download the project below. 
 
 
 

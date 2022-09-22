@@ -15,9 +15,9 @@ toc: false
 
 ---
 
-### Update 3/29/2021: [Barracuda PoseNet Tutorial](https://christianjmills.com/Barracuda-PoseNet-Tutorial-1/)
+### Update 3/29/2021: [Barracuda PoseNet Tutorial](../../barracuda-posenet-tutorial/part-1/)
 
-### Update 7/31/2021: [Barracuda PoseNet Tutorial 2nd Edition](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-1/)
+### Update 7/31/2021: [Barracuda PoseNet Tutorial 2nd Edition](../../barracuda-posenet-tutorial-v2/part-1/)
 
 * [Background](#background)
 * [The Project](#the-project)

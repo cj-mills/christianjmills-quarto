@@ -194,4 +194,4 @@ That takes care of the required setup. In the next part, we will cover how to cr
 
 
 
-### Next: [Part 2](https://christianjmills.com/OpenVINO-Plugin-for-Unity-Tutorial-2/)
+### Next: [Part 2](../part-2/)

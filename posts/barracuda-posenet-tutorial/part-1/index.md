@@ -12,7 +12,7 @@ description: This first post covers how to set up a video player in Unity. We'll
 categories: [unity, tutorial]
 ---
 
-**Version 2:** [Part 1](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-1/) 
+**Version 2:** [Part 1](../../barracuda-posenet-tutorial-v2/part-1/) 
 
 **Last Updated:** Nov 24, 2020
 
@@ -202,5 +202,5 @@ We now have a video player that we can use to feed input to the PoseNet model. T
 
 ### [GitHub Repository - Version 1](https://github.com/cj-mills/Barracuda-PoseNet-Tutorial/tree/Version-1)
 
-## Next: [Part 2](https://christianjmills.com/Barracuda-PoseNet-Tutorial-2/)
+## Next: [Part 2](../part-2/)
 

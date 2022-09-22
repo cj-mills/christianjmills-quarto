@@ -134,6 +134,6 @@ That takes care of the required setup. In the next post I'll cover the optional 
 
 
 
-### Next: [Part 1.5 (Optional)](https://christianjmills.com/End-To-End-In-Game-Style-Transfer-Tutorial-1-5/) [Part 2](https://christianjmills.com/End-To-End-In-Game-Style-Transfer-Tutorial-2/) 
+### Next: [Part 1.5 (Optional)](../part-1-5/) [Part 2](../part-2/) 
 
 [GitHub Repository](https://github.com/cj-mills/End-to-End-In-Game-Style-Transfer-Tutorial)

@@ -16,7 +16,7 @@ toc: false
 
 ---
 
-### Update 7/31/2021: [Barracuda PoseNet Tutorial 2nd Edition](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-1/)
+### Update 7/31/2021: [Barracuda PoseNet Tutorial 2nd Edition](../../barracuda-posenet-tutorial-v2/part-1/)
 
 ## I Fixed the Offset Vectors...
 

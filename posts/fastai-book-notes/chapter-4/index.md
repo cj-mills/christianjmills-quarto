@@ -3853,6 +3853,6 @@ Sequential(
 
 
 
-**Previous:** [Notes on fastai Book Ch. 3](https://christianjmills.com/Notes-on-Fastai-Book-03/)
+**Previous:** [Notes on fastai Book Ch. 3](../chapter-3/)
 
-**Next:** [Notes on fastai Book Ch. 5](https://christianjmills.com/Notes-on-Fastai-Book-05/)
+**Next:** [Notes on fastai Book Ch. 5](../chapter-5/)

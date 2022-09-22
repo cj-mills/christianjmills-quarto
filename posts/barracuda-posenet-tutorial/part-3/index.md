@@ -12,11 +12,11 @@ categories: [unity, tutorial]
 
 ---
 
-**Version 2:** [Part 1](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-1/) 
+**Version 2:** [Part 1](../../barracuda-posenet-tutorial-v2/part-1/) 
 
 **Last Updated:** Nov 30, 2020
 
-### Previous: [Part 2](https://christianjmills.com/Barracuda-PoseNet-Tutorial-2/) [Part 2.5](https://christianjmills.com/Barracuda-PoseNet-Tutorial-2-5/)
+### Previous: [Part 2](../part-2/) [Part 2.5](../part-2-5/)
 
 * [Introduction](#introduction)
 * [Install Barracuda Package](#install-barracuda-package)
@@ -50,7 +50,7 @@ Wait for Unity to install the dependencies.
 
 ## Import PoseNet Model
 
-Now we can import the model into Unity. The Barracuda dev team has focused on supporting the [ONNX](https://onnx.ai/) format for models. We aren't able to directly import models from TensorFlow or PyTorch. I've already converted the PoseNet model to ONNX. You can check out my tutorial for converting TensorFlow SavedModels to ONNX ([here](https://christianjmills.com/tensorflow/onnx/tutorial/2020/10/21/How-to-Convert-a-TensorFlow-SavedModel-to-ONNX.html)). PyTorch provides built-in support for ONNX ([link](https://pytorch.org/tutorials/advanced/super_resolution_with_onnxruntime.html)).
+Now we can import the model into Unity. The Barracuda dev team has focused on supporting the [ONNX](https://onnx.ai/) format for models. We aren't able to directly import models from TensorFlow or PyTorch. I've already converted the PoseNet model to ONNX. You can check out my tutorial for converting TensorFlow SavedModels to ONNX ([here](../../tensorflow-savedmodel-to-onnx-tutorial/)). PyTorch provides built-in support for ONNX ([link](https://pytorch.org/tutorials/advanced/super_resolution_with_onnxruntime.html)).
 
 ### Download the ONNX File
 
@@ -68,7 +68,7 @@ If you select the `resnet50` asset, you should see the following in the `Inspect
 
 ## Load the Model
 
-Next, we need to implement the code for loading the model in the `PoseNet` [script](https://christianjmills.com/unity/tutorial/2020/11/04/Barracuda-PoseNet-Tutorial-2.html#create-the-posenet-script).
+Next, we need to implement the code for loading the model in the `PoseNet` [script](../part-2/#create-the-posenet-script).
 
 ### Add `Unity.Barracuda` Namespace
 
@@ -190,5 +190,5 @@ We've finally performed inference using a PoseNet model in Unity. However, we ne
 
 ### [GitHub Repository - Version 1](https://github.com/cj-mills/Barracuda-PoseNet-Tutorial/tree/Version-1)
 
-### Next: [Part 4](https://christianjmills.com/Barracuda-PoseNet-Tutorial-4/)
+### Next: [Part 4](../part-4/)
 

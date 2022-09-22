@@ -19,7 +19,7 @@ toc: false
 ### 8/11/2022:
 
 * This tutorial is outdated. Use the new version at the link below.
-* [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1](https://christianjmills.com/IceVision-to-OpenVINO-to-Unity-Tutorial-1/)
+* [End-to-End Object Detection for Unity With IceVision and OpenVINO Pt. 1](../../icevision-openvino-unity-tutorial/part-1/)
 
 ------
 
@@ -115,7 +115,7 @@ Python 3.6, 3.7, or 3.8 64-bit are needed to convert a model from [ONNX format](
 
 * Windows Store Python 3.8: ([link](https://www.microsoft.com/en-us/p/python-38/9mssztt1n39l?activetab=pivot:overviewtab))
 
-The YOLOX models are already available in OpenVINO IR format, so Python is not required for this tutorial. However, models trained on custom datasets will need to be converted. The steps for converting models from ONNX format to OpenVINO IR are covered in a [previous tutorial](https://christianjmills.com/OpenVINO-Plugin-for-Unity-Tutorial-1/#convert-onnx-model-to-openvino-ir). The YOLOX models are also available in ONNX format on [GitHub](https://github.com/Megvii-BaseDetection/YOLOX/tree/main/demo/ONNXRuntime).
+The YOLOX models are already available in OpenVINO IR format, so Python is not required for this tutorial. However, models trained on custom datasets will need to be converted. The steps for converting models from ONNX format to OpenVINO IR are covered in a [previous tutorial](../part-1/#convert-onnx-model-to-openvino-ir). The YOLOX models are also available in ONNX format on [GitHub](https://github.com/Megvii-BaseDetection/YOLOX/tree/main/demo/ONNXRuntime).
 
  
 
@@ -212,4 +212,4 @@ That takes care of the required setup. In the next part, we will cover how to cr
 
 
 
-### Next: [Part 2](https://christianjmills.com/OpenVINO-Object-Detection-for-Unity-Tutorial-2/)
+### Next: [Part 2](../part-2/)

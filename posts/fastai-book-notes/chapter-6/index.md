@@ -1143,7 +1143,7 @@ learn.show_results(ds_idx=1, nrows=3, figsize=(6,8))
 
 
 
-**Previous:** [Notes on fastai Book Ch. 5](https://christianjmills.com/Notes-on-Fastai-Book-05/)
+**Previous:** [Notes on fastai Book Ch. 5](../chapter-5/)
 
-**Next:** [Notes on fastai Book Ch. 7](https://christianjmills.com/Notes-on-Fastai-Book-07/)
+**Next:** [Notes on fastai Book Ch. 7](../chapter-7/)
 

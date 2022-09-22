@@ -1783,6 +1783,6 @@ dls = tls.dataloaders(after_item=[Resize(224), ToTensor],
 
 
 
-**Previous:** [Notes on fastai Book Ch. 10](https://christianjmills.com/Notes-on-Fastai-Book-10/)
+**Previous:** [Notes on fastai Book Ch. 10](../chapter-10/)
 
-**Next:** [Notes on fastai Book Ch. 12](https://christianjmills.com/Notes-on-Fastai-Book-12/)
+**Next:** [Notes on fastai Book Ch. 12](../chapter-12/)

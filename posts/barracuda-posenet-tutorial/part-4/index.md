@@ -12,11 +12,11 @@ categories: [unity, tutorial]
 
 ---
 
-**Version 2:** [Part 1](https://christianjmills.com/Barracuda-PoseNet-Tutorial-V2-1/) 
+**Version 2:** [Part 1](../../barracuda-posenet-tutorial-v2/part-1/) 
 
 **Last Updated:** Nov 30, 2020
 
-### Previous: [Part 3](https://christianjmills.com/Barracuda-PoseNet-Tutorial-3/)
+### Previous: [Part 3](../part-3/)
 
 * [Introduction](#introduction)
 * [Create ProcessOutput() Method](#create-processoutput-method)
@@ -113,7 +113,7 @@ After scaling the output back to the `inputImage` resolution, we'll need to scal
 
 ### Calculate Aspect Ratio Scale
 
-As I noted in [Part 2](https://christianjmills.com/unity/tutorial/2020/11/04/Barracuda-PoseNet-Tutorial-2.html#resize-the-image), we need to compensate for the change in aspect ratio that results from resizing the image. We can use the dimensions of the `videoTexture` to stretch the output to the original aspect ratio. 
+As I noted in [Part 2](../part-2/#resize-the-image), we need to compensate for the change in aspect ratio that results from resizing the image. We can use the dimensions of the `videoTexture` to stretch the output to the original aspect ratio. 
 
 ![unsqueezeScale](./images/unsqueezeScale.png)
 
@@ -159,7 +159,7 @@ We finally have the estimated key point locations relative to the source video. 
 
 ### [GitHub Repository - Version 1](https://github.com/cj-mills/Barracuda-PoseNet-Tutorial/tree/Version-1)
 
-### Next: [Part 5](https://christianjmills.com/Barracuda-PoseNet-Tutorial-5/)
+### Next: [Part 5](../part-5/)
 
 
 
