@@ -1,17 +1,20 @@
 ---
-categories:
-- fastai
-- openvino
-- unity
+title: How to Create an OpenVINO Plugin for Unity on Windows Pt. 3
 date: 2022-7-18
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: Part 3 covers modifying the Unity project from the fastai-to-unity tutorial
   to classify images with a OpenVINO DLL.
-hide: false
-layout: post
-search_exclude: false
-title: How to Create an OpenVINO Plugin for Unity on Windows Pt. 3
-toc: false
+categories: [fastai, openvino, unity]
 
+twitter-card:
+  creator: "@cdotjdotmills"
+  site: "@cdotjdotmills"
+open-graph:
 ---
 
 * [Overview](#overview)

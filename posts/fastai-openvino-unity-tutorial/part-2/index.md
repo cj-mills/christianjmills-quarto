@@ -1,17 +1,20 @@
 ---
-categories:
-- fastai
-- openvino
-- unity
+title: How to Create an OpenVINO Plugin for Unity on Windows Pt. 2
 date: 2022-7-17
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: Part 2 covers creating a dynamic link library (DLL) file in Visual Studio
   to perform inference with OpenVINO.
-hide: false
-layout: post
-search_exclude: false
-title: How to Create an OpenVINO Plugin for Unity on Windows Pt. 2
-toc: false
+categories: [fastai, openvino, unity]
 
+twitter-card:
+  creator: "@cdotjdotmills"
+  site: "@cdotjdotmills"
+open-graph:
 ---
 
 * [Overview](#overview)

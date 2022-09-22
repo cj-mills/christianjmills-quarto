@@ -8129,7 +8129,7 @@ call
   <category>unity</category>
   <guid>https://cj-mills.github.io/christianjmills-quarto/posts/fastai-openvino-unity-tutorial/part-3/index.html</guid>
   <pubDate>Mon, 18 Jul 2022 07:00:00 GMT</pubDate>
-  <media:content url="https://cj-mills.github.io/christianjmills-quarto/posts/fastai-openvino-unity-tutorial/part-3/images/unity-create-plugins-folder.png" medium="image" type="image/png" height="95" width="144"/>
+  <media:content url="https://cj-mills.github.io/christianjmills-quarto/images/empty.gif" medium="image" type="image/gif"/>
 </item>
 <item>
   <title>How to Create an OpenVINO Plugin for Unity on Windows Pt. 2</title>
@@ -8710,7 +8710,7 @@ call
   <category>unity</category>
   <guid>https://cj-mills.github.io/christianjmills-quarto/posts/fastai-openvino-unity-tutorial/part-2/index.html</guid>
   <pubDate>Sun, 17 Jul 2022 07:00:00 GMT</pubDate>
-  <media:content url="https://cj-mills.github.io/christianjmills-quarto/posts/fastai-openvino-unity-tutorial/part-2/images/openvino_download_page.png" medium="image" type="image/png" height="171" width="144"/>
+  <media:content url="https://cj-mills.github.io/christianjmills-quarto/images/empty.gif" medium="image" type="image/gif"/>
 </item>
 <item>
   <title>How to Create an OpenVINO Plugin for Unity on Windows Pt. 1</title>
@@ -11488,7 +11488,7 @@ test_input_size
   <category>unity</category>
   <guid>https://cj-mills.github.io/christianjmills-quarto/posts/fastai-openvino-unity-tutorial/part-1/index.html</guid>
   <pubDate>Sun, 17 Jul 2022 07:00:00 GMT</pubDate>
-  <media:content url="https://cj-mills.github.io/christianjmills-quarto/posts/fastai-openvino-unity-tutorial/part-1/images/cover.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://cj-mills.github.io/christianjmills-quarto/images/empty.gif" medium="image" type="image/gif"/>
 </item>
 <item>
   <title>How to Create a LibTorch Plugin for Unity on Windows Pt. 3</title>
@@ -15128,7 +15128,7 @@ False
   <category>barracuda</category>
   <guid>https://cj-mills.github.io/christianjmills-quarto/posts/fastai-to-unity-tutorial/part-3/index.html</guid>
   <pubDate>Wed, 08 Jun 2022 07:00:00 GMT</pubDate>
-  <media:content url="https://cj-mills.github.io/christianjmills-quarto/posts/fastai-to-unity-tutorial/part-3/images/unity-webcam-pixel-shader-fps-resnet18.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://cj-mills.github.io/christianjmills-quarto/posts/fastai-to-unity-tutorial/part-3/images/fastai.png" medium="image" type="image/png" height="135" width="135"/>
 </item>
 <item>
   <title>Fastai to Unity Beginner Tutorial Pt. 2</title>
@@ -16313,7 +16313,7 @@ False
   <category>barracuda</category>
   <guid>https://cj-mills.github.io/christianjmills-quarto/posts/fastai-to-unity-tutorial/part-2/index.html</guid>
   <pubDate>Tue, 07 Jun 2022 07:00:00 GMT</pubDate>
-  <media:content url="https://cj-mills.github.io/christianjmills-quarto/posts/fastai-to-unity-tutorial/part-2/images/unity-hub-installs.png" medium="image" type="image/png" height="95" width="144"/>
+  <media:content url="https://cj-mills.github.io/christianjmills-quarto/posts/fastai-to-unity-tutorial/part-2/images/fastai.png" medium="image" type="image/png" height="135" width="135"/>
 </item>
 <item>
   <title>Fastai to Unity Beginner Tutorial Pt. 1</title>

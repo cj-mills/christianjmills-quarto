@@ -1,19 +1,21 @@
 ---
-categories:
-- fastai
-- openvino
-- unity
+title: How to Create an OpenVINO Plugin for Unity on Windows Pt. 1
 date: 2022-7-17
+image: /images/empty.gif
+title-block-categories: false
+layout: post
+toc: false
+hide: false
+search_exclude: false
 description: This follow-up to the fastai-to-unity tutorial covers creating an OpenVINO
   plugin for the Unity game engine. Part 1 covers the required modifications to the
   original training code.
-image: ./images/cover.jpg
-hide: false
-layout: post
-search_exclude: false
-title: How to Create an OpenVINO Plugin for Unity on Windows Pt. 1
-toc: false
+categories: [fastai, openvino, unity]
 
+twitter-card:
+  creator: "@cdotjdotmills"
+  site: "@cdotjdotmills"
+open-graph:
 ---
 
 * [Introduction](#introduction)
